@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+    <import resource="classpath:de/dailab/jiactng/agentcore/conf/AgentNode.xml" />
+    <import resource="classpath:de/dailab/jiactng/agentcore/conf/JMSMessaging.xml" />
+    <import resource="classpath:de/dailab/jiactng/agentcore/conf/Agent.xml" />
+
+    <bean name="SocialMediaAgentNode" parent="NodeWithJMX">
+    	<property name="overwriteDiscoveryURI" value="smartmulticast://default?group=aal"/>
+    	<property name="agentNodeBeans">
+			<list>
+				<!-- <ref bean="StandardJMSBroker"/> -->
+				<ref bean="AALWS1314GatewayBroker" />
+				<ref bean="IDirectory" />
+			</list>
+		</property>
+        <property name="agents">
+            <list>           	
+            	
+            	<ref bean="SocialMediaAgent" />
+            </list>
+        </property>
+        <property name="logLevel" value="ERROR" />
+    </bean>
+    
+    <bean name="AALWS1314GatewayBroker" parent="ActiveMQBroker">
+        <property name="persistent" value="false" />
+        <property name="connectors">
+            <set>
+                <ref bean="AALWS1314GatewayConnector" />
+            </set>
+        </property>
+    </bean>
+ 
+    <bean name="AALWS1314GatewayConnector" parent="ActiveMQTransportConnector">
+        <property name="networkURI" value="static:(tcp://130.149.154.19:45678)" />
+        <property name="duplex" value="true" />
+        <property name="networkTTL" value="255" />
+        <property name="transportURI" value="tcp://0.0.0.0:0" />
+    </bean>
+    
+    <bean name="SocialMediaAgent" parent="SimpleAgent" singleton="false">
+		<property name="agentBeans">
+			<list>
+				<ref bean="FacebookBean" />
+				
+			</list>
+		</property>
+		<property name="logLevel" value="ERROR" />
+	</bean>
+	
+	<bean name="InformationAgent" parent="SimpleAgent" singleton="false">
+		<property name="agentBeans">
+			<list>
+				<ref bean="CalendarBean" />
+				<ref bean="NewsfeedBean" />
+			</list>
+		</property>
+		<property name="logLevel" value="ERROR" />
+	</bean>
+	
+	<bean name="CommunicationAgent" parent="SimpleAgent" singleton="false">
+		<property name="agentBeans">
+			<list>
+				<ref bean="EmailBean" />
+			</list>
+		</property>
+		<property name="logLevel" value="ERROR" />
+	</bean>
+	
+	<bean name="RegisterandLoginAgent" parent="SimpleAgent" singleton="false">
+		<property name="agentBeans">
+			<list>
+				<ref bean="RegisterBean" />
+			</list>
+		</property>
+		<property name="logLevel" value="ERROR" />
+	</bean>
+	
+	<bean name="TestAgent" parent="SimpleAgent" singleton="false">
+		<property name="agentBeans">
+			<list>
+				<ref bean="TestAgentBean" />
+			</list>
+		</property>
+		<property name="logLevel" value="ERROR" />
+	</bean>
+	
+	<bean name="GroupingBean" class="agents.beans.GroupingBean" singleton="false">  
+        <property name="logLevel" value="INFO" />
+    </bean>
+    
+    <bean name="FacebookBean" class="agents.beans.FacebookBean" singleton="false">  
+        <property name="logLevel" value="INFO" />
+    </bean>
+    
+    <bean name="LinkedInBean" class="agents.beans.LinkedInBean" singleton="false">  
+        <property name="logLevel" value="INFO" />
+    </bean>
+    
+    <bean name="CalendarBean" class="agents.beans.CalendarBean" singleton="false">  
+        <property name="logLevel" value="INFO" />
+    </bean>
+    
+    <bean name="EmailBean" class="agents.beans.EmailbookBean" singleton="false">  
+        <property name="logLevel" value="INFO" />
+    </bean>
+    
+    <bean name="NewsfeedBean" class="agents.beans.NewsfeedBean" singleton="false">  
+        <property name="logLevel" value="INFO" />
+    </bean>
+    
+    <bean name="RegisterBean" class="agents.beans.RegisterBean" singleton="false">  
+    	<property name="executeInterval" value="10000" />
+        <property name="logLevel" value="INFO" />
+    </bean>
+    
+    <bean name="TestAgentBean" class="agents.beans.TestAgentBean" singleton="false">  
+    	<property name="executeInterval" value="10000" />
+        <property name="logLevel" value="INFO" />
+    </bean>
+
+
+</beans>
+
