@@ -7,10 +7,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.List;
 
-import messages.FBMessage;
-import messages.FBData;
-import objects.FacebookUser;
+import ontology.messages.FBMessage;
+import ontology.messages.FacebookData;
+import ontology.messages.GetFacebookData;
 
 import org.sercho.masp.space.event.SpaceEvent;
 import org.sercho.masp.space.event.SpaceObserver;
@@ -21,6 +22,7 @@ import access.MySQLAccess;
 import de.dailab.jiactng.agentcore.AbstractAgentBean;
 import de.dailab.jiactng.agentcore.action.Action;
 import de.dailab.jiactng.agentcore.comm.ICommunicationBean;
+import de.dailab.jiactng.agentcore.comm.IMessageBoxAddress;
 import de.dailab.jiactng.agentcore.comm.message.IJiacMessage;
 import de.dailab.jiactng.agentcore.comm.message.JiacMessage;
 import de.dailab.jiactng.agentcore.knowledge.IFact;
@@ -62,19 +64,21 @@ public class FacebookBean extends AbstractAgentBean{
 	private ResultSet resultSet = null;
 	
 	private long userID;
-	private FacebookUser fbUser;
 	
 	@Override
 	public void doStart() throws Exception{
 		super.doStart();
 		log.info("FacebookAgent started.");
+		log.info("my ID: " + thisAgent.getAgentId());
+		log.info("my Name: " + thisAgent.getAgentName());
+		log.info("my Node: " + thisAgent.getAgentNode().getName());
 		
 		access = new MySQLAccess();
 		connect = access.connectDriver();
 		fbAccess = new FBUserAccess(connect);
 		
 		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
-		IActionDescription sendAction = memory.read(template);
+		sendAction = memory.read(template);
 		
 		if(sendAction == null){
 			sendAction = thisAgent.searchAction(template);
@@ -101,10 +105,10 @@ public class FacebookBean extends AbstractAgentBean{
 		facebook.setOAuthAccessToken(access);
 	}
 	
-	private FacebookUser getMeInformation(long id) throws Exception{
+	private FacebookData getMeInformation(long id, String receiverID) throws Exception{
 		
-		FacebookUser fbUser;
-		fbUser = new FacebookUser();
+		FacebookData fbUser;
+		fbUser = new FacebookData(thisAgent.getAgentId(), receiverID);
 		String query = "SELECT uid, pic_big FROM user WHERE uid = me()";
 		JSONArray jsonArray = facebook.executeFQL(query);
 		
@@ -115,9 +119,9 @@ public class FacebookBean extends AbstractAgentBean{
 		}
 		
 		fbUser.setMe(facebook.getMe());
-		fbAccess.saveUserInfo(id, fbUser);
+//		fbAccess.saveUserInfo(id, fbUser);
 		
-		log.info("Facebook-Daten von User: " + id + " wurde in die Datenbank geschrieben.");
+//		log.info("Facebook-Daten von User: " + id + " wurde in die Datenbank geschrieben.");
 		
 		return fbUser;
 		
@@ -300,26 +304,40 @@ public class FacebookBean extends AbstractAgentBean{
 				log.info("FacebookAgent - message received");
 				
 				IJiacMessage message = memory.remove(wce.getObject());
-				log.info(message);
 				
 				if(message != null){
 					IFact obj = message.getPayload();
 					
-					FBMessage newMessage = new FBMessage(); 
+					FBMessage fb = new FBMessage(); 
 					
-					if(obj instanceof FBData){
-						id = ((FBData) obj).getID();
-						accessToken = ((FBData) obj).getAccessToken();
+					if(obj instanceof GetFacebookData){
+						id = ((GetFacebookData) obj).getUserID();
+						accessToken = ((GetFacebookData) obj).getAccessToken();
+						
+						FacebookData fbUser = null;
 						
 						initFacebook();
 						
 						try {
-							fbUser = getMeInformation(id);
-							log.info(fbUser.getFbid());
-							log.info(fbUser.getPicture());
-							log.info(fbUser.getMe().getName());
-//							newMessage.setfbUser(getMeInformation(id));
-//							fetchInterests(id);
+							
+							List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+
+							for(IAgentDescription agent : agentDescriptions){
+								if(agent.getName().equals("FacebookAgent")){
+
+									IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+									
+									fbUser = getMeInformation(id, agent.getAid());
+									log.info(fbUser.getFbid());
+									log.info(fbUser.getPicture());
+									
+//									fetchInterests(id);
+									
+									JiacMessage newMessage = new JiacMessage(fbUser);
+
+									invoke(sendAction, new Serializable[] {newMessage, receiver});
+								}
+							}
 							
 						} catch (Exception e) {
 							e.printStackTrace();
@@ -330,10 +348,6 @@ public class FacebookBean extends AbstractAgentBean{
 					}
 					
 				}
-				
-//				JiacMessage sendMessage = new JiacMessage(newMessage);
-//				
-//				invoke(sendAction, new Serializable[]{sendMessage, message.getSender()});
 			}
 			
 		}

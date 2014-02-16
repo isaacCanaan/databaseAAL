@@ -6,8 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import messages.FBMessage;
-import messages.FBData;
+import ontology.messages.FBData;
+import ontology.messages.FBMessage;
 
 import org.sercho.masp.space.event.SpaceEvent;
 import org.sercho.masp.space.event.SpaceObserver;
@@ -78,7 +78,7 @@ public class UserRegisterBean extends AbstractAgentBean{
 				
 				FBMessage newMessage = new FBMessage(); 
 				
-				if(obj instanceof FBData){
+				if(obj instanceof ){
 					
 					try {
 						
@@ -86,10 +86,7 @@ public class UserRegisterBean extends AbstractAgentBean{
 						e.printStackTrace();
 					}
 				}
-				
-				JiacMessage sendMessage = new JiacMessage(newMessage);
-				
-				invoke(sendAction, new Serializable[]{sendMessage, message.getSender()});
+
 			}
 			
 		}

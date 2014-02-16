@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import messages.LinkedInData;
+import ontology.messages.LinkedInData;
 
 import org.eclipse.core.internal.runtime.Log;
 import org.sercho.masp.space.event.SpaceEvent;

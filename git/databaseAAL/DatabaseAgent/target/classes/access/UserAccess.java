@@ -42,9 +42,6 @@ public class UserAccess {
 		  catch (Exception e) {
 		      throw e;
 	      } 
-		  finally {
-		      connect.close();
-		  }
 
 	  }
 	  
@@ -71,9 +68,6 @@ public class UserAccess {
 		  catch (Exception e) {
 		      throw e;
 		  } 
-		  finally {
-		      connect.close();
-		  }
 		  
 	  }
 	  
@@ -96,9 +90,6 @@ public class UserAccess {
 		  catch (Exception e) {
 		      throw e;
 		  } 
-		  finally {
-		      connect.close();
-		  }
 	  }
 	  
 	  // get all datas of an user of given id
@@ -128,9 +119,6 @@ public class UserAccess {
 		  catch (Exception e) {
 		      throw e;
 		  } 
-		  finally {
-		      connect.close();
-		  }
 		  
 		  // no user found with given id
 		  if(user.getName().equals("")){

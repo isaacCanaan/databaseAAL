@@ -3,10 +3,9 @@ package agents.beans;
 import java.io.Serializable;
 import java.util.List;
 
-import messages.NewsFeed;
-import messages.UserID;
 import newsfeeds.FetchRSSFeed;
 import objects.NewsFeedMessage;
+import ontology.messages.NewsFeedData;
 
 import org.sercho.masp.space.event.SpaceEvent;
 import org.sercho.masp.space.event.SpaceObserver;
@@ -72,6 +71,19 @@ public class NewsfeedBean extends AbstractAgentBean{
 									
 					try {
 						news = new FetchRSSFeed().getRSSFeedWeltDE();
+						
+						List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+
+						for(IAgentDescription agent : agentDescriptions){
+							if(agent.getName().equals("")){
+
+								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+								
+								JiacMessage newMessage = new JiacMessage(new NewsFeedData(thisAgent.getAgentId(), agent.getAid(), news));
+
+								invoke(sendAction, new Serializable[] {newMessage, receiver});
+							}
+						}
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
@@ -80,10 +92,6 @@ public class NewsfeedBean extends AbstractAgentBean{
 				if(news == null){
 					throw new RuntimeException("No Newsfeed found.");
 				}
-				
-				JiacMessage sendMessage = new JiacMessage(new NewsFeed(news));
-				
-				invoke(sendAction, new Serializable[]{sendMessage, message.getSender()});
 			}
 			
 		}

@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Calendar;
 
-import objects.FacebookUser;
+import ontology.messages.FacebookData;
 
 import com.restfb.types.FacebookType;
 
@@ -22,7 +22,7 @@ public class FBUserAccess {
 		this.connect = connect;
 	}
 	
-	public void saveUserInfo(long id, FacebookUser user) throws Exception{
+	public void saveUserInfo(long id, FacebookData user) throws Exception{
 		  
 		  try {
 			  
@@ -53,14 +53,11 @@ public class FBUserAccess {
 		  catch (Exception e) {
 		      throw e;
 	      } 
-		  finally {
-		      connect.close();
-		  }
 	  }
 	
-	public FacebookUser readFBUser(long id) throws Exception{
+	public FacebookData readFBUser(long id) throws Exception{
 		  
-		  FacebookUser user = new FacebookUser();
+		  FacebookData user = new FacebookData("", "");
 		  
 		  try {
 			  
@@ -81,9 +78,6 @@ public class FBUserAccess {
 		  catch (Exception e) {
 		      throw e;
 		  } 
-		  finally {
-		      connect.close();
-		  }
 		  
 		  // no user found with given id
 		  if(user.getFbid()==0){
@@ -105,12 +99,9 @@ public class FBUserAccess {
 		  catch (Exception e) {
 		      throw e;
 		  } 
-		  finally {
-		      connect.close();
-		  }
 	  }
 	
-	public void updateFBUser(long id, FacebookUser user) throws Exception{
+	public void updateFBUser(long id, FacebookData user) throws Exception{
 		  
 		  try {
 			  
@@ -126,9 +117,6 @@ public class FBUserAccess {
 		  catch (Exception e) {
 		      throw e;
 		  } 
-		  finally {
-		      connect.close();
-		  }
 	}
 	
 }

@@ -5,10 +5,8 @@ import java.util.ArrayList;
 
 import mails.MailReceiver;
 import mails.eMailAcc;
-import messages.CalendarEntries;
-import messages.Mails;
-import messages.UserID;
 import objects.Mail;
+import ontology.messages.CalendarData;
 
 import org.sercho.masp.space.event.SpaceEvent;
 import org.sercho.masp.space.event.SpaceObserver;
@@ -80,6 +78,19 @@ private IActionDescription sendAction = null;
 						
 						GoogleCalendarFetcher fetch = new GoogleCalendarFetcher("", "");
 						entries = fetch.getEventEntries();
+						
+						List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+
+						for(IAgentDescription agent : agentDescriptions){
+							if(agent.getName().equals("")){
+
+								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+								
+								JiacMessage newMessage = new JiacMessage(new CalendarData(thisAgent.getAgentId(), agent.getAid(), entires));
+
+								invoke(sendAction, new Serializable[] {newMessage, receiver});
+							}
+						}
 
 					} catch (Exception e) {
 						e.printStackTrace();
@@ -87,12 +98,8 @@ private IActionDescription sendAction = null;
 				}
 				
 				if(entries == null){
-					throw new RuntimeException("No Mails found.");
+					throw new RuntimeException("No Calendar Entries found.");
 				}
-				
-				JiacMessage sendMessage = new JiacMessage(new CalendarEntries(entries));
-				
-				invoke(sendAction, new Serializable[]{sendMessage, message.getSender()});
 			}
 			
 		}

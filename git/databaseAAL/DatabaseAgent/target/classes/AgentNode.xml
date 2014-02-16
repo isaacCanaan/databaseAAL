@@ -7,7 +7,7 @@
     <import resource="classpath:de/dailab/jiactng/agentcore/conf/JMSMessaging.xml" />
     <import resource="classpath:de/dailab/jiactng/agentcore/conf/Agent.xml" />
 
-    <bean name="SocialMediaAgentNode" parent="NodeWithJMX">
+    <bean name="ApplicationNode" parent="NodeWithJMX">
     	<property name="overwriteDiscoveryURI" value="smartmulticast://default?group=aal"/>
     	<property name="agentNodeBeans">
 			<list>
@@ -18,7 +18,7 @@
 		</property>
         <property name="agents">
             <list>           	
-            	
+          		
             	<ref bean="SocialMediaAgent" />
             </list>
         </property>
