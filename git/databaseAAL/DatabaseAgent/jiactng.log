@@ -836,3 +836,11 @@ Caused by: java.lang.ClassNotFoundException: jiac.messages.GetFacebookData
 2014-02-16 17:24:16,888 INFO [n-1353651632ebd031.a-135365167c7bf48d.FacebookBean] - my Node: ApplicationNode
 2014-02-16 17:24:32,177 ERROR [n-1353651632ebd031.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
 2014-02-16 17:24:32,177 ERROR [n-1353651632ebd031.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353651632ebd031,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-16 20:50:36,071 WARN [n-13537058d95c055c] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-16 20:50:36,558 ERROR [n-13537058d95c055c.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-16 20:50:37,521 INFO [n-13537058d95c055c.a-13537058fe00f129.FacebookBean] - FacebookAgent started.
+2014-02-16 20:50:37,522 INFO [n-13537058d95c055c.a-13537058fe00f129.FacebookBean] - my ID: a-13537058fe00f129
+2014-02-16 20:50:37,522 INFO [n-13537058d95c055c.a-13537058fe00f129.FacebookBean] - my Name: SocialMediaAgent
+2014-02-16 20:50:37,522 INFO [n-13537058d95c055c.a-13537058fe00f129.FacebookBean] - my Node: ApplicationNode
+2014-02-16 20:50:41,563 ERROR [n-13537058d95c055c.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-16 20:50:41,563 ERROR [n-13537058d95c055c.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-13537058d95c055c,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"

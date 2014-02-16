@@ -1,23 +1,24 @@
 package ontology.messages;
 
+import objects.LinkedInUser;
+import ontology.Message;
+import ontology.MessageType;
 import de.dailab.jiactng.agentcore.knowledge.IFact;
 
-public class LinkedInData implements IFact{
+public class LinkedInData extends Message{
 	
-	private String accessToken;
-	private String tokenSecret;
+	private LinkedInUser user;
 	
-	public LinkedInData(String accessToken, String tokenSecret){
-		this.accessToken = accessToken;
-		this.tokenSecret = tokenSecret;
+	public LinkedInData(String senderID, String receiverID){
+		super(senderID, receiverID, MessageType.SOCIAL_DATA);
 	}
 	
-	public String getAccessToken(){
-		return accessToken;
+	public LinkedInUser getMe(){
+		return this.user;
 	}
 	
-	public String getTokenSecret(){
-		return tokenSecret;
+	public void setMe(LinkedInUser user){
+		this.user = user;
 	}
 
 }

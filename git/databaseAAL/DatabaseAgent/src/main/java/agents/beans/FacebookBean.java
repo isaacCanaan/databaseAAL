@@ -9,7 +9,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import ontology.messages.FBMessage;
 import ontology.messages.FacebookData;
 import ontology.messages.GetFacebookData;
 
@@ -307,8 +306,6 @@ public class FacebookBean extends AbstractAgentBean{
 				
 				if(message != null){
 					IFact obj = message.getPayload();
-					
-					FBMessage fb = new FBMessage(); 
 					
 					if(obj instanceof GetFacebookData){
 						id = ((GetFacebookData) obj).getUserID();
