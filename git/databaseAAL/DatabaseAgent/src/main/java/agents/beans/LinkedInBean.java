@@ -16,6 +16,7 @@ import org.sercho.masp.space.event.WriteCallEvent;
 
 import com.google.code.linkedinapi.client.LinkedInApiClient;
 import com.google.code.linkedinapi.client.LinkedInApiClientFactory;
+import com.google.code.linkedinapi.schema.Connections;
 import com.google.code.linkedinapi.schema.Person;
 
 import access.MySQLAccess;
@@ -104,6 +105,14 @@ public class LinkedInBean extends AbstractAgentBean{
 							log.info("Summary:" + profile.getSummary());
 							log.info("Industry:" + profile.getIndustry());
 							log.info("Picture:" + profile.getPictureUrl());
+							
+							Connections connections = client.getConnectionsForCurrentUser();
+							log.info("Total connections fetched:" + connections.getTotal());
+							for (Person person : connections.getPersonList()) {
+							       log.info(person.getId() + ":" + person.getFirstName() + " " + person.getLastName() + ":" + person.getHeadline());
+							}
+							
+							
 							
 							LinkedInUser user = new LinkedInUser();
 							
