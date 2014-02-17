@@ -62,7 +62,7 @@ public class LinkedInBean extends AbstractAgentBean{
 		factory = LinkedInApiClientFactory.newInstance(consumerKeyValue, consumerSecretValue);
 		
 		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
-		IActionDescription sendAction = memory.read(template);
+		sendAction = memory.read(template);
 		
 		if(sendAction == null){
 			sendAction = thisAgent.searchAction(template);
