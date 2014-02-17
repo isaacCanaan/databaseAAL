@@ -4,7 +4,7 @@ import java.util.Date;
 
 import de.dailab.jiactng.agentcore.knowledge.IFact;
 
-public class Mail implements IFact{
+public class Mail{
 
 	private String subject;
 	private String content;

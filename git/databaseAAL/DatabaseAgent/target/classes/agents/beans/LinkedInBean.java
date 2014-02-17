@@ -114,7 +114,7 @@ public class LinkedInBean extends AbstractAgentBean{
 
 									IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 									
-									LinkedInData data = new LinkedInData(thisAgent.getAgentId(), agent.getAid());
+									LinkedInData data = new LinkedInData(obj.getID(), thisAgent.getAgentId(), agent.getAid());
 									data.setMe(user);
 									JiacMessage newMessage = new JiacMessage(data);
 

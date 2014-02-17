@@ -14,10 +14,13 @@ import org.sercho.masp.space.event.WriteCallEvent;
 import de.dailab.jiactng.agentcore.AbstractAgentBean;
 import de.dailab.jiactng.agentcore.action.Action;
 import de.dailab.jiactng.agentcore.comm.ICommunicationBean;
+import de.dailab.jiactng.agentcore.comm.IMessageBoxAddress;
 import de.dailab.jiactng.agentcore.comm.message.IJiacMessage;
 import de.dailab.jiactng.agentcore.comm.message.JiacMessage;
 import de.dailab.jiactng.agentcore.knowledge.IFact;
+import de.dailab.jiactng.agentcore.ontology.AgentDescription;
 import de.dailab.jiactng.agentcore.ontology.IActionDescription;
+import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 
 public class NewsfeedBean extends AbstractAgentBean{
 	
@@ -67,7 +70,7 @@ public class NewsfeedBean extends AbstractAgentBean{
 				List<NewsFeedMessage> news = null;
 				
 				// instance??? todo
-				if(obj instanceof){
+				if(obj instanceof GetNewsData){
 									
 					try {
 						news = new FetchRSSFeed().getRSSFeedWeltDE();
@@ -79,7 +82,7 @@ public class NewsfeedBean extends AbstractAgentBean{
 
 								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 								
-								JiacMessage newMessage = new JiacMessage(new NewsFeedData(thisAgent.getAgentId(), agent.getAid(), news));
+								JiacMessage newMessage = new JiacMessage(new NewsFeedData(obj.getID, thisAgent.getAgentId(), agent.getAid(), news));
 
 								invoke(sendAction, new Serializable[] {newMessage, receiver});
 							}

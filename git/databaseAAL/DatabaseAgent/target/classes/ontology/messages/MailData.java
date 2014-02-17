@@ -9,11 +9,21 @@ import de.dailab.jiactng.agentcore.knowledge.IFact;
 
 public class MailData extends Message{
 	
+	private long id;
 	private ArrayList<Mail> mails;
 	
-	public MailData(String senderID, String receiverID, ArrayList<Mail> mails){
+	public MailData(long id, String senderID, String receiverID, ArrayList<Mail> mails){
 		super(senderID, receiverID, MessageType.COMM_DATA);
+		this.id = id;
 		this.mails = mails;
+	}
+	
+	public long getID(){
+		return id;
+	}
+	
+	public void setID(long id){
+		this.id = id;
 	}
 	
 	public ArrayList<Mail> getMails(){

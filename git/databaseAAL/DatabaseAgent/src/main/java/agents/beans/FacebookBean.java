@@ -107,7 +107,7 @@ public class FacebookBean extends AbstractAgentBean{
 	private FacebookData getMeInformation(long id, String receiverID) throws Exception{
 		
 		FacebookData fbUser;
-		fbUser = new FacebookData(thisAgent.getAgentId(), receiverID);
+		fbUser = new FacebookData(id, thisAgent.getAgentId(), receiverID);
 		String query = "SELECT uid, pic_big FROM user WHERE uid = me()";
 		JSONArray jsonArray = facebook.executeFQL(query);
 		

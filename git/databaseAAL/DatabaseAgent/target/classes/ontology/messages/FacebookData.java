@@ -11,6 +11,7 @@ import facebook4j.internal.org.json.JSONObject;
 
 public class FacebookData extends Message{
 	
+	private long id;
 	private long fbid;
 	private String username;
 	private String name;
@@ -23,8 +24,17 @@ public class FacebookData extends Message{
 	private Timestamp timestamp;
 	private User me;
 	
-	public FacebookData(String senderID, String receiverID){
+	public FacebookData(long id, String senderID, String receiverID){
 		super(senderID, receiverID, MessageType.SOCIAL_DATA);
+		this.id = id;
+	}
+	
+	public long getID(){
+		return id;
+	}
+	
+	public void setID(long id){
+		this.id = id;
 	}
 	
 	public void setFbid(long fbid){

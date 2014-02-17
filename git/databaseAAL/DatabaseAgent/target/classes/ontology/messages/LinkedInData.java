@@ -7,10 +7,20 @@ import de.dailab.jiactng.agentcore.knowledge.IFact;
 
 public class LinkedInData extends Message{
 	
+	private long id;
 	private LinkedInUser user;
 	
-	public LinkedInData(String senderID, String receiverID){
+	public LinkedInData(long id, String senderID, String receiverID){
 		super(senderID, receiverID, MessageType.SOCIAL_DATA);
+		this.id = id;
+	}
+	
+	public long getID(){
+		return id;
+	}
+	
+	public void setID(long id){
+		this.id = id;
 	}
 	
 	public LinkedInUser getMe(){

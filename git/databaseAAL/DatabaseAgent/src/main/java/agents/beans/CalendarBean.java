@@ -2,25 +2,30 @@ package agents.beans;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 import mails.MailReceiver;
 import mails.eMailAcc;
-import objects.Mail;
+import objects.Entry;
 import ontology.messages.CalendarData;
+import ontology.messages.GetCalendarData;
 
 import org.sercho.masp.space.event.SpaceEvent;
 import org.sercho.masp.space.event.SpaceObserver;
 import org.sercho.masp.space.event.WriteCallEvent;
 
-import calendar.Entry;
+
 import calendar.GoogleCalendarFetcher;
 import de.dailab.jiactng.agentcore.AbstractAgentBean;
 import de.dailab.jiactng.agentcore.action.Action;
 import de.dailab.jiactng.agentcore.comm.ICommunicationBean;
+import de.dailab.jiactng.agentcore.comm.IMessageBoxAddress;
 import de.dailab.jiactng.agentcore.comm.message.IJiacMessage;
 import de.dailab.jiactng.agentcore.comm.message.JiacMessage;
 import de.dailab.jiactng.agentcore.knowledge.IFact;
+import de.dailab.jiactng.agentcore.ontology.AgentDescription;
 import de.dailab.jiactng.agentcore.ontology.IActionDescription;
+import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 
 public class CalendarBean extends AbstractAgentBean{
 	
@@ -72,7 +77,7 @@ private IActionDescription sendAction = null;
 				
 
 				// instance??? todo
-				if(obj instanceof){
+				if(obj instanceof GetCalendarData){
 									
 					try {
 						
@@ -86,7 +91,7 @@ private IActionDescription sendAction = null;
 
 								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 								
-								JiacMessage newMessage = new JiacMessage(new CalendarData(thisAgent.getAgentId(), agent.getAid(), entires));
+								JiacMessage newMessage = new JiacMessage(new CalendarData(obj.getID, thisAgent.getAgentId(), agent.getAid(), entries));
 
 								invoke(sendAction, new Serializable[] {newMessage, receiver});
 							}
