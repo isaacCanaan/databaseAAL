@@ -1,11 +1,26 @@
 package ontology;
 
 public enum MessageType {
-    SOCIAL_DATA,
+	TEST_MESSAGE,
+	NEW_KNOWN_USER,
+	NEW_UNKNOWN_USER,
+
+	GET_USER_INFORMATION,	
+
+	GET_SOCIAL,
+	GET_COMM,
+	GET_INFO,
+
+	SAVE_SOCIAL,
+	SAVE_INFO,
+	SAVE_COMM,
+
+	GET_TODOS,
+	SOCIAL_DATA,
     COMM_DATA,
     INFO_DATA,
-    
-    GET_SOCIAL,
-    GET_INFO,
-    GET_COMM
+    GESTURE,
+
+    DELETE_COMM,
+    DELETE_INFO
 }

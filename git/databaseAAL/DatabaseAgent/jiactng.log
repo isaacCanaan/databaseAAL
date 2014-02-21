@@ -972,3 +972,178 @@ https://t.co/0WksdZ97c4', isContributorsEnabled=false, profileImageUrl='http://p
 2014-02-17 16:51:17,709 INFO [n-1353b1db9adc69d3.a-1353b1dba4023926.TwitterBean] - UserJSONImpl{id=395471530, name='Yuan Cheng ', screenName='distortedworld', location='Berlin', description='Through distorted lens, I will capture the world. To this world, I shall bring clarity.', isContributorsEnabled=false, profileImageUrl='http://pbs.twimg.com/profile_images/2638751028/1a06b039cdd86716d77dfc09195e5965_normal.jpeg', profileImageUrlHttps='https://pbs.twimg.com/profile_images/2638751028/1a06b039cdd86716d77dfc09195e5965_normal.jpeg', url='null', isProtected=false, followersCount=4, status=StatusJSONImpl{createdAt=Tue Feb 04 03:36:49 CET 2014, id=430530352453812224, text='If you don't wanna get hurt, don't get involved with people.', source='<a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>', isTruncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, isFavorited=false, isRetweeted=false, favoriteCount=0, inReplyToScreenName='null', geoLocation=null, place=null, retweetCount=0, isPossiblySensitive=false, isoLanguageCode=en, contributorsIDs=[J@6a81262, retweetedStatus=null, userMentionEntities=[], urlEntities=[], hashtagEntities=[], mediaEntities=[], currentUserRetweetId=-1, user=null}, profileBackgroundColor='C0DEED', profileTextColor='333333', profileLinkColor='0084B4', profileSidebarFillColor='DDEEF6', profileSidebarBorderColor='C0DEED', profileUseBackgroundImage=true, showAllInlineMedia=false, friendsCount=20, createdAt=Fri Oct 21 20:21:41 CEST 2011, favouritesCount=0, utcOffset=-10800, timeZone='Greenland', profileBackgroundImageUrl='http://abs.twimg.com/images/themes/theme1/bg.png', profileBackgroundImageUrlHttps='https://abs.twimg.com/images/themes/theme1/bg.png', profileBackgroundTiled=false, lang='de', statusesCount=12, isGeoEnabled=false, isVerified=false, translator=false, listedCount=0, isFollowRequestSent=false}
 2014-02-17 16:51:20,115 ERROR [n-1353b1db9adc69d3.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
 2014-02-17 16:51:20,115 ERROR [n-1353b1db9adc69d3.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353b1db9adc69d3,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-17 17:48:04,246 WARN [n-1353b4f782ede916] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-17 17:48:07,161 ERROR [n-1353b4f782ede916.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-17 17:48:07,903 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b4f782ede916AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:48:08,318 INFO [n-1353b4f782ede916.a-1353b4f7df61501d.OutlookBean] - OutlookAgent started.
+2014-02-17 17:48:08,958 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b4f782ede916AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:48:10,997 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b4f782ede916AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:48:14,684 ERROR [n-1353b4f782ede916.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-17 17:48:14,685 ERROR [n-1353b4f782ede916.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353b4f782ede916,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-17 17:50:27,712 WARN [n-1353b518ea2e87ac] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-17 17:50:28,397 ERROR [n-1353b518ea2e87ac.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-17 17:50:28,749 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b518ea2e87acAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:50:28,962 INFO [n-1353b518ea2e87ac.a-1353b518cb5a565c.OutlookBean] - OutlookAgent started.
+2014-02-17 17:50:29,790 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b518ea2e87acAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:50:31,831 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b518ea2e87acAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:50:35,869 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b518ea2e87acAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:50:42,170 ERROR [n-1353b518ea2e87ac.a-1353b518cb5a565c.SimpleExecutionCycle] - Error when executing bean 'OutlookBean'
+java.lang.NullPointerException
+	at agents.beans.OutlookBean.execute(OutlookBean.java:81)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.processBeanExecutes(SimpleExecutionCycle.java:118)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.run(SimpleExecutionCycle.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-17 17:50:43,908 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b518ea2e87acAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:50:47,984 ERROR [n-1353b518ea2e87ac.a-1353b518cb5a565c.SimpleExecutionCycle] - Error when executing bean 'OutlookBean'
+java.lang.NullPointerException
+	at agents.beans.OutlookBean.execute(OutlookBean.java:81)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.processBeanExecutes(SimpleExecutionCycle.java:118)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.run(SimpleExecutionCycle.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-17 17:50:53,807 ERROR [n-1353b518ea2e87ac.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-17 17:50:53,807 ERROR [n-1353b518ea2e87ac.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353b518ea2e87ac,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-17 17:55:57,190 WARN [n-1353b565a08eadb4] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-17 17:55:57,567 ERROR [n-1353b565a08eadb4.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-17 17:55:57,935 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b565a08eadb4AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:55:58,159 INFO [n-1353b565a08eadb4.a-1353b56581d9d7bc.OutlookBean] - OutlookAgent started.
+2014-02-17 17:55:58,977 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b565a08eadb4AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:56:01,016 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b565a08eadb4AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:56:05,164 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b565a08eadb4AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:56:08,470 ERROR [n-1353b565a08eadb4.a-1353b56581d9d7bc.SimpleExecutionCycle] - Error when executing bean 'OutlookBean'
+java.lang.NullPointerException
+	at agents.beans.OutlookBean.execute(OutlookBean.java:82)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.processBeanExecutes(SimpleExecutionCycle.java:118)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.run(SimpleExecutionCycle.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-17 17:56:13,205 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b565a08eadb4AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:56:13,869 ERROR [n-1353b565a08eadb4.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-17 17:56:13,869 ERROR [n-1353b565a08eadb4.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353b565a08eadb4,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-17 17:57:19,719 WARN [n-1353b578c16bc9c4] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-17 17:57:20,401 ERROR [n-1353b578c16bc9c4.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-17 17:57:20,763 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b578c16bc9c4AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:57:21,053 INFO [n-1353b578c16bc9c4.a-1353b578ec4c9c06.OutlookBean] - OutlookAgent started.
+2014-02-17 17:57:21,871 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b578c16bc9c4AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:57:24,012 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b578c16bc9c4AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:57:28,050 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b578c16bc9c4AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:57:30,888 ERROR [n-1353b578c16bc9c4.a-1353b578ec4c9c06.SimpleExecutionCycle] - Error when executing bean 'OutlookBean'
+java.lang.NullPointerException
+	at agents.beans.OutlookBean.execute(OutlookBean.java:84)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.processBeanExecutes(SimpleExecutionCycle.java:118)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.run(SimpleExecutionCycle.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-17 17:57:33,916 ERROR [n-1353b578c16bc9c4.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-17 17:57:33,917 ERROR [n-1353b578c16bc9c4.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353b578c16bc9c4,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-17 17:57:52,925 WARN [n-1353b580cbe5c8cf] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-17 17:57:53,292 ERROR [n-1353b580cbe5c8cf.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-17 17:57:53,668 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b580cbe5c8cfAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:57:53,901 INFO [n-1353b580cbe5c8cf.a-1353b5807c84e41d.OutlookBean] - OutlookAgent started.
+2014-02-17 17:57:54,707 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b580cbe5c8cfAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:57:56,752 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b580cbe5c8cfAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:58:00,968 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b580cbe5c8cfAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:58:04,206 ERROR [n-1353b580cbe5c8cf.a-1353b5807c84e41d.SimpleExecutionCycle] - Error when executing bean 'OutlookBean'
+java.lang.NullPointerException
+	at agents.beans.OutlookBean.execute(OutlookBean.java:84)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.processBeanExecutes(SimpleExecutionCycle.java:118)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.run(SimpleExecutionCycle.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-17 17:58:05,169 ERROR [n-1353b580cbe5c8cf.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-17 17:58:05,169 ERROR [n-1353b580cbe5c8cf.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353b580cbe5c8cf,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-17 17:58:41,264 WARN [n-1353b58bd42da3fc] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-17 17:58:41,623 ERROR [n-1353b58bd42da3fc.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-17 17:58:41,999 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b58bd42da3fcAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:58:42,214 INFO [n-1353b58bd42da3fc.a-1353b58bb54be204.OutlookBean] - OutlookAgent started.
+2014-02-17 17:58:43,040 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b58bd42da3fcAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:58:45,081 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b58bd42da3fcAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:58:49,207 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b58bd42da3fcAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 17:58:52,362 ERROR [n-1353b58bd42da3fc.a-1353b58bb54be204.SimpleExecutionCycle] - Error when executing bean 'OutlookBean'
+java.lang.NullPointerException
+	at agents.beans.OutlookBean.execute(OutlookBean.java:84)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.processBeanExecutes(SimpleExecutionCycle.java:118)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.run(SimpleExecutionCycle.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-17 17:58:53,452 ERROR [n-1353b58bd42da3fc.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-17 17:58:53,452 ERROR [n-1353b58bd42da3fc.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353b58bd42da3fc,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-17 18:00:47,610 WARN [n-1353b5a928bc689c] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-17 18:00:48,300 ERROR [n-1353b5a928bc689c.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-17 18:00:48,730 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b5a928bc689cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 18:00:48,950 INFO [n-1353b5a928bc689c.a-1353b5a954157fee.OutlookBean] - OutlookAgent started.
+2014-02-17 18:00:49,850 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b5a928bc689cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 18:00:51,891 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b5a928bc689cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 18:00:55,932 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b5a928bc689cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 18:00:58,743 ERROR [n-1353b5a928bc689c.a-1353b5a954157fee.SimpleExecutionCycle] - Error when executing bean 'OutlookBean'
+java.lang.NullPointerException
+	at agents.beans.OutlookBean.execute(OutlookBean.java:84)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.processBeanExecutes(SimpleExecutionCycle.java:118)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.run(SimpleExecutionCycle.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-17 18:00:59,579 ERROR [n-1353b5a928bc689c.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-17 18:00:59,580 ERROR [n-1353b5a928bc689c.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353b5a928bc689c,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-17 18:02:44,095 WARN [n-1353b5c497ea2f2d] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-17 18:02:44,470 ERROR [n-1353b5c497ea2f2d.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-17 18:02:44,848 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b5c497ea2f2dAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 18:02:45,071 INFO [n-1353b5c497ea2f2d.a-1353b5c4795e5667.OutlookBean] - OutlookAgent started.
+2014-02-17 18:02:45,889 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b5c497ea2f2dAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 18:02:47,928 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b5c497ea2f2dAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 18:02:51,995 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353b5c497ea2f2dAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-17 18:02:55,200 ERROR [n-1353b5c497ea2f2d.a-1353b5c4795e5667.SimpleExecutionCycle] - Error when executing bean 'OutlookBean'
+java.lang.NullPointerException
+	at agents.beans.OutlookBean.execute(OutlookBean.java:84)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.processBeanExecutes(SimpleExecutionCycle.java:118)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.run(SimpleExecutionCycle.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-17 18:02:55,986 ERROR [n-1353b5c497ea2f2d.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-17 18:02:55,986 ERROR [n-1353b5c497ea2f2d.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353b5c497ea2f2d,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-18 12:36:56,113 WARN [n-1353f29181b86b6b] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-18 12:37:01,907 ERROR [n-1353f29181b86b6b.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-18 12:37:02,362 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353f29181b86b6bAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-18 12:37:02,707 INFO [n-1353f29181b86b6b.a-1353f291e414f50d.FacebookBean] - FacebookAgent started.
+2014-02-18 12:37:02,707 INFO [n-1353f29181b86b6b.a-1353f291e414f50d.FacebookBean] - my ID: a-1353f291e414f50d
+2014-02-18 12:37:02,708 INFO [n-1353f29181b86b6b.a-1353f291e414f50d.FacebookBean] - my Name: SocialMediaAgent
+2014-02-18 12:37:02,708 INFO [n-1353f29181b86b6b.a-1353f291e414f50d.FacebookBean] - my Node: ApplicationNode
+2014-02-18 12:37:03,370 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353f29181b86b6bAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-18 12:37:05,376 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353f29181b86b6bAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-18 12:37:09,385 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353f29181b86b6bAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-18 12:37:17,390 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353f29181b86b6bAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-18 12:37:33,402 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1353f29181b86b6bAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-18 12:37:36,041 ERROR [n-1353f29181b86b6b.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-18 12:37:36,041 ERROR [n-1353f29181b86b6b.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1353f29181b86b6b,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"

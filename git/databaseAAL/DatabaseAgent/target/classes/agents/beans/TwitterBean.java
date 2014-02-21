@@ -109,67 +109,67 @@ public class TwitterBean extends AbstractAgentBean{
 	}
 	}
 	
-//	private class MessageObserver implements SpaceObserver<IFact>{
-//		
-//		
-//
-//		/**
-//		 * 
-//		 */
-//		private static final long serialVersionUID = -8182513339144469591L;
-//
-//		@Override
-//		public void notify(SpaceEvent<? extends IFact> event) {
-//			if(event instanceof WriteCallEvent<?>){
-//				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
-//				
-//				IJiacMessage message = memory.remove(wce.getObject());
-//				
-//				if(message != null){
-//					IFact obj = message.getPayload();
-//					
-//					if(obj instanceof GetTwitterData){
-//						
-//						try {
-//							
-//							  ConfigurationBuilder cb = new ConfigurationBuilder();
-//							    cb.setDebugEnabled(true)
-//							      .setOAuthConsumerKey(consumerKeyValue)
-//							      .setOAuthConsumerSecret(consumerSecretValue)
-//							      .setOAuthAccessToken(obj.getAccessToken())
-//							      .setOAuthAccessTokenSecret(obj.getTokenSecret());
-//							    TwitterFactory tf = new TwitterFactory(cb.build());
-//							    Twitter twitter = tf.getInstance();
-//							
-//							 List<Status> statuses = twitter.getHomeTimeline();
-//					    	    IDs friendsList = twitter.getFriendsIDs(20);
-//							
-//							List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
-//
-//							for(IAgentDescription agent : agentDescriptions){
-//								if(agent.getName().equals("LinkedInAgent")){
-//
-//									IMessageBoxAddress receiver = agent.getMessageBoxAddress();
-//									
-//									TwitterData data = new TwitterData(obj.getID(), thisAgent.getAgentId(), agent.getAid());
-//									JiacMessage newMessage = new JiacMessage(data);
-//
-//									invoke(sendAction, new Serializable[] {newMessage, receiver});
-//								}
-//							}
-//						} catch (Exception e) {
-//							e.printStackTrace();
-//						}
-//					}
-//					else{
-//						memory.write(wce.getObject());
-//					}
-//				}
-//				
-//			}
-//			
-//		}
-//		
-//	}
+	private class MessageObserver implements SpaceObserver<IFact>{
+		
+		
+
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = -8182513339144469591L;
+
+		@Override
+		public void notify(SpaceEvent<? extends IFact> event) {
+			if(event instanceof WriteCallEvent<?>){
+				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
+				
+				IJiacMessage message = memory.remove(wce.getObject());
+				
+				if(message != null){
+					IFact obj = message.getPayload();
+					
+					if(obj instanceof GetTwitterData){
+						
+						try {
+							
+							  ConfigurationBuilder cb = new ConfigurationBuilder();
+							    cb.setDebugEnabled(true)
+							      .setOAuthConsumerKey(consumerKeyValue)
+							      .setOAuthConsumerSecret(consumerSecretValue)
+							      .setOAuthAccessToken(obj.getAccessToken())
+							      .setOAuthAccessTokenSecret(obj.getTokenSecret());
+							    TwitterFactory tf = new TwitterFactory(cb.build());
+							    Twitter twitter = tf.getInstance();
+							
+							 List<Status> statuses = twitter.getHomeTimeline();
+					    	    IDs friendsList = twitter.getFriendsIDs(20);
+							
+							List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+
+							for(IAgentDescription agent : agentDescriptions){
+								if(agent.getName().equals("LinkedInAgent")){
+
+									IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+									
+									TwitterData data = new TwitterData(obj.getID(), thisAgent.getAgentId(), agent.getAid());
+									JiacMessage newMessage = new JiacMessage(data);
+
+									invoke(sendAction, new Serializable[] {newMessage, receiver});
+								}
+							}
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+					}
+					else{
+						memory.write(wce.getObject());
+					}
+				}
+				
+			}
+			
+		}
+		
+	}
 
 }

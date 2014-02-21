@@ -44,8 +44,9 @@
     <bean name="SocialMediaAgent" parent="SimpleAgent" singleton="false">
 		<property name="agentBeans">
 			<list>
+
+
 				<ref bean="FacebookBean" />
-				<ref bean="TwitterBean" />
 			</list>
 		</property>
 		<property name="logLevel" value="ERROR" />
@@ -56,6 +57,7 @@
 			<list>
 				<ref bean="CalendarBean" />
 				<ref bean="NewsfeedBean" />
+				
 			</list>
 		</property>
 		<property name="logLevel" value="ERROR" />
@@ -114,6 +116,11 @@
     </bean>
     
     <bean name="NewsfeedBean" class="agents.beans.NewsfeedBean" singleton="false">  
+        <property name="logLevel" value="INFO" />
+    </bean>
+    
+     <bean name="OutlookBean" class="agents.beans.OutlookBean" singleton="false">  
+    	<property name="executeInterval" value="10000" />
         <property name="logLevel" value="INFO" />
     </bean>
     
