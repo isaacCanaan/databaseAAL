@@ -3,9 +3,12 @@ package access;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Calendar;
+import java.util.HashMap;
 
+import jiac.Settings;
 import objects.LivingUser;
 
 public class UserAccess {
@@ -26,8 +29,6 @@ public class UserAccess {
 
 			  // get current date	  
 			  Calendar cal = Calendar.getInstance();
-//			  SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
-//			  sdf.format(cal.getTime());
 			  
 			  preparedStatement = connect.prepareStatement("insert into  AAL.USER values (default, ?, ?, ?, ? , ?, ?)");
 			  preparedStatement.setString(1, name);
@@ -52,8 +53,6 @@ public class UserAccess {
 		  try {
 			  
 			  Calendar cal = Calendar.getInstance();
-//			  SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
-//			  sdf.format(cal.getTime());
 			 
 			  preparedStatement = connect.prepareStatement("update AAL.USER set name=?, last_name=?, gender=?, email=?, webpage=?, timestamp=? where id= ? ; ");
 			  preparedStatement.setString(1, user.getName());
@@ -100,7 +99,7 @@ public class UserAccess {
 		  
 		  try {
 			  
-		      preparedStatement = connect.prepareStatement("SELECT id, name, last_name, gender, email, webpage, timestamp USER from AAL.USER where id= ? ; ");
+		      preparedStatement = connect.prepareStatement("SELECT id, name, last_name, gender, email, webpage, timestamp from AAL.USER where id= ? ; ");
 		      preparedStatement.setString(1, String.valueOf(id));
 	          resultSet = preparedStatement.executeQuery();
 	          
@@ -127,6 +126,102 @@ public class UserAccess {
 		  
 		  return user;
 		  
+	  }
+	  
+	  public void saveKey(int id, String key, String value) throws Exception{
+		  
+		  try {
+			  
+			  preparedStatement = connect.prepareStatement("SELECT * from AAL.KEY where id= ? and key = ?; ");
+		      preparedStatement.setInt(1, id);
+		      preparedStatement.setString(1, key);
+	          resultSet = preparedStatement.executeQuery();
+	          
+	          if(resultSet.next()) {
+	        	  preparedStatement = connect.prepareStatement("update AAL.KEY set value = ? where id= ? and key = ?; ");
+				  preparedStatement.setString(1, value);
+				  preparedStatement.setInt(2, id);
+			      preparedStatement.setString(3, key);
+			      preparedStatement.executeUpdate();
+	    	  }
+	          else{
+	        	  preparedStatement = connect.prepareStatement("insert into AAL.KEY values (? , ?, ?)");
+				  preparedStatement.setInt(1, id);
+			      preparedStatement.setString(2, key);
+			      preparedStatement.setString(3, value);
+			      preparedStatement.executeUpdate();  
+	          }
+		  } 
+		  catch (Exception e) {
+		      throw e;
+		  }
+	  }
+	  
+	  public HashMap<String,String> getKeys(int id) throws SQLException{
+		  
+		  HashMap<String,String> map = new HashMap<String,String>();
+		  
+		  preparedStatement = connect.prepareStatement("SELECT * from AAL.KEY where id= ?; ");
+	      preparedStatement.setInt(1, id);
+          resultSet = preparedStatement.executeQuery();
+          
+          while(resultSet.next()){
+        	  map.put(resultSet.getString("key"), resultSet.getString("value"));
+          }
+		  
+		  return map;
+	  }
+	  
+	  public void savePreferences(int id, Settings sets) throws Exception{
+		  try {
+			  
+			  preparedStatement = connect.prepareStatement("SELECT * from AAL.PREFERENCES where id= ?; ");
+		      preparedStatement.setInt(1, id);
+	          resultSet = preparedStatement.executeQuery();
+	          
+	          if(resultSet.next()) {
+	        	  preparedStatement = connect.prepareStatement("update AAL.PREFERENCES set news = ?, todo = ?, calendar = ?, social =?, info = ? where id= ?; ");
+				  preparedStatement.setBoolean(1, sets.isNewsPrivate());
+				  preparedStatement.setBoolean(2, sets.isTodosPrivate());
+				  preparedStatement.setBoolean(3, sets.isCalendarPrivate());
+				  preparedStatement.setBoolean(4, sets.isSocialPrivate());
+				  preparedStatement.setBoolean(5, sets.isInfoPrivate());
+				  preparedStatement.setInt(6, id);
+			      preparedStatement.executeUpdate();
+	    	  }
+	          else{
+	        	  preparedStatement = connect.prepareStatement("insert into AAL.PREFERENCES values (?, ?, ?, ?, ?, ?)");
+				  preparedStatement.setInt(1, id);
+				  preparedStatement.setBoolean(2, sets.isNewsPrivate());
+				  preparedStatement.setBoolean(3, sets.isTodosPrivate());
+				  preparedStatement.setBoolean(4, sets.isCalendarPrivate());
+				  preparedStatement.setBoolean(5, sets.isSocialPrivate());
+				  preparedStatement.setBoolean(6, sets.isInfoPrivate());
+			      preparedStatement.executeUpdate();  
+	          }
+		  } 
+		  catch (Exception e) {
+		      throw e;
+		  }
+	  }
+	  
+	  public Settings getPreferences(int id) throws SQLException{
+		  
+		  Settings sets = new Settings();
+		  
+		  preparedStatement = connect.prepareStatement("SELECT * from AAL.PREFERENCES where id= ?; ");
+	      preparedStatement.setInt(1, id);
+          resultSet = preparedStatement.executeQuery();
+          
+          while(resultSet.next()){
+        	  sets.setNewsPrivacy(resultSet.getBoolean("news"));
+        	  sets.setTodosPrivacy(resultSet.getBoolean("todo"));	
+        	  sets.setCalendarPrivacy(resultSet.getBoolean("calendar"));       		
+        	  sets.setSocialPrivacy(resultSet.getBoolean("social"));      		
+        	  sets.setInfoPrivacy(resultSet.getBoolean("info"));
+          }
+		  
+		  return sets;
 	  }
 
 }
