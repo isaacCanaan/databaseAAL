@@ -44,8 +44,8 @@ public class TwitterBean extends AbstractAgentBean{
 	
 	private final String consumerKeyValue = "6edjES4nEmLuDMCoRtvkw";
 	private final String consumerSecretValue = "V2N8REdkCrDS0mr2msI3HJl4eRAgATM0K6BBUIdt33Y";
-	private String accessToken = "395471530-VA2crkvu4pXsVlCkioDPrjzTQYrwSO870Vy5ny1j";
-	private String tokenSecret = "d27UcbqfK5xNmetRFRoSG0YodpGqVIorcLfmZndPCPQgx";
+	private String accessToken;
+	private String tokenSecret;
 	
 	private IActionDescription sendAction = null;
 	

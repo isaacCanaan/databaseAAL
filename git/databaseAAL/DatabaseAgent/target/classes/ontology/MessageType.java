@@ -22,5 +22,9 @@ public enum MessageType {
     GESTURE,
 
     DELETE_COMM,
-    DELETE_INFO
+    DELETE_INFO,
+    
+    SAVE_IN_DATA_BASE,
+    FIND_USER_ID,
+    RESULT_QR_ID
 }
