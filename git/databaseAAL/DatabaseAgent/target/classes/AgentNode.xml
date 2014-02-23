@@ -18,7 +18,7 @@
 		</property>
         <property name="agents">
             <list>           	
-          		
+          		<ref bean="InformationAgent" />
             	<ref bean="SocialMediaAgent" />
             </list>
         </property>
@@ -44,8 +44,7 @@
     <bean name="SocialMediaAgent" parent="SimpleAgent" singleton="false">
 		<property name="agentBeans">
 			<list>
-
-
+				<ref bean="TwitterBean" />
 				<ref bean="FacebookBean" />
 			</list>
 		</property>
@@ -57,7 +56,7 @@
 			<list>
 				<ref bean="CalendarBean" />
 				<ref bean="NewsfeedBean" />
-				
+				<ref bean="ProfileBean" />
 			</list>
 		</property>
 		<property name="logLevel" value="ERROR" />
@@ -72,10 +71,10 @@
 		<property name="logLevel" value="ERROR" />
 	</bean>
 	
-	<bean name="RegisterandLoginAgent" parent="SimpleAgent" singleton="false">
+	<bean name="RecognitionAgent" parent="SimpleAgent" singleton="false">
 		<property name="agentBeans">
 			<list>
-				<ref bean="RegisterBean" />
+				<ref bean="RecognitionBean" />
 			</list>
 		</property>
 		<property name="logLevel" value="ERROR" />
@@ -120,12 +119,14 @@
     </bean>
     
      <bean name="OutlookBean" class="agents.beans.OutlookBean" singleton="false">  
-    	<property name="executeInterval" value="10000" />
         <property name="logLevel" value="INFO" />
     </bean>
     
-    <bean name="RegisterBean" class="agents.beans.RegisterBean" singleton="false">  
-    	<property name="executeInterval" value="10000" />
+    <bean name="RecognitionBean" class="agents.beans.RecognitionBean" singleton="false">  
+        <property name="logLevel" value="INFO" />
+    </bean>
+    
+    <bean name="ProfileBean" class="agents.beans.ProfileBean" singleton="false">  
         <property name="logLevel" value="INFO" />
     </bean>
     

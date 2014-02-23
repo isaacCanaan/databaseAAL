@@ -1,13 +1,13 @@
 package calendar;
 
-import objects.Entry;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedList;
+
+import ontology.messages.CalendarData;
 
 import com.google.gdata.client.calendar.CalendarService;
 import com.google.gdata.data.calendar.CalendarEventEntry;
@@ -25,7 +25,7 @@ public class GoogleCalendarFetcher {
 		this.pword = pword;
 	}
 	
-	public ArrayList<Entry> getEventEntries(){
+	public ArrayList<CalendarData.Entry> getEventEntries(){
 		// Create a Service to access the calendar
 		CalendarService myService = new CalendarService("LivingWall GoogleCalendarAccess");
 		try {
@@ -53,7 +53,7 @@ public class GoogleCalendarFetcher {
 		}
 		LinkedList<CalendarEventEntry> events = (LinkedList<CalendarEventEntry>) feed.getEntries();
 		
-		ArrayList<Entry> entries = new ArrayList<Entry>();
+		ArrayList<CalendarData.Entry> entries = new ArrayList<CalendarData.Entry>();
 		for (CalendarEventEntry e : events){
 //			e.getParticipants()
 			String content = e.getPlainTextContent();
@@ -65,7 +65,8 @@ public class GoogleCalendarFetcher {
 				etime = new Date(e.getTimes().get(0).getEndTime().getValue());
 			}
 			String location = e.getLocations().get(0).getValueString();
-			Entry currentEntry = new Entry(content, name, stime, etime, location);
+			CalendarData cal = new CalendarData();
+			CalendarData.Entry currentEntry = cal.new Entry(content, name, stime, etime, location);
 			entries.add(currentEntry);
 		}
 		return entries;

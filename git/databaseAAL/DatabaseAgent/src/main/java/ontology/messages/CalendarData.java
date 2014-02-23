@@ -13,6 +13,10 @@ public class CalendarData extends Message {
 	private static final long serialVersionUID = 1110543766223665082L;
 	int userID;
 	ArrayList<Entry> entries;
+	
+	public CalendarData(){
+		
+	}
 
 	public CalendarData(String senderID, String receiverID, int userID, ArrayList<Entry> entries) {
 		super(senderID, receiverID, MessageType.INFO_DATA);

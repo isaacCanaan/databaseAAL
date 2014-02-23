@@ -6,12 +6,8 @@ import java.util.List;
 
 import mails.MailReceiver;
 import mails.eMailAcc;
-import newsfeeds.FetchRSSFeed;
-import objects.Mail;
-import objects.NewsFeedMessage;
 import ontology.messages.GetMailData;
 import ontology.messages.MailData;
-import ontology.messages.NewsFeedData;
 
 import org.sercho.masp.space.event.SpaceEvent;
 import org.sercho.masp.space.event.SpaceObserver;
@@ -68,15 +64,14 @@ public class EmailBean extends AbstractAgentBean{
 			if(event instanceof WriteCallEvent<?>){
 				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
 				
-				log.info("NewsfeedAgent - message received");
+				log.info("MailAgent - message received");
 				
 				IJiacMessage message = memory.remove(wce.getObject());
 				IFact obj = message.getPayload();
 				
 				ArrayList<eMailAcc> accs = new ArrayList<eMailAcc>();
-				ArrayList<Mail> mails = null;
-				
-				// instance??? todo
+				ArrayList<MailData.Mail> mails = null;
+
 				if(obj instanceof GetMailData){
 									
 					try {
@@ -92,7 +87,7 @@ public class EmailBean extends AbstractAgentBean{
 
 								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 								
-								JiacMessage newMessage = new JiacMessage(new MailData(obj.getID(), thisAgent.getAgentId(), agent.getAid(), mails));
+								JiacMessage newMessage = new JiacMessage(new MailData(thisAgent.getAgentId(), agent.getAid(), ((GetMailData) obj).getUserID(), mails));
 
 								invoke(sendAction, new Serializable[] {newMessage, receiver});
 							}

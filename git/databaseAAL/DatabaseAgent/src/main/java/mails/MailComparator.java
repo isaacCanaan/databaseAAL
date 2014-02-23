@@ -2,11 +2,11 @@ package mails;
 
 import java.util.Comparator;
 
-import objects.Mail;
+import ontology.messages.MailData;
 
-public class MailComparator implements Comparator<Mail>{
+public class MailComparator implements Comparator<MailData.Mail>{
 	@Override
-	public int compare(Mail obj1, Mail obj2){
+	public int compare(MailData.Mail obj1, MailData.Mail obj2){
 		return obj2.getReceived().compareTo(obj1.getReceived());
 	}
 }

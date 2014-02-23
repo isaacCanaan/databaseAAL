@@ -5,6 +5,7 @@ import java.util.List;
 
 import newsfeeds.FetchRSSFeed;
 import objects.NewsFeedMessage;
+import ontology.messages.GetNewsData;
 import ontology.messages.NewsFeedData;
 
 import org.sercho.masp.space.event.SpaceEvent;
@@ -69,7 +70,6 @@ public class NewsfeedBean extends AbstractAgentBean{
 				
 				List<NewsFeedMessage> news = null;
 				
-				// instance??? todo
 				if(obj instanceof GetNewsData){
 									
 					try {
@@ -78,11 +78,11 @@ public class NewsfeedBean extends AbstractAgentBean{
 						List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
 
 						for(IAgentDescription agent : agentDescriptions){
-							if(agent.getName().equals("")){
+							if(agent.getName().equals("InformationAgent")){
 
 								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 								
-								JiacMessage newMessage = new JiacMessage(new NewsFeedData(obj.getID, thisAgent.getAgentId(), agent.getAid(), news));
+								JiacMessage newMessage = new JiacMessage(new NewsFeedData(thisAgent.getAgentId(), agent.getAid(), news));
 
 								invoke(sendAction, new Serializable[] {newMessage, receiver});
 							}

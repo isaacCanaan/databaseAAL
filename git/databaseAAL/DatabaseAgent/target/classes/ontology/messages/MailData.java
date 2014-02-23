@@ -12,6 +12,10 @@ public class MailData extends Message {
 	int userID;
 	private ArrayList<Mail> mails;
 
+	public MailData(){
+		
+	}
+	
 	public MailData(String senderID, String receiverID, int userID, ArrayList<Mail> mails) {
 		super(senderID, receiverID, MessageType.COMM_DATA);
 		this.userID = userID;

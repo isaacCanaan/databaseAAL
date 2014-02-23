@@ -6,7 +6,6 @@ import java.util.List;
 
 import mails.MailReceiver;
 import mails.eMailAcc;
-import objects.Entry;
 import ontology.messages.CalendarData;
 import ontology.messages.GetCalendarData;
 
@@ -65,7 +64,7 @@ private IActionDescription sendAction = null;
 		@Override
 		public void notify(SpaceEvent<? extends IFact> event) {
 			
-			ArrayList<Entry> entries = null;
+			ArrayList<CalendarData.Entry> entries = null;
 			
 			if(event instanceof WriteCallEvent<?>){
 				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
@@ -75,8 +74,6 @@ private IActionDescription sendAction = null;
 				IJiacMessage message = memory.remove(wce.getObject());
 				IFact obj = message.getPayload();
 				
-
-				// instance??? todo
 				if(obj instanceof GetCalendarData){
 									
 					try {
@@ -87,11 +84,11 @@ private IActionDescription sendAction = null;
 						List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
 
 						for(IAgentDescription agent : agentDescriptions){
-							if(agent.getName().equals("")){
+							if(agent.getName().equals("InformationAgent")){
 
 								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 								
-								JiacMessage newMessage = new JiacMessage(new CalendarData(obj.getID, thisAgent.getAgentId(), agent.getAid(), entries));
+								JiacMessage newMessage = new JiacMessage(new CalendarData(thisAgent.getAgentId(), agent.getAid(), ((GetCalendarData) obj).getUserID(), entries));
 
 								invoke(sendAction, new Serializable[] {newMessage, receiver});
 							}

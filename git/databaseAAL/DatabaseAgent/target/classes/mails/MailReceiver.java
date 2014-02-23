@@ -15,7 +15,7 @@ import javax.mail.Part;
 import javax.mail.Session;
 import javax.mail.Store;
 
-import objects.Mail;
+import ontology.messages.MailData;
 
 public class MailReceiver {
 	
@@ -33,14 +33,14 @@ public class MailReceiver {
 //	}
 	
 	private ArrayList<eMailAcc> emailAccs;
-	private ArrayList<Mail> emails;
+	private ArrayList<MailData.Mail> emails;
 	
 	public MailReceiver (ArrayList<eMailAcc> emailAccs){
 		this.emailAccs = emailAccs;
 	}
 	
-	public ArrayList<Mail> receiveMails(){
-		ArrayList<Mail> received = new ArrayList<Mail>();
+	public ArrayList<MailData.Mail> receiveMails(){
+		ArrayList<MailData.Mail> received = new ArrayList<MailData.Mail>();
 		for (int i=0; i<emailAccs.size(); i++){
 			eMailAcc current = emailAccs.get(i);
 			String provider = getProvider(current.getEmailAdd());
@@ -90,8 +90,8 @@ public class MailReceiver {
 		}
 	}
 	
-	private ArrayList<Mail> getMails(eMailAcc acc,Properties properties){
-		ArrayList<Mail> mails = new ArrayList<Mail>();
+	private ArrayList<MailData.Mail> getMails(eMailAcc acc,Properties properties){
+		ArrayList<MailData.Mail> mails = new ArrayList<MailData.Mail>();
 		try {  
 			   Session session = Session.getInstance(properties, null);
 			   Store store = null;
@@ -130,7 +130,8 @@ public class MailReceiver {
 			    Message message = messages[i];  
 			    String msg = getText(message);
 			    String type = message.getContentType();
-			    mails.add(new Mail(message.getSubject(), msg, type,
+			    MailData mailData = new MailData();
+			    mails.add(mailData.new Mail(message.getSubject(), msg, type,
 			    		message.getFrom()[0].toString(),new Date(message.getSentDate().getTime())));
 			   }  
 			  
@@ -144,11 +145,11 @@ public class MailReceiver {
 	}
 
 	// Getter and setter
-	public ArrayList<Mail> getEmails() {
+	public ArrayList<MailData.Mail> getEmails() {
 		return emails;
 	}
 
-	public void setEmails(ArrayList<Mail> emails) {
+	public void setEmails(ArrayList<MailData.Mail> emails) {
 		this.emails = emails;
 	}
 	
