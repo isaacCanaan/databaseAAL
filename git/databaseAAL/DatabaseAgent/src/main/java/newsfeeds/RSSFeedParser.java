@@ -16,8 +16,9 @@ import javax.xml.stream.events.XMLEvent;
 
 
 
+
 import objects.Feed;
-import objects.NewsFeedMessage;
+import ontology.messages.NewsFeedData;
 
 import org.xml.sax.helpers.AttributesImpl;
 
@@ -117,7 +118,8 @@ public class RSSFeedParser {
 	          }
 	        } else if (event.isEndElement()) {
 	          if (event.asEndElement().getName().getLocalPart() == (ITEM)) {
-	            NewsFeedMessage message = new NewsFeedMessage();
+	        	NewsFeedData data = new NewsFeedData();
+	            NewsFeedData.NewsFeedMessage message = data.new NewsFeedMessage();
 	            message.setDescription(description);
 //	            message.setGuid(guid);
 	            message.setLink(link);

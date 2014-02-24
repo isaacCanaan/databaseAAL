@@ -3,6 +3,8 @@ package objects;
 import java.util.ArrayList;
 import java.util.List;
 
+import ontology.messages.NewsFeedData;
+
 public class Feed {
 	final String title;
 	final String link;
@@ -11,7 +13,7 @@ public class Feed {
 	final String copyright;
 	final String pubDate;
 	
-	final List<NewsFeedMessage> entries = new ArrayList<NewsFeedMessage>();
+	final ArrayList<NewsFeedData.NewsFeedMessage> entries = new ArrayList<NewsFeedData.NewsFeedMessage>();
 
 	  public Feed(String title, String link, String description, String language,
 	      String copyright, String pubDate) {
@@ -23,7 +25,7 @@ public class Feed {
 	    this.pubDate = pubDate;
 	  }
 
-	  public List<NewsFeedMessage> getMessages() {
+	  public ArrayList<NewsFeedData.NewsFeedMessage> getMessages() {
 	    return entries;
 	  }
 

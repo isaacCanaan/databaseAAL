@@ -82,7 +82,7 @@ public class UserAccess {
 		      preparedStatement.executeUpdate();
 	          
 	          // deleting the profile results in deleting of the facebook-datas as well
-	          FBUserAccess fbaccess = new FBUserAccess(connect);
+	          SocialAccess fbaccess = new SocialAccess(connect);
 	          fbaccess.deleteFBUser(id);
 	          
 		  } 

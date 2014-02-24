@@ -5,7 +5,11 @@ import ontology.MessageType;
 
 public class GetFacebookData extends Message{
 
-    int userID;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 3519883674163530271L;
+	int userID;
     String accessToken;
 
     public GetFacebookData(String senderID, String receiverID, int userID, String accessToken){

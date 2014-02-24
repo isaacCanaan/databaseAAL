@@ -24,8 +24,9 @@ public class FacebookData extends Message{
 	private Timestamp timestamp;
 	private User me;
 	
-	public FacebookData(long id, String senderID, String receiverID){
+	public FacebookData(String senderID, String receiverID, long id){
 		super(senderID, receiverID, MessageType.SOCIAL_DATA);
+		this.id = id;
 	}
 	
 	public void setFbid(long fbid){

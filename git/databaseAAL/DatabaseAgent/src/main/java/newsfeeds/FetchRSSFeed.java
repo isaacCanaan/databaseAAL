@@ -1,13 +1,14 @@
 package newsfeeds;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import ontology.messages.NewsFeedData;
 import objects.Feed;
-import objects.NewsFeedMessage;
 
 public class FetchRSSFeed {
 	
-	public List<NewsFeedMessage> getRSSFeedWeltDE(){
+	public ArrayList<NewsFeedData.NewsFeedMessage> getRSSFeedWeltDE(){
 		RSSFeedParser parser = new RSSFeedParser("http://www.welt.de/wirtschaft/?service=Rss");
     	Feed feed = parser.readFeed();
     	

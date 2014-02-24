@@ -2,6 +2,7 @@ package access;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Calendar;
 
@@ -19,14 +20,14 @@ import facebook4j.Television;
 
 // not tested yet
 
-public class FBUserAccess {
+public class SocialAccess {
 	
 	private Connection connect = null;
 	private Statement statement = null;
 	private PreparedStatement preparedStatement = null;
 	private ResultSet resultSet = null;
 	
-	public FBUserAccess(Connection connect){
+	public SocialAccess(Connection connect){
 		this.connect = connect;
 	}
 	
@@ -261,6 +262,51 @@ public class FBUserAccess {
 		  catch (Exception e) {
 		      throw e;
 		  }
+	}
+	
+	public String getAccessToken(int id, String accessToken, String type) throws SQLException{
+		
+		String aToken = accessToken;
+		
+		if(aToken.equals("")){
+			preparedStatement = connect.prepareStatement("select * from AAL.ACCESSTOKEN where id=? and type=?");
+			preparedStatement.setInt(1, id);
+			preparedStatement.setString(1, type);		
+			resultSet = preparedStatement.executeQuery();
+	          
+	          if(resultSet.next()){
+	        	  aToken = resultSet.getString("token");
+	          }
+		}
+		
+		saveAccessToken(id, aToken, type);
+		
+		return aToken;
+	}
+	
+	private void saveAccessToken(int id, String accessToken, String type) throws SQLException{
+		
+		preparedStatement = connect.prepareStatement("select * from AAL.ACCESSTOKEN where id=? and type=?");
+		preparedStatement.setInt(1, id);
+		preparedStatement.setString(1, type);		
+		resultSet = preparedStatement.executeQuery();
+          
+	    if(resultSet.next()){
+	    	preparedStatement = connect.prepareStatement("update AAL.ACCESSTOKEN set token =? where id= ? and type=?; ");
+	    	preparedStatement.setString(1, accessToken);
+	    	preparedStatement.setInt(2, id);
+	    	preparedStatement.setString(3, type);
+	    	preparedStatement.executeUpdate(); 
+	    }
+	    else{
+	    	 preparedStatement = connect.prepareStatement("insert into  AAL.ACCESSTOKEN values (?, ?, ?)");
+	    	 preparedStatement.setLong(1, id);
+	    	 preparedStatement.setString(3, accessToken);
+	    	 preparedStatement.setString(4, type);
+			 preparedStatement.executeUpdate();
+	    }
+ 
+
 	}
 	
 }

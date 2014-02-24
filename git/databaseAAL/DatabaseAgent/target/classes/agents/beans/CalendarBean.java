@@ -28,7 +28,7 @@ import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 
 public class CalendarBean extends AbstractAgentBean{
 	
-private IActionDescription sendAction = null;
+	private IActionDescription sendAction = null;
 	
 	@Override
 	public void doStart() throws Exception{

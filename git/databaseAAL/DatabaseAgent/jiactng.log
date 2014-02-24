@@ -1157,3 +1157,354 @@ java.lang.NullPointerException
 2014-02-23 18:42:46,034 WARN [n-13558f6f109c59b2] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
 2014-02-23 18:44:03,667 WARN [n-13558f8123e47cc2] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
 2014-02-23 18:44:52,057 WARN [n-13558f8c4b21472c] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 18:51:56,354 WARN [n-13558fef024aa75b] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 18:52:14,978 WARN [n-13558ff388512f8a] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 18:54:46,506 WARN [n-13559016fb46d371] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 18:55:28,523 WARN [n-13559020d5259b77] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 18:56:49,942 WARN [n-13559033ba60969f] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 18:56:51,262 ERROR [n-13559033ba60969f.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-23 18:56:51,909 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559033ba60969fAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 18:56:52,269 INFO [n-13559033ba60969f.a-135590336c879df5.NewsfeedBean] - InformationAgent started.
+2014-02-23 18:56:52,292 INFO [n-13559033ba60969f.a-13559033bc1b037e.TwitterBean] - TwitterAgent started.
+2014-02-23 18:56:53,059 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559033ba60969fAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 18:56:54,852 INFO [n-13559033ba60969f.a-13559033bc1b037e.FacebookBean] - FacebookAgent started.
+2014-02-23 18:56:54,853 INFO [n-13559033ba60969f.a-13559033bc1b037e.FacebookBean] - my ID: a-13559033bc1b037e
+2014-02-23 18:56:54,853 INFO [n-13559033ba60969f.a-13559033bc1b037e.FacebookBean] - my Name: SocialMediaAgent
+2014-02-23 18:56:54,859 INFO [n-13559033ba60969f.a-13559033bc1b037e.FacebookBean] - my Node: ApplicationNode
+2014-02-23 18:56:55,186 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559033ba60969fAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 18:56:59,138 ERROR [n-13559033ba60969f.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-23 18:56:59,138 ERROR [n-13559033ba60969f.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-13559033ba60969f,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-23 18:57:31,919 WARN [n-1355903d39f83bf3] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 18:58:49,437 WARN [n-1355904f8cdec9d7] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 18:59:22,599 WARN [n-1355905755296d77] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 20:50:56,612 WARN [n-1355966deb3b531b] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 20:51:18,597 WARN [n-13559672a3354968] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 20:51:19,286 ERROR [n-13559672a3354968.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-23 20:51:19,641 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559672a3354968AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:51:19,933 INFO [n-13559672a3354968.a-135596731772e147.TestAgentBean] - TestAgent started.
+2014-02-23 20:51:19,951 INFO [n-13559672a3354968.a-135596731255cdd9.NewsfeedBean] - InformationAgent started.
+2014-02-23 20:51:19,953 INFO [n-13559672a3354968.a-135596729f31a3be.TwitterBean] - TwitterAgent started.
+2014-02-23 20:51:20,681 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559672a3354968AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:51:21,929 INFO [n-13559672a3354968.a-135596729f31a3be.FacebookBean] - FacebookAgent started.
+2014-02-23 20:51:21,929 INFO [n-13559672a3354968.a-135596729f31a3be.FacebookBean] - my ID: a-135596729f31a3be
+2014-02-23 20:51:21,934 INFO [n-13559672a3354968.a-135596729f31a3be.FacebookBean] - my Name: SocialMediaAgent
+2014-02-23 20:51:21,935 INFO [n-13559672a3354968.a-135596729f31a3be.FacebookBean] - my Node: ApplicationNode
+2014-02-23 20:51:22,718 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559672a3354968AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:51:26,760 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559672a3354968AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:51:28,766 INFO [n-13559672a3354968.a-135596731772e147.TestAgentBean] - TestAgent - sending UserID to: msgbox:n-13559672a3354968/a-135596729f31a3be
+2014-02-23 20:51:28,767 INFO [n-13559672a3354968.a-135596731772e147.TestAgentBean] - TestAgent - sending UserID to: msgbox:n-13559672a3354968/a-135596731255cdd9
+2014-02-23 20:51:28,779 INFO [n-13559672a3354968.a-135596729f31a3be.FacebookBean] - FacebookAgent - message received
+2014-02-23 20:51:28,782 INFO [n-13559672a3354968.a-135596731255cdd9.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-23 20:51:29,020 ERROR [n-13559672a3354968.a-135596729f31a3be.SimpleExecutionCycle] - Error when executing bean 'TwitterBean'
+java.lang.IllegalStateException: Neither user ID/password combination nor OAuth consumer key/secret combination supplied
+	at twitter4j.TwitterBaseImpl.getId(TwitterBaseImpl.java:125)
+	at agents.beans.TwitterBean.execute(TwitterBean.java:97)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.processBeanExecutes(SimpleExecutionCycle.java:118)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.run(SimpleExecutionCycle.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-23 20:51:29,705 INFO [n-13559672a3354968.a-135596731255cdd9.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-23 20:51:30,042 ERROR [n-13559672a3354968.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-23 20:51:30,043 ERROR [n-13559672a3354968.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-13559672a3354968,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-23 20:52:32,513 WARN [n-13559683db47ace8] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 20:52:32,859 ERROR [n-13559683db47ace8.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-23 20:52:33,213 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559683db47ace8AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:52:33,483 INFO [n-13559683db47ace8.a-13559683fed10279.TestAgentBean] - TestAgent started.
+2014-02-23 20:52:33,499 INFO [n-13559683db47ace8.a-135596844f0fb174.NewsfeedBean] - InformationAgent started.
+2014-02-23 20:52:33,502 INFO [n-13559683db47ace8.a-135596841b8f22a2.TwitterBean] - TwitterAgent started.
+2014-02-23 20:52:34,283 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559683db47ace8AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:52:34,823 INFO [n-13559683db47ace8.a-135596841b8f22a2.FacebookBean] - FacebookAgent started.
+2014-02-23 20:52:34,824 INFO [n-13559683db47ace8.a-135596841b8f22a2.FacebookBean] - my ID: a-135596841b8f22a2
+2014-02-23 20:52:34,824 INFO [n-13559683db47ace8.a-135596841b8f22a2.FacebookBean] - my Name: SocialMediaAgent
+2014-02-23 20:52:34,824 INFO [n-13559683db47ace8.a-135596841b8f22a2.FacebookBean] - my Node: ApplicationNode
+2014-02-23 20:52:36,324 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559683db47ace8AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:52:40,363 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-13559683db47ace8AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:52:42,679 INFO [n-13559683db47ace8.a-13559683fed10279.TestAgentBean] - TestAgent - sending UserID to: msgbox:n-13559683db47ace8/a-135596841b8f22a2
+2014-02-23 20:52:42,680 INFO [n-13559683db47ace8.a-13559683fed10279.TestAgentBean] - TestAgent - sending UserID to: msgbox:n-13559683db47ace8/a-135596844f0fb174
+2014-02-23 20:52:42,691 INFO [n-13559683db47ace8.a-135596841b8f22a2.FacebookBean] - FacebookAgent - message received
+2014-02-23 20:52:42,694 INFO [n-13559683db47ace8.a-135596844f0fb174.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-23 20:52:42,813 ERROR [n-13559683db47ace8.a-135596841b8f22a2.SimpleExecutionCycle] - Error when executing bean 'TwitterBean'
+java.lang.IllegalStateException: Neither user ID/password combination nor OAuth consumer key/secret combination supplied
+	at twitter4j.TwitterBaseImpl.getId(TwitterBaseImpl.java:125)
+	at agents.beans.TwitterBean.execute(TwitterBean.java:97)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.processBeanExecutes(SimpleExecutionCycle.java:118)
+	at de.dailab.jiactng.agentcore.execution.SimpleExecutionCycle.run(SimpleExecutionCycle.java:61)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-23 20:52:43,278 INFO [n-13559683db47ace8.a-13559683fed10279.TestAgentBean] - http://img.welt.de/img/webwelt/crop125131396/3882094786-ci3x2s-w260/Mozilla-3-.jpg
+2014-02-23 20:52:43,278 INFO [n-13559683db47ace8.a-13559683fed10279.TestAgentBean] - http://img.welt.de/img/wall-street-journal/crop125131067/0322097659-ci3x2s-w260/Amazon-Logistikzentrum.jpg
+2014-02-23 20:52:43,279 INFO [n-13559683db47ace8.a-13559683fed10279.TestAgentBean] - http://img.welt.de/img/wirtschaft/crop125129079/7182097495-ci3x2s-w260/China.jpg
+2014-02-23 20:52:44,271 ERROR [n-13559683db47ace8.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-23 20:52:44,272 ERROR [n-13559683db47ace8.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-13559683db47ace8,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-23 20:53:22,302 WARN [n-1355968f72da73a0] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 20:53:22,936 ERROR [n-1355968f72da73a0.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-23 20:53:23,285 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355968f72da73a0AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:53:23,571 INFO [n-1355968f72da73a0.a-1355968f96a0ca61.TestAgentBean] - TestAgent started.
+2014-02-23 20:53:23,589 INFO [n-1355968f72da73a0.a-1355968fe754efac.NewsfeedBean] - InformationAgent started.
+2014-02-23 20:53:23,593 INFO [n-1355968f72da73a0.a-1355968fb3d90c2a.FacebookBean] - FacebookAgent started.
+2014-02-23 20:53:23,593 INFO [n-1355968f72da73a0.a-1355968fb3d90c2a.FacebookBean] - my ID: a-1355968fb3d90c2a
+2014-02-23 20:53:23,594 INFO [n-1355968f72da73a0.a-1355968fb3d90c2a.FacebookBean] - my Name: SocialMediaAgent
+2014-02-23 20:53:23,594 INFO [n-1355968f72da73a0.a-1355968fb3d90c2a.FacebookBean] - my Node: ApplicationNode
+2014-02-23 20:53:24,357 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355968f72da73a0AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:53:26,502 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355968f72da73a0AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:53:30,544 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355968f72da73a0AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:53:32,479 INFO [n-1355968f72da73a0.a-1355968f96a0ca61.TestAgentBean] - TestAgent - sending UserID to: msgbox:n-1355968f72da73a0/a-1355968fb3d90c2a
+2014-02-23 20:53:32,480 INFO [n-1355968f72da73a0.a-1355968f96a0ca61.TestAgentBean] - TestAgent - sending UserID to: msgbox:n-1355968f72da73a0/a-1355968fe754efac
+2014-02-23 20:53:32,492 INFO [n-1355968f72da73a0.a-1355968fb3d90c2a.FacebookBean] - FacebookAgent - message received
+2014-02-23 20:53:32,494 INFO [n-1355968f72da73a0.a-1355968fe754efac.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-23 20:53:33,081 INFO [n-1355968f72da73a0.a-1355968f96a0ca61.TestAgentBean] - http://img.welt.de/img/webwelt/crop125131396/3882094786-ci3x2s-w260/Mozilla-3-.jpg
+2014-02-23 20:53:33,081 INFO [n-1355968f72da73a0.a-1355968f96a0ca61.TestAgentBean] - http://img.welt.de/img/wall-street-journal/crop125131067/0322097659-ci3x2s-w260/Amazon-Logistikzentrum.jpg
+2014-02-23 20:53:33,081 INFO [n-1355968f72da73a0.a-1355968f96a0ca61.TestAgentBean] - http://img.welt.de/img/wirtschaft/crop125129079/7182097495-ci3x2s-w260/China.jpg
+2014-02-23 20:53:34,246 ERROR [n-1355968f72da73a0.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-23 20:53:34,246 ERROR [n-1355968f72da73a0.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355968f72da73a0,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-23 20:54:18,534 WARN [n-1355969c88506478] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-23 20:54:18,876 ERROR [n-1355969c88506478.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-23 20:54:19,236 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355969c88506478AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:54:19,518 INFO [n-1355969c88506478.a-1355969cfc94edaf.TestAgentBean] - TestAgent started.
+2014-02-23 20:54:19,536 INFO [n-1355969c88506478.a-1355969cf7652919.NewsfeedBean] - InformationAgent started.
+2014-02-23 20:54:19,540 INFO [n-1355969c88506478.a-1355969c843daf56.FacebookBean] - FacebookAgent started.
+2014-02-23 20:54:19,540 INFO [n-1355969c88506478.a-1355969c843daf56.FacebookBean] - my ID: a-1355969c843daf56
+2014-02-23 20:54:19,541 INFO [n-1355969c88506478.a-1355969c843daf56.FacebookBean] - my Name: SocialMediaAgent
+2014-02-23 20:54:19,541 INFO [n-1355969c88506478.a-1355969c843daf56.FacebookBean] - my Node: ApplicationNode
+2014-02-23 20:54:20,275 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355969c88506478AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:54:22,313 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355969c88506478AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:54:26,353 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355969c88506478AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-23 20:54:28,702 INFO [n-1355969c88506478.a-1355969cfc94edaf.TestAgentBean] - TestAgent - sending UserID to: msgbox:n-1355969c88506478/a-1355969c843daf56
+2014-02-23 20:54:28,703 INFO [n-1355969c88506478.a-1355969cfc94edaf.TestAgentBean] - TestAgent - sending UserID to: msgbox:n-1355969c88506478/a-1355969cf7652919
+2014-02-23 20:54:28,717 INFO [n-1355969c88506478.a-1355969c843daf56.FacebookBean] - FacebookAgent - message received
+2014-02-23 20:54:28,722 INFO [n-1355969c88506478.a-1355969cf7652919.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-23 20:54:29,401 INFO [n-1355969c88506478.a-1355969cfc94edaf.TestAgentBean] - http://img.welt.de/img/webwelt/crop125131396/3882094786-ci3x2s-w260/Mozilla-3-.jpg
+2014-02-23 20:54:29,401 INFO [n-1355969c88506478.a-1355969cfc94edaf.TestAgentBean] - http://img.welt.de/img/wall-street-journal/crop125131067/0322097659-ci3x2s-w260/Amazon-Logistikzentrum.jpg
+2014-02-23 20:54:29,402 INFO [n-1355969c88506478.a-1355969cfc94edaf.TestAgentBean] - http://img.welt.de/img/wirtschaft/crop125129079/7182097495-ci3x2s-w260/China.jpg
+2014-02-23 20:54:29,866 INFO [n-1355969c88506478.a-1355969cfc94edaf.TestAgentBean] - Success: Yuan Cheng
+2014-02-23 20:54:29,867 INFO [n-1355969c88506478.a-1355969cfc94edaf.TestAgentBean] - Success: https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/t5/1118488_100000526506751_919481016_n.jpg
+2014-02-23 20:54:32,989 ERROR [n-1355969c88506478.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-23 20:54:32,990 ERROR [n-1355969c88506478.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355969c88506478,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 14:13:23,237 WARN [n-1355cf50813dbd5c] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 14:13:24,637 ERROR [n-1355cf50813dbd5c.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 14:13:25,123 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:13:25,437 INFO [n-1355cf50813dbd5c.a-1355cf50802420c8.NewsfeedBean] - InformationAgent started.
+2014-02-24 14:13:26,128 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:13:28,133 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:13:32,148 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:13:40,152 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:14:07,822 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:14:07,827 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:14:08,967 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:14:10,974 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:14:14,982 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:14:22,990 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:14:38,995 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:15:08,998 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:15:39,008 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:16:09,016 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:16:39,026 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:17:09,045 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:17:39,050 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cf50813dbd5cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:17:50,451 ERROR [n-1355cf50813dbd5c.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-24 14:17:50,451 ERROR [n-1355cf50813dbd5c.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355cf50813dbd5c,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 14:19:12,349 WARN [n-1355cfa1cbedfe9c] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 14:19:12,769 ERROR [n-1355cfa1cbedfe9c.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 14:19:13,114 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfa1cbedfe9cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:19:13,355 INFO [n-1355cfa1cbedfe9c.a-1355cfa1bb94d570.NewsfeedBean] - InformationAgent started.
+2014-02-24 14:19:14,119 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfa1cbedfe9cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:19:16,124 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfa1cbedfe9cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:19:20,131 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfa1cbedfe9cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:19:28,138 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfa1cbedfe9cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:19:44,142 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfa1cbedfe9cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:20:14,150 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfa1cbedfe9cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:20:44,159 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfa1cbedfe9cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:21:14,167 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfa1cbedfe9cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:21:44,175 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfa1cbedfe9cAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:22:09,002 ERROR [n-1355cfa1cbedfe9c.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-24 14:22:09,002 ERROR [n-1355cfa1cbedfe9c.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355cfa1cbedfe9c,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 14:24:33,247 WARN [n-1355cfec49dd6108] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 14:24:33,572 ERROR [n-1355cfec49dd6108.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 14:24:33,907 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfec49dd6108AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:24:34,127 INFO [n-1355cfec49dd6108.a-1355cfecbed7fb9f.NewsfeedBean] - InformationAgent started.
+2014-02-24 14:24:34,912 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfec49dd6108AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:24:36,919 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfec49dd6108AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:24:40,991 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfec49dd6108AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:24:48,995 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfec49dd6108AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:25:05,004 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355cfec49dd6108AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:25:20,649 ERROR [n-1355cfec49dd6108.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-24 14:25:20,650 ERROR [n-1355cfec49dd6108.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355cfec49dd6108,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 14:35:18,005 WARN [n-1355d082a1763864] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 14:35:18,318 ERROR [n-1355d082a1763864.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 14:35:18,650 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:35:18,878 INFO [n-1355d082a1763864.a-1355d0828f04dd98.NewsfeedBean] - InformationAgent started.
+2014-02-24 14:35:19,657 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:35:21,665 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:35:25,673 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:35:33,678 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:35:49,683 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:36:19,692 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:36:49,780 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:37:19,788 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:37:49,796 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:38:19,802 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d082a1763864AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:38:29,301 ERROR [n-1355d082a1763864.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-24 14:38:29,301 ERROR [n-1355d082a1763864.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355d082a1763864,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 14:38:34,780 WARN [n-1355d0b03921f260] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 14:38:35,089 ERROR [n-1355d0b03921f260.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 14:38:35,438 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d0b03921f260AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:38:35,681 INFO [n-1355d0b03921f260.a-1355d0b0ad9f94c7.NewsfeedBean] - InformationAgent started.
+2014-02-24 14:38:36,444 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d0b03921f260AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:38:38,449 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d0b03921f260AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:38:42,455 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d0b03921f260AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:38:50,460 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d0b03921f260AALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:39:00,453 ERROR [n-1355d0b03921f260.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-24 14:39:00,453 ERROR [n-1355d0b03921f260.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355d0b03921f260,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 14:49:08,336 WARN [n-1355d14410a2436a] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 14:49:08,754 ERROR [n-1355d14410a2436a.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 14:49:10,537 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d14410a2436aAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:49:10,730 INFO [n-1355d14410a2436a.a-1355d143d844e6e9.NewsfeedBean] - InformationAgent started.
+2014-02-24 14:49:11,632 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d14410a2436aAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:49:13,731 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d14410a2436aAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:49:21,614 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d14410a2436aAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:49:29,712 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d14410a2436aAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:49:45,805 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d14410a2436aAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:50:15,910 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d14410a2436aAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:50:46,014 WARN [org.apache.activemq.network.DiscoveryNetworkConnector] - Could not start network bridge between: vm://n-1355d14410a2436aAALWS1314GatewayBroker?async=false&network=true and: tcp://130.149.154.19:45678 due to: java.net.ConnectException: Connection refused
+2014-02-24 14:50:50,213 ERROR [de.dailab.jiac.net.discovery.multicast.SourceAwareMulticastDiscoveryAgent] - Failed to advertise our service: aal.ActiveMQ-4.alive.%localhost%tcp://yuans-mbp:49491
+java.io.IOException: Network is down
+	at java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.net.DatagramSocket.send(DatagramSocket.java:676)
+	at de.dailab.jiac.net.discovery.multicast.SourceAwareMulticastDiscoveryAgent.doAdvertizeSelf(SourceAwareMulticastDiscoveryAgent.java:409)
+	at de.dailab.jiac.net.discovery.multicast.SourceAwareMulticastDiscoveryAgent.doTimeKeepingServices(SourceAwareMulticastDiscoveryAgent.java:393)
+	at de.dailab.jiac.net.discovery.multicast.SourceAwareMulticastDiscoveryAgent.run(SourceAwareMulticastDiscoveryAgent.java:354)
+	at java.lang.Thread.run(Thread.java:722)
+2014-02-24 14:50:55,768 ERROR [n-1355d14410a2436a.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-24 14:50:55,768 ERROR [n-1355d14410a2436a.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355d14410a2436a,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 15:05:53,699 WARN [n-1355d22e0f4124e8] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 15:05:55,129 ERROR [n-1355d22e0f4124e8.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 15:05:55,720 INFO [n-1355d22e0f4124e8.a-1355d22dcc1e7081.NewsfeedBean] - InformationAgent started.
+2014-02-24 15:08:09,770 INFO [n-1355d22e0f4124e8.a-1355d22dcc1e7081.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:08:11,493 INFO [n-1355d22e0f4124e8.a-1355d22dcc1e7081.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:08:38,195 INFO [n-1355d22e0f4124e8.a-1355d22dcc1e7081.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:08:38,269 INFO [n-1355d22e0f4124e8.a-1355d22dcc1e7081.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:09:44,993 INFO [n-1355d22e0f4124e8.a-1355d22dcc1e7081.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:09:45,465 INFO [n-1355d22e0f4124e8.a-1355d22dcc1e7081.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:09:49,459 ERROR [n-1355d22e0f4124e8.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-24 15:09:49,460 ERROR [n-1355d22e0f4124e8.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355d22e0f4124e8,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 15:15:53,708 WARN [n-1355d2b9c289f260] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 15:15:55,098 ERROR [n-1355d2b9c289f260.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 15:15:55,691 INFO [n-1355d2b9c289f260.a-1355d2b97e2bbc71.NewsfeedBean] - InformationAgent started.
+2014-02-24 15:16:02,533 INFO [n-1355d2b9c289f260.a-1355d2b97e2bbc71.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:16:02,643 INFO [n-1355d2b9c289f260.a-1355d2b97e2bbc71.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:16:03,167 INFO [n-1355d2b9c289f260.a-1355d2b97e2bbc71.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:16:03,200 INFO [n-1355d2b9c289f260.a-1355d2b97e2bbc71.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:16:30,932 INFO [n-1355d2b9c289f260.a-1355d2b97e2bbc71.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:16:30,999 INFO [n-1355d2b9c289f260.a-1355d2b97e2bbc71.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:16:31,026 INFO [n-1355d2b9c289f260.a-1355d2b97e2bbc71.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:16:31,038 INFO [n-1355d2b9c289f260.a-1355d2b97e2bbc71.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:18:41,401 ERROR [n-1355d2b9c289f260.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-24 15:18:41,401 ERROR [n-1355d2b9c289f260.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355d2b9c289f260,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 15:18:49,284 WARN [n-1355d2e29de0b1cc] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 15:18:49,578 ERROR [n-1355d2e29de0b1cc.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 15:18:50,224 INFO [n-1355d2e29de0b1cc.a-1355d2e28b49c5d0.NewsfeedBean] - InformationAgent started.
+2014-02-24 15:20:06,558 INFO [n-1355d2e29de0b1cc.a-1355d2e28b49c5d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:20:07,079 INFO [n-1355d2e29de0b1cc.a-1355d2e28b49c5d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:20:08,018 INFO [n-1355d2e29de0b1cc.a-1355d2e28b49c5d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:20:08,050 INFO [n-1355d2e29de0b1cc.a-1355d2e28b49c5d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:20:43,878 ERROR [n-1355d2e29de0b1cc.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-24 15:20:43,878 ERROR [n-1355d2e29de0b1cc.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355d2e29de0b1cc,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 15:27:36,457 WARN [n-1355d35d5bcbd944] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 15:27:36,849 ERROR [n-1355d35d5bcbd944.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 15:27:37,556 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - InformationAgent started.
+2014-02-24 15:27:37,572 INFO [n-1355d35d5bcbd944.a-1355d35d2c41b225.FacebookBean] - FacebookAgent started.
+2014-02-24 15:27:37,572 INFO [n-1355d35d5bcbd944.a-1355d35d2c41b225.FacebookBean] - my ID: a-1355d35d2c41b225
+2014-02-24 15:27:37,574 INFO [n-1355d35d5bcbd944.a-1355d35d2c41b225.FacebookBean] - my Name: SocialMediaAgent
+2014-02-24 15:27:37,574 INFO [n-1355d35d5bcbd944.a-1355d35d2c41b225.FacebookBean] - my Node: ApplicationNode
+2014-02-24 15:27:59,004 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:27:59,144 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:28:12,680 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:28:12,724 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:28:40,759 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:28:41,360 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:29:48,964 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:29:49,441 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:30:38,077 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:30:38,473 ERROR [n-1355d35d5bcbd944.a-1355d35d2c41b225.CommunicationBean.jms.receiver] - An error receiving a message occured. Cause is 'java.io.InvalidClassException: ontology.messages.FacebookData; local class incompatible: stream classdesc serialVersionUID = -7387841624375299862, local class serialVersionUID = 5254322552137160377'
+2014-02-24 15:30:38,475 ERROR [n-1355d35d5bcbd944.a-1355d35d2c41b225.CommunicationBean] - message transport 'jms' threw an exception
+javax.jms.JMSException: Failed to build body from bytes. Reason: java.io.InvalidClassException: ontology.messages.FacebookData; local class incompatible: stream classdesc serialVersionUID = -7387841624375299862, local class serialVersionUID = 5254322552137160377
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:35)
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:191)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.unpack(JMSMessageTransport.java:139)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSReceiver.onMessage(JMSReceiver.java:177)
+	at org.apache.activemq.ActiveMQMessageConsumer.dispatch(ActiveMQMessageConsumer.java:1230)
+	at org.apache.activemq.ActiveMQSessionExecutor.dispatch(ActiveMQSessionExecutor.java:134)
+	at org.apache.activemq.ActiveMQSessionExecutor.iterate(ActiveMQSessionExecutor.java:205)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:127)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.io.InvalidClassException: ontology.messages.FacebookData; local class incompatible: stream classdesc serialVersionUID = -7387841624375299862, local class serialVersionUID = 5254322552137160377
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:604)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1601)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1514)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1750)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1347)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:369)
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:184)
+	... 10 more
+2014-02-24 15:30:38,501 ERROR [n-1355d35d5bcbd944.a-1355d35d2c41b225.CommunicationBean.jms.receiver] - An error receiving a message occured. Cause is 'java.io.InvalidClassException: ontology.messages.FacebookData; local class incompatible: stream classdesc serialVersionUID = -7387841624375299862, local class serialVersionUID = 5254322552137160377'
+2014-02-24 15:30:38,502 ERROR [n-1355d35d5bcbd944.a-1355d35d2c41b225.CommunicationBean] - message transport 'jms' threw an exception
+javax.jms.JMSException: Failed to build body from bytes. Reason: java.io.InvalidClassException: ontology.messages.FacebookData; local class incompatible: stream classdesc serialVersionUID = -7387841624375299862, local class serialVersionUID = 5254322552137160377
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:35)
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:191)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.unpack(JMSMessageTransport.java:139)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSReceiver.onMessage(JMSReceiver.java:177)
+	at org.apache.activemq.ActiveMQMessageConsumer.dispatch(ActiveMQMessageConsumer.java:1230)
+	at org.apache.activemq.ActiveMQSessionExecutor.dispatch(ActiveMQSessionExecutor.java:134)
+	at org.apache.activemq.ActiveMQSessionExecutor.iterate(ActiveMQSessionExecutor.java:205)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:127)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.io.InvalidClassException: ontology.messages.FacebookData; local class incompatible: stream classdesc serialVersionUID = -7387841624375299862, local class serialVersionUID = 5254322552137160377
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:604)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1601)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1514)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1750)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1347)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:369)
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:184)
+	... 10 more
+2014-02-24 15:30:38,548 ERROR [n-1355d35d5bcbd944.a-1355d35d2c41b225.CommunicationBean.jms.receiver] - An error receiving a message occured. Cause is 'java.io.InvalidClassException: ontology.messages.FacebookData; local class incompatible: stream classdesc serialVersionUID = -7387841624375299862, local class serialVersionUID = 5254322552137160377'
+2014-02-24 15:30:38,549 ERROR [n-1355d35d5bcbd944.a-1355d35d2c41b225.CommunicationBean] - message transport 'jms' threw an exception
+javax.jms.JMSException: Failed to build body from bytes. Reason: java.io.InvalidClassException: ontology.messages.FacebookData; local class incompatible: stream classdesc serialVersionUID = -7387841624375299862, local class serialVersionUID = 5254322552137160377
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:35)
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:191)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.unpack(JMSMessageTransport.java:139)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSReceiver.onMessage(JMSReceiver.java:177)
+	at org.apache.activemq.ActiveMQMessageConsumer.dispatch(ActiveMQMessageConsumer.java:1230)
+	at org.apache.activemq.ActiveMQSessionExecutor.dispatch(ActiveMQSessionExecutor.java:134)
+	at org.apache.activemq.ActiveMQSessionExecutor.iterate(ActiveMQSessionExecutor.java:205)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:127)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.io.InvalidClassException: ontology.messages.FacebookData; local class incompatible: stream classdesc serialVersionUID = -7387841624375299862, local class serialVersionUID = 5254322552137160377
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:604)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1601)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1514)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1750)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1347)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:369)
+	at org.apache.activemq.command.ActiveMQObjectMessage.getObject(ActiveMQObjectMessage.java:184)
+	... 10 more
+2014-02-24 15:30:38,574 INFO [n-1355d35d5bcbd944.a-1355d35d49861e70.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 15:30:51,219 ERROR [n-1355d35d5bcbd944.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node ApplicationNode as JMX resource.
+2014-02-24 15:30:51,220 ERROR [n-1355d35d5bcbd944.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355d35d5bcbd944,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"

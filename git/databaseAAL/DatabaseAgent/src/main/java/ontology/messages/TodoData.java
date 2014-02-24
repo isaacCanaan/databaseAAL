@@ -11,6 +11,10 @@ public class TodoData extends Message{
 	private static final long serialVersionUID = 3387887822322414052L;
 	int userID;
     ArrayList<TodoItem> items;
+    
+    public TodoData(){
+    	
+    }
 
     public TodoData(String senderID, String receiverID, int userID, ArrayList<TodoItem> items){
         super(senderID, receiverID, MessageType.GET_INFO);

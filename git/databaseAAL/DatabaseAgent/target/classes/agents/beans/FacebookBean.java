@@ -16,7 +16,7 @@ import org.sercho.masp.space.event.SpaceEvent;
 import org.sercho.masp.space.event.SpaceObserver;
 import org.sercho.masp.space.event.WriteCallEvent;
 
-import access.FBUserAccess;
+import access.SocialAccess;
 import access.MySQLAccess;
 import de.dailab.jiactng.agentcore.AbstractAgentBean;
 import de.dailab.jiactng.agentcore.action.Action;
@@ -51,12 +51,12 @@ public class FacebookBean extends AbstractAgentBean{
 	private static String appId = "688786967828835";
 	private static String secretKey = "4761c8cec03889b8e7b8b6dd93eb91ee";
 	
-	private long id = 0;
+	private int id = 0;
 	private String accessToken = "fail";
 	private long expirationTimeMillis = 5178246;
 	
 	private MySQLAccess access = null;
-	private FBUserAccess fbAccess = null;
+	private SocialAccess smAccess = null;
 	private Connection connect = null;
 	private Statement statement = null;
 	private PreparedStatement preparedStatement = null;
@@ -74,7 +74,7 @@ public class FacebookBean extends AbstractAgentBean{
 		
 		access = new MySQLAccess();
 		connect = access.connectDriver();
-		fbAccess = new FBUserAccess(connect);
+		smAccess = new SocialAccess(connect);
 		
 		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
 		sendAction = memory.read(template);
@@ -146,7 +146,7 @@ public class FacebookBean extends AbstractAgentBean{
 	
 			}
 			
-			fbAccess.saveInterests(id, books, interests, music, games, movies, tv);
+			smAccess.saveInterests(id, books, interests, music, games, movies, tv);
 	}
 	
 	private class MessageObserver implements SpaceObserver<IFact>{
@@ -169,8 +169,13 @@ public class FacebookBean extends AbstractAgentBean{
 					IFact obj = message.getPayload();
 					
 					if(obj instanceof GetFacebookData){
+						
 						id = ((GetFacebookData) obj).getUserID();
-						accessToken = ((GetFacebookData) obj).getAccessToken();
+						try {
+							accessToken = smAccess.getAccessToken(id, ((GetFacebookData) obj).getAccessToken(), "facebook");
+						} catch (SQLException e1) {
+							e1.printStackTrace();
+						}
 						
 						FacebookData fbUser = null;
 						
@@ -181,13 +186,11 @@ public class FacebookBean extends AbstractAgentBean{
 							List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
 
 							for(IAgentDescription agent : agentDescriptions){
-								if(agent.getName().equals("FacebookAgent")){
+								if(agent.getName().equals("SocialMediaAgent")){
 
 									IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 									
 									fbUser = getMeInformation(id, agent.getAid());
-									log.info(fbUser.getFbid());
-									log.info(fbUser.getPicture());
 									
 //									fetchInterests(id);
 									

@@ -17,10 +17,9 @@
 			</list>
 		</property>
         <property name="agents">
-            <list>           	
+            <list>      	
           		<ref bean="InformationAgent" />
             	<ref bean="SocialMediaAgent" />
-            	<ref bean="TestAgent" />
             </list>
         </property>
         <property name="logLevel" value="ERROR" />
@@ -45,7 +44,6 @@
     <bean name="SocialMediaAgent" parent="SimpleAgent" singleton="false">
 		<property name="agentBeans">
 			<list>
-				<ref bean="TwitterBean" />
 				<ref bean="FacebookBean" />
 			</list>
 		</property>

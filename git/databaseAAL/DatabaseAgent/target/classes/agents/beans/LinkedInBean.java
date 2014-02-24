@@ -95,7 +95,7 @@ public class LinkedInBean extends AbstractAgentBean{
 				if(message != null){
 					IFact obj = message.getPayload();
 					
-					if(obj instanceof LinkedInData){
+					if(obj instanceof GetLinkedInData){
 						
 						try {
 							client = factory.createLinkedInApiClient(obj.getAccessToken(), ((LinkedInData) obj).getTokenSecret());
@@ -110,9 +110,7 @@ public class LinkedInBean extends AbstractAgentBean{
 							log.info("Total connections fetched:" + connections.getTotal());
 							for (Person person : connections.getPersonList()) {
 							       log.info(person.getId() + ":" + person.getFirstName() + " " + person.getLastName() + ":" + person.getHeadline());
-							}
-							
-							
+							}	
 							
 							LinkedInUser user = new LinkedInUser();
 							

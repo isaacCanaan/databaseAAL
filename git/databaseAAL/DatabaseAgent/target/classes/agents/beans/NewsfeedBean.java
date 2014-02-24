@@ -1,10 +1,10 @@
 package agents.beans;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import newsfeeds.FetchRSSFeed;
-import objects.NewsFeedMessage;
 import ontology.messages.GetNewsData;
 import ontology.messages.NewsFeedData;
 
@@ -68,7 +68,7 @@ public class NewsfeedBean extends AbstractAgentBean{
 				IJiacMessage message = memory.remove(wce.getObject());
 				IFact obj = message.getPayload();
 				
-				List<NewsFeedMessage> news = null;
+				ArrayList<NewsFeedData.NewsFeedMessage> news = null;
 				
 				if(obj instanceof GetNewsData){
 									
@@ -91,14 +91,8 @@ public class NewsfeedBean extends AbstractAgentBean{
 						e.printStackTrace();
 					}
 				}
-				
-				if(news == null){
-					throw new RuntimeException("No Newsfeed found.");
-				}
 			}
-			
 		}
-		
 	}
 
 }
