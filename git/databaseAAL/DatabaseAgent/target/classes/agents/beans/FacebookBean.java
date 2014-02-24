@@ -68,9 +68,6 @@ public class FacebookBean extends AbstractAgentBean{
 	public void doStart() throws Exception{
 		super.doStart();
 		log.info("FacebookAgent started.");
-		log.info("my ID: " + thisAgent.getAgentId());
-		log.info("my Name: " + thisAgent.getAgentName());
-		log.info("my Node: " + thisAgent.getAgentNode().getName());
 		
 		access = new MySQLAccess();
 		connect = access.connectDriver();
@@ -107,7 +104,7 @@ public class FacebookBean extends AbstractAgentBean{
 	private FacebookData getMeInformation(long id, String receiverID) throws Exception{
 		
 		FacebookData fbUser;
-		fbUser = new FacebookData(id, thisAgent.getAgentId(), receiverID);
+		fbUser = new FacebookData(thisAgent.getAgentId(), receiverID, id);
 		String query = "SELECT uid, pic_big FROM user WHERE uid = me()";
 		JSONArray jsonArray = facebook.executeFQL(query);
 		
@@ -161,14 +158,14 @@ public class FacebookBean extends AbstractAgentBean{
 			if(event instanceof WriteCallEvent<?>){
 				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
 				
-				log.info("FacebookAgent - message received");
-				
 				IJiacMessage message = memory.remove(wce.getObject());
 				
 				if(message != null){
 					IFact obj = message.getPayload();
 					
 					if(obj instanceof GetFacebookData){
+						
+						log.info("FacebookAgent - message received");
 						
 						id = ((GetFacebookData) obj).getUserID();
 						try {

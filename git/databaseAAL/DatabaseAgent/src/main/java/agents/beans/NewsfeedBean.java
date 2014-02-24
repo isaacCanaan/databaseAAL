@@ -63,14 +63,14 @@ public class NewsfeedBean extends AbstractAgentBean{
 			if(event instanceof WriteCallEvent<?>){
 				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
 				
-				log.info("NewsfeedAgent - message received");
-				
-				IJiacMessage message = memory.remove(wce.getObject());
+				IJiacMessage message = memory.read(wce.getObject());
 				IFact obj = message.getPayload();
 				
 				ArrayList<NewsFeedData.NewsFeedMessage> news = null;
 				
 				if(obj instanceof GetNewsData){
+					
+					log.info("NewsfeedAgent - message received");
 									
 					try {
 						news = new FetchRSSFeed().getRSSFeedWeltDE();
@@ -90,6 +90,8 @@ public class NewsfeedBean extends AbstractAgentBean{
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
+					
+					memory.remove(wce.getObject());
 				}
 			}
 		}

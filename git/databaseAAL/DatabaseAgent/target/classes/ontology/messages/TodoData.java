@@ -1,5 +1,6 @@
 package ontology.messages;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -34,8 +35,12 @@ public class TodoData extends Message{
     	this.items = items;
     }
 
-    public class TodoItem {
-    	public int id;		// falls wir eins löschen wollen
+    public class TodoItem implements Serializable{
+    	/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1964635806393082000L;
+		public int id;		// falls wir eins löschen wollen
     	public String text;
     	public String prio;	// LOW,MIDDLE,HIGH
     	public Date created = new Date();
@@ -45,6 +50,22 @@ public class TodoData extends Message{
     		this.text = text;
     		this.prio = prio;
     		this.created = created;
-    	} 
+    	}
+    	
+    	public int getId(){
+    		return id;
+    	}
+    	
+    	public String getText(){
+    		return text;
+    	}
+    	
+    	public String getPrio(){
+    		return prio;
+    	}
+    	
+    	public Date getDate(){
+    		return created;
+    	}
     }
 }

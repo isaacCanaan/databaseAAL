@@ -15,26 +15,25 @@ public class TodoAccess {
 	  private PreparedStatement preparedStatement = null;
 	  private ResultSet resultSet = null;
 	  
+	  public TodoAccess(Connection connect){
+		  this.connect = connect;
+	  }
 	  
-	  public void saveNewTodoItem(int userId, int todoId, String prio, String text, Date date) throws Exception{
-		  	  
-		  MySQLAccess access = new MySQLAccess();
+	  
+	  public void saveNewTodoItem(int userId, String prio, String text, Date date) throws Exception{
 		  
+		  
+		  System.out.println("Save Test.");
 		  try {
 			  
-			  connect = access.connectDriver();
 			  
-
-			  
-			  preparedStatement = connect.prepareStatement("insert into  AAL.TODO values (default, ?, ?, ?, ? , ?)");
+			  preparedStatement = connect.prepareStatement("insert into  AAL.TODO values (?, default, ?, ? , ?)");
 			  preparedStatement.setInt(1, userId);
-		      preparedStatement.setInt(2, todoId);
-		      preparedStatement.setString(3, prio);
-		      preparedStatement.setString(4, text);
-		      preparedStatement.setDate(5, (java.sql.Date) date);
+		      preparedStatement.setString(2, prio);
+		      preparedStatement.setString(3, text);
+		      preparedStatement.setDate(4, new java.sql.Date(date.getTime()));
 		      preparedStatement.executeUpdate();  
-		     
-		      
+		    	      
 		  } 
 		  catch (Exception e) {
 		      throw e;
@@ -43,15 +42,12 @@ public class TodoAccess {
 	  
 	  public void updateTodoItem(int todoId, TodoData.TodoItem item) throws Exception{
 		  
-		  MySQLAccess access = new MySQLAccess();
-		  
 		  try {
 			  
-			  connect = access.connectDriver();
-			  
-			  preparedStatement = connect.prepareStatement("update AAL.TODO set  prio=?, text=? where todoId= ? ; ");
-			  preparedStatement.setString(3, item.prio);
-			  preparedStatement.setString(4, item.text);
+			  preparedStatement = connect.prepareStatement("update AAL.TODO set prio=?, text=? where todoId= ? ; ");
+			  preparedStatement.setString(1, item.prio);
+			  preparedStatement.setString(2, item.text);
+			  preparedStatement.setInt(3, todoId);
 		      preparedStatement.executeUpdate();
 		      
 		  } 
@@ -63,14 +59,10 @@ public class TodoAccess {
 	  
 	  public void deleteUser(int todoId) throws Exception{
 		  
-		  MySQLAccess access = new MySQLAccess();
-		  
 		  try {
 			  
-			  connect = access.connectDriver();
-			 
 			  preparedStatement = connect.prepareStatement("delete from AAL.TODO where todoId= ? ; ");
-		      preparedStatement.setString(2, String.valueOf(todoId));
+		      preparedStatement.setString(1, String.valueOf(todoId));
 		      preparedStatement.executeUpdate();
 		      
 		  } 
@@ -83,14 +75,11 @@ public class TodoAccess {
 		  
 		  TodoData data = new TodoData();
 		  TodoData.TodoItem item = data.new TodoItem(todoId, null, null, null);
-		  MySQLAccess access = new MySQLAccess();
 		  
 		  try {
-			 
-			  connect = access.connectDriver();
 			  
 			  preparedStatement = connect.prepareStatement("SELECT userId, todoId, prio, text, date from AAL.TODO where todoId = ?");
-	          preparedStatement.setString(2, String.valueOf(todoId));
+	          preparedStatement.setString(1, String.valueOf(todoId));
 	          resultSet = preparedStatement.executeQuery();
 	          
 	          
@@ -115,11 +104,8 @@ public class TodoAccess {
 		  ArrayList<TodoData.TodoItem> items = new ArrayList<TodoData.TodoItem>();
 		  TodoData data = new TodoData();
 		  TodoData.TodoItem item = data.new TodoItem(0, null, null, null);
-		  MySQLAccess access = new MySQLAccess();
 		  
 		  try {
-				 
-			  connect = access.connectDriver();
 			  
 			  preparedStatement = connect.prepareStatement("SELECT todoId, prio, text, date from AAL.TODO where userId=?");
 	          preparedStatement.setString(1, String.valueOf(userId));

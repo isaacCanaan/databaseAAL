@@ -1,18 +1,24 @@
 package agents.beans;
 
 import java.io.Serializable;
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
 import ontology.messages.CalendarData;
 import ontology.messages.GetCalendarData;
 import ontology.messages.GetTodoData;
+import ontology.messages.SaveTodo;
+import ontology.messages.TodoData;
+import ontology.messages.TodoData.TodoItem;
 
 import org.sercho.masp.space.event.SpaceEvent;
 import org.sercho.masp.space.event.SpaceObserver;
 import org.sercho.masp.space.event.WriteCallEvent;
 
-import calendar.GoogleCalendarFetcher;
+import access.MySQLAccess;
+import access.SocialAccess;
+import access.TodoAccess;
 import de.dailab.jiactng.agentcore.AbstractAgentBean;
 import de.dailab.jiactng.agentcore.action.Action;
 import de.dailab.jiactng.agentcore.comm.ICommunicationBean;
@@ -27,11 +33,18 @@ import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 public class TodoBean extends AbstractAgentBean{
 
 private IActionDescription sendAction = null;
+private MySQLAccess access = null;
+private TodoAccess todoAccess = null;
+private Connection connect = null; 
 	
 	@Override
 	public void doStart() throws Exception{
 		super.doStart();
 		log.info("InformationAgent started.");
+		
+		access = new MySQLAccess();
+		connect = access.connectDriver();
+		todoAccess = new TodoAccess(connect);
 		
 		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
 		sendAction = memory.read(template);
@@ -62,20 +75,31 @@ private IActionDescription sendAction = null;
 		@Override
 		public void notify(SpaceEvent<? extends IFact> event) {
 			
-			ArrayList<CalendarData.Entry> entries = null;
-			
 			if(event instanceof WriteCallEvent<?>){
 				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
 				
-				log.info("TodoAgent - message received");
-				
-				IJiacMessage message = memory.remove(wce.getObject());
+				IJiacMessage message = memory.read(wce.getObject());
 				IFact obj = message.getPayload();
 				
+				if(obj instanceof SaveTodo){
+					
+					log.info("TodoAgent - Save message received");
+					TodoItem item = ((SaveTodo) obj).getTodo();
+					try {
+						todoAccess.saveNewTodoItem(((SaveTodo) obj).getUserID(), item.getPrio(), item.getText(), item.getDate());
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+					memory.remove(wce.getObject());
+				}
+				
 				if(obj instanceof GetTodoData){
+					
+					log.info("TodoAgent - Get message received");
 									
 					try {
 
+						ArrayList<TodoItem> todos = todoAccess.readTodoItemList(((GetTodoData) obj).getUserID());
 						
 						List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
 
@@ -84,7 +108,7 @@ private IActionDescription sendAction = null;
 
 								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 								
-								JiacMessage newMessage = new JiacMessage(new CalendarData(thisAgent.getAgentId(), agent.getAid(), ((GetCalendarData) obj).getUserID(), entries));
+								JiacMessage newMessage = new JiacMessage(new TodoData(thisAgent.getAgentId(), agent.getAid(), ((GetTodoData) obj).getUserID(), todos));
 
 								invoke(sendAction, new Serializable[] {newMessage, receiver});
 							}
@@ -93,11 +117,9 @@ private IActionDescription sendAction = null;
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
+					memory.remove(wce.getObject());
 				}
 				
-				if(entries == null){
-					throw new RuntimeException("No Calendar Entries found.");
-				}
 			}
 			
 		}

@@ -27,6 +27,9 @@ import access.UserAccess;
 import de.dailab.jiactng.agentcore.AbstractAgentBean;
 import de.dailab.jiactng.agentcore.action.Action;
 import de.dailab.jiactng.agentcore.comm.ICommunicationBean;
+import static de.dailab.jiactng.agentcore.comm.ICommunicationBean.ACTION_JOIN_GROUP;
+import static de.dailab.jiactng.agentcore.comm.CommunicationAddressFactory.*;
+import de.dailab.jiactng.agentcore.comm.IGroupAddress;
 import de.dailab.jiactng.agentcore.comm.IMessageBoxAddress;
 import de.dailab.jiactng.agentcore.comm.message.IJiacMessage;
 import de.dailab.jiactng.agentcore.comm.message.JiacMessage;
@@ -34,10 +37,15 @@ import de.dailab.jiactng.agentcore.knowledge.IFact;
 import de.dailab.jiactng.agentcore.ontology.AgentDescription;
 import de.dailab.jiactng.agentcore.ontology.IActionDescription;
 import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
+import de.dailab.jiactng.agentcore.action.AbstractMethodExposingBean;
 
-public class RecognitionBean extends AbstractAgentBean{
+public class RecognitionBean extends AbstractMethodExposingBean{
 
+	public static final String FACEDATAGROUPNAME = "FaceDataGroup";
+	private IGroupAddress groupAddress;
+	
 	private IActionDescription sendAction = null;
+	private Action join;
 	
 	private MySQLAccess access = null;
 	private RecognitionAccess recAccess = null;
@@ -45,6 +53,12 @@ public class RecognitionBean extends AbstractAgentBean{
 	private Statement statement = null;
 	private PreparedStatement preparedStatement = null;
 	private ResultSet resultSet = null;
+	
+	@Override
+	public void doInit() throws Exception{
+		super.doInit();
+		groupAddress = createGroupAddress(FACEDATAGROUPNAME);
+	}
 	
 	@Override
 	public void doStart() throws Exception{
@@ -57,6 +71,8 @@ public class RecognitionBean extends AbstractAgentBean{
 		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
 		IActionDescription sendAction = memory.read(template);
 		
+		join = retrieveAction(ACTION_JOIN_GROUP);
+		
 		if(sendAction == null){
 			sendAction = thisAgent.searchAction(template);
 		}
@@ -64,6 +80,8 @@ public class RecognitionBean extends AbstractAgentBean{
 		if(sendAction == null){
 			throw new RuntimeException("Send action not found.");
 		}
+		
+		invoke(join, new Serializable[] {groupAddress}, this);
 		
 		memory.attach(new MessageObserver(), new JiacMessage());
 	}
@@ -110,32 +128,24 @@ public class RecognitionBean extends AbstractAgentBean{
 						e.printStackTrace();
 					}
 				}
-				
-				if(obj instanceof FindUserIdMessage){
-					
-					int id = 0;
-					try {
-						id = recAccess.findUserId(((FindUserIdMessage) obj).getQrString());
-					} catch (Exception e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					
-					List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
-
-					for(IAgentDescription agent : agentDescriptions){
-						if(agent.getName().equals("FacebookAgent")){
-
-							IMessageBoxAddress receiver = agent.getMessageBoxAddress();
-							
-							ResultQrIdMessage idResult = new ResultQrIdMessage(thisAgent.getAgentId(), agent.getAid(), id);
-
-							JiacMessage newMessage = new JiacMessage(idResult);
-
-							invoke(sendAction, new Serializable[] {newMessage, receiver});
-						}
-					}
-				}
+//				
+//				if(obj instanceof FindUserIdMessage){
+//					
+//					int id = 0;
+//					try {
+//						id = recAccess.findUserId(((FindUserIdMessage) obj).getQrString());
+//					} catch (Exception e) {
+//						// TODO Auto-generated catch block
+//						e.printStackTrace();
+//					}
+//
+//					
+//					ResultQrIdMessage idResult = new ResultQrIdMessage(thisAgent.getAgentId(), null, id);
+//
+//					JiacMessage newMessage = new JiacMessage(idResult);
+//
+//					invoke(sendAction, new Serializable[] {newMessage, groupAddress});
+//				}
 
 			}
 			

@@ -5,12 +5,15 @@ import java.util.Date;
 
 import ontology.Message;
 import ontology.MessageType;
-import de.dailab.jiactng.agentcore.knowledge.IFact;
 import facebook4j.User;
-import facebook4j.internal.org.json.JSONObject;
 
 public class FacebookData extends Message{
 	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7387841624375299862L;
 	private long id;
 	private long fbid;
 	private String username;

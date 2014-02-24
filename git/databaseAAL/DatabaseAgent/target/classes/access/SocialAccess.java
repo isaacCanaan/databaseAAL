@@ -66,7 +66,7 @@ public class SocialAccess {
 	
 	public FacebookData readFBUser(long id) throws Exception{
 		  
-		  FacebookData user = new FacebookData(0, "", "");
+		  FacebookData user = new FacebookData("", "", 0);
 		  
 		  try {
 			  
@@ -271,7 +271,7 @@ public class SocialAccess {
 		if(aToken.equals("")){
 			preparedStatement = connect.prepareStatement("select * from AAL.ACCESSTOKEN where id=? and type=?");
 			preparedStatement.setInt(1, id);
-			preparedStatement.setString(1, type);		
+			preparedStatement.setString(2, type);		
 			resultSet = preparedStatement.executeQuery();
 	          
 	          if(resultSet.next()){
@@ -288,7 +288,7 @@ public class SocialAccess {
 		
 		preparedStatement = connect.prepareStatement("select * from AAL.ACCESSTOKEN where id=? and type=?");
 		preparedStatement.setInt(1, id);
-		preparedStatement.setString(1, type);		
+		preparedStatement.setString(2, type);		
 		resultSet = preparedStatement.executeQuery();
           
 	    if(resultSet.next()){
@@ -301,8 +301,8 @@ public class SocialAccess {
 	    else{
 	    	 preparedStatement = connect.prepareStatement("insert into  AAL.ACCESSTOKEN values (?, ?, ?)");
 	    	 preparedStatement.setLong(1, id);
-	    	 preparedStatement.setString(3, accessToken);
-	    	 preparedStatement.setString(4, type);
+	    	 preparedStatement.setString(2, accessToken);
+	    	 preparedStatement.setString(3, type);
 			 preparedStatement.executeUpdate();
 	    }
  

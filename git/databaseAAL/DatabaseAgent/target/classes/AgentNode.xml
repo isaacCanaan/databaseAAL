@@ -7,7 +7,7 @@
     <import resource="classpath:de/dailab/jiactng/agentcore/conf/JMSMessaging.xml" />
     <import resource="classpath:de/dailab/jiactng/agentcore/conf/Agent.xml" />
 
-    <bean name="ApplicationNode" parent="NodeWithJMX">
+    <bean name="DataNode" parent="NodeWithJMX">
     	<property name="overwriteDiscoveryURI" value="smartmulticast://default?group=aal"/>
     	<property name="agentNodeBeans">
 			<list>
@@ -20,6 +20,7 @@
             <list>      	
           		<ref bean="InformationAgent" />
             	<ref bean="SocialMediaAgent" />
+            	<ref bean="RecognitionAgent" />
             </list>
         </property>
         <property name="logLevel" value="ERROR" />
@@ -53,9 +54,8 @@
 	<bean name="InformationAgent" parent="SimpleAgent" singleton="false">
 		<property name="agentBeans">
 			<list>
-
+				<ref bean="TodoBean" />
 				<ref bean="NewsfeedBean" />
-
 			</list>
 		</property>
 		<property name="logLevel" value="ERROR" />
@@ -126,6 +126,10 @@
     </bean>
     
     <bean name="ProfileBean" class="agents.beans.ProfileBean" singleton="false">  
+        <property name="logLevel" value="INFO" />
+    </bean>
+    
+    <bean name="TodoBean" class="agents.beans.TodoBean" singleton="false">  
         <property name="logLevel" value="INFO" />
     </bean>
     
