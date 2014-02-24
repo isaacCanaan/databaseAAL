@@ -119,6 +119,8 @@ private Connection connect = null;
 						e.printStackTrace();
 					}
 					memory.remove(wce.getObject());
+					
+					log.info("Todo sent.");
 				}
 				
 			}

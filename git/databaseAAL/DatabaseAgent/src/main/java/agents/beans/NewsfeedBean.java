@@ -90,8 +90,8 @@ public class NewsfeedBean extends AbstractAgentBean{
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
-					
 					memory.remove(wce.getObject());
+					log.info("Newsfeed sent");
 				}
 			}
 		}

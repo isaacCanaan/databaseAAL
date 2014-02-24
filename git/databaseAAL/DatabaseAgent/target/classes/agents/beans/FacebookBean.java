@@ -158,7 +158,7 @@ public class FacebookBean extends AbstractAgentBean{
 			if(event instanceof WriteCallEvent<?>){
 				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
 				
-				IJiacMessage message = memory.remove(wce.getObject());
+				IJiacMessage message = memory.read(wce.getObject());
 				
 				if(message != null){
 					IFact obj = message.getPayload();
@@ -200,9 +200,8 @@ public class FacebookBean extends AbstractAgentBean{
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
-					}
-					else{
-						memory.write(wce.getObject());
+						
+						memory.remove(wce.getObject());
 					}
 					
 				}

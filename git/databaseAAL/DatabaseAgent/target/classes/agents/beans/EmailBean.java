@@ -78,7 +78,7 @@ public class EmailBean extends AbstractAgentBean{
 			if(event instanceof WriteCallEvent<?>){
 				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
 				
-				IJiacMessage message = memory.remove(wce.getObject());
+				IJiacMessage message = memory.read(wce.getObject());
 				IFact obj = message.getPayload();
 				
 				ArrayList<eMailAcc> accs = new ArrayList<eMailAcc>();
@@ -99,14 +99,12 @@ public class EmailBean extends AbstractAgentBean{
 					String mail = data.getMail();
 					String pw = data.getPassword();
 					Base64 decoder = new Base64();
-					String test = decoder.encodeToString(pw.getBytes());
-					byte[] decodedBytes = decoder.decode(test);
-					String password = new String(decodedBytes);
-					
-					log.info("Hier das Passwort: " + password);
+					byte[] test = decoder.decodeBase64(pw);
+
+					String password = new String(test);
 									
 					try {
-						eMailAcc acc = new eMailAcc(mail, "patafix-ibdg:223");
+						eMailAcc acc = new eMailAcc(mail, password);
 						accs.add(acc);
 						MailReceiver mrec = new MailReceiver(accs);
 						mails = mrec.receiveMails();
@@ -126,7 +124,12 @@ public class EmailBean extends AbstractAgentBean{
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
+					
+					memory.remove(wce.getObject());
+					log.info("Mails sent");
+						
 				}
+
 				
 			}
 			

@@ -27,7 +27,7 @@ public class GoogleCalendarFetcher {
 	
 	public ArrayList<CalendarData.Entry> getEventEntries(){
 		// Create a Service to access the calendar
-		CalendarService myService = new CalendarService("LivingWall GoogleCalendarAccess");
+		CalendarService myService = new CalendarService("LivingWall GoogleCalendarAccess2");
 		try {
 			myService.setUserCredentials(this.emailAddress, this.pword);
 		} catch (AuthenticationException e) {

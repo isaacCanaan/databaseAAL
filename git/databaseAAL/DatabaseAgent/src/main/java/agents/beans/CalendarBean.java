@@ -115,16 +115,14 @@ public class CalendarBean extends AbstractAgentBean{
 					String mail = data.getMail();
 					String pw = data.getPassword();
 					Base64 decoder = new Base64();
-					String test = decoder.encodeToString(pw.getBytes());
-					byte[] decodedBytes = decoder.decode(test);
-					String password = new String(decodedBytes);
+					byte[] test = decoder.decodeBase64(pw);
+
+					String password = new String(test);
 					
-					log.info("Hier das Mail: " + mail);
-					log.info("Hier das Passwort: " + password);
 					
 					try {
 						
-						GoogleCalendarFetcher fetch = new GoogleCalendarFetcher("noxes.yc@googlemail.de", "noxes2506");
+						GoogleCalendarFetcher fetch = new GoogleCalendarFetcher(mail, password);
 						entries = fetch.getEventEntries();
 						
 						List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());

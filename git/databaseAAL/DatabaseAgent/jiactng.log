@@ -3171,3 +3171,670 @@ Caused by: java.io.NotSerializableException: ontology.messages.MailData$Mail
 	at org.apache.activemq.command.ActiveMQObjectMessage.storeContent(ActiveMQObjectMessage.java:105)
 	... 23 more
 2014-02-24 21:41:24,183 INFO [n-1355e7b987342a37.a-1355e7b95a1532e4.FacebookBean] - FacebookAgent - message received
+2014-02-24 21:46:28,628 ERROR [n-1355e7b987342a37.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 21:46:28,629 ERROR [n-1355e7b987342a37.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355e7b987342a37,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 21:46:35,864 WARN [n-1355e80bf3a3ba5f] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 21:46:36,228 ERROR [n-1355e80bf3a3ba5f.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 21:46:37,000 INFO [n-1355e80bf3a3ba5f.a-1355e80ba79d05d8.TodoBean] - InformationAgent started.
+2014-02-24 21:46:37,001 INFO [n-1355e80bf3a3ba5f.a-1355e80ba79d05d8.TodoBean] - my ID: a-1355e80ba79d05d8
+2014-02-24 21:46:38,479 INFO [n-1355e80bf3a3ba5f.a-1355e80ba79d05d8.NewsfeedBean] - InformationAgent started.
+2014-02-24 21:46:38,490 INFO [n-1355e80bf3a3ba5f.a-1355e80bc5abf324.FacebookBean] - FacebookAgent started.
+2014-02-24 21:46:38,900 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.CalendarBean] - InformationAgent started.
+2014-02-24 21:46:39,443 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - CommunicationAgent started.
+2014-02-24 21:46:49,928 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:46:50,080 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:47:24,910 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:49:48,470 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:49:48,615 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:50:06,623 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:50:20,686 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:50:20,717 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:50:52,883 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:50:52,912 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:51:12,259 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:51:12,287 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:51:29,679 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:51:29,707 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:51:47,610 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:51:47,642 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:51:49,197 INFO [n-1355e80bf3a3ba5f.a-1355e80bc5abf324.FacebookBean] - FacebookAgent - message received
+2014-02-24 21:52:05,449 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:52:05,481 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:53:04,048 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:53:04,075 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:53:22,354 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:53:22,454 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:53:41,695 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:53:41,739 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:53:49,821 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:53:49,849 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:54:08,476 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:54:08,504 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:54:28,802 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:54:28,829 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:54:46,699 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:54:46,727 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:55:19,369 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:55:19,395 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:57:10,555 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:57:33,165 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:57:33,202 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:57:52,010 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:57:52,046 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:58:11,135 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:58:11,163 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 21:58:29,088 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 21:58:29,116 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:00:34,497 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 22:00:34,524 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:01:03,797 INFO [n-1355e80bf3a3ba5f.a-1355e80bc5abf324.FacebookBean] - FacebookAgent - message received
+2014-02-24 22:03:18,658 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 22:03:18,745 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:03:36,418 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 22:03:36,452 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:03:53,927 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 22:03:53,959 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:04:12,153 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 22:04:12,182 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:04:17,425 INFO [n-1355e80bf3a3ba5f.a-1355e80bc5abf324.FacebookBean] - FacebookAgent - message received
+2014-02-24 22:04:29,276 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 22:04:29,308 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:04:48,313 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - MailAgent - Get message received
+2014-02-24 22:04:48,344 INFO [n-1355e80bf3a3ba5f.a-1355e80bc292052a.EmailBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:05:32,875 ERROR [n-1355e80bf3a3ba5f.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:05:32,876 ERROR [n-1355e80bf3a3ba5f.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355e80bf3a3ba5f,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:05:38,786 WARN [n-1355e915b8ff03ab] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:05:39,561 ERROR [n-1355e915b8ff03ab.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:05:40,306 INFO [n-1355e915b8ff03ab.a-1355e9160b722455.TodoBean] - InformationAgent started.
+2014-02-24 22:05:40,307 INFO [n-1355e915b8ff03ab.a-1355e9160b722455.TodoBean] - my ID: a-1355e9160b722455
+2014-02-24 22:05:41,963 INFO [n-1355e915b8ff03ab.a-1355e9160b722455.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:05:41,975 INFO [n-1355e915b8ff03ab.a-1355e91607bdbc76.FacebookBean] - FacebookAgent started.
+2014-02-24 22:05:42,363 INFO [n-1355e915b8ff03ab.a-1355e915c93b62eb.CalendarBean] - InformationAgent started.
+2014-02-24 22:05:42,834 INFO [n-1355e915b8ff03ab.a-1355e915c93b62eb.EmailBean] - CommunicationAgent started.
+2014-02-24 22:05:53,658 INFO [n-1355e915b8ff03ab.a-1355e915c93b62eb.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 22:05:53,713 INFO [n-1355e915b8ff03ab.a-1355e915c93b62eb.CalendarBean] - Hier das Mail: jseilkopf@gmail.com
+2014-02-24 22:05:53,713 INFO [n-1355e915b8ff03ab.a-1355e915c93b62eb.CalendarBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:07:46,491 ERROR [n-1355e915b8ff03ab.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:07:46,491 ERROR [n-1355e915b8ff03ab.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355e915b8ff03ab,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:07:52,593 WARN [n-1355e934e07fe56b] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:07:52,954 ERROR [n-1355e934e07fe56b.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:07:53,687 INFO [n-1355e934e07fe56b.a-1355e935331b1fb5.TodoBean] - InformationAgent started.
+2014-02-24 22:07:53,688 INFO [n-1355e934e07fe56b.a-1355e935331b1fb5.TodoBean] - my ID: a-1355e935331b1fb5
+2014-02-24 22:07:54,500 INFO [n-1355e934e07fe56b.a-1355e935331b1fb5.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:07:54,507 INFO [n-1355e934e07fe56b.a-1355e9352f950366.FacebookBean] - FacebookAgent started.
+2014-02-24 22:07:55,201 INFO [n-1355e934e07fe56b.a-1355e934f110b5db.CalendarBean] - InformationAgent started.
+2014-02-24 22:07:55,785 INFO [n-1355e934e07fe56b.a-1355e934f110b5db.EmailBean] - CommunicationAgent started.
+2014-02-24 22:08:05,082 INFO [n-1355e934e07fe56b.a-1355e934f110b5db.EmailBean] - MailAgent - Get message received
+2014-02-24 22:08:05,132 INFO [n-1355e934e07fe56b.a-1355e934f110b5db.EmailBean] - Hier das Test: [B@36c919fe
+2014-02-24 22:08:05,132 INFO [n-1355e934e07fe56b.a-1355e934f110b5db.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:09:54,849 INFO [n-1355e934e07fe56b.a-1355e934f110b5db.EmailBean] - MailAgent - Get message received
+2014-02-24 22:09:54,875 INFO [n-1355e934e07fe56b.a-1355e934f110b5db.EmailBean] - Hier das Test: [B@7b4499b0
+2014-02-24 22:09:54,875 INFO [n-1355e934e07fe56b.a-1355e934f110b5db.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:09:55,005 INFO [n-1355e934e07fe56b.a-1355e935331b1fb5.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:09:55,166 INFO [n-1355e934e07fe56b.a-1355e935331b1fb5.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:11:56,840 ERROR [n-1355e934e07fe56b.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:11:56,841 ERROR [n-1355e934e07fe56b.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355e934e07fe56b,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:12:22,184 WARN [n-1355e973fb8ec20f] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:12:22,556 ERROR [n-1355e973fb8ec20f.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:12:23,313 INFO [n-1355e973fb8ec20f.a-1355e973af72d008.TodoBean] - InformationAgent started.
+2014-02-24 22:12:23,314 INFO [n-1355e973fb8ec20f.a-1355e973af72d008.TodoBean] - my ID: a-1355e973af72d008
+2014-02-24 22:12:25,048 INFO [n-1355e973fb8ec20f.a-1355e973af72d008.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:12:25,055 INFO [n-1355e973fb8ec20f.a-1355e973ce2396ec.FacebookBean] - FacebookAgent started.
+2014-02-24 22:12:25,791 INFO [n-1355e973fb8ec20f.a-1355e973cb06517a.CalendarBean] - InformationAgent started.
+2014-02-24 22:12:26,059 INFO [n-1355e973fb8ec20f.a-1355e973cb06517a.EmailBean] - CommunicationAgent started.
+2014-02-24 22:13:00,934 INFO [n-1355e973fb8ec20f.a-1355e973cb06517a.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 22:13:00,969 INFO [n-1355e973fb8ec20f.a-1355e973af72d008.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:13:00,982 INFO [n-1355e973fb8ec20f.a-1355e973cb06517a.CalendarBean] - Hier das Mail: jseilkopf@gmail.com
+2014-02-24 22:13:00,983 INFO [n-1355e973fb8ec20f.a-1355e973cb06517a.CalendarBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:13:01,441 INFO [n-1355e973fb8ec20f.a-1355e973af72d008.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:15:11,225 INFO [n-1355e973fb8ec20f.a-1355e973af72d008.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:15:11,260 INFO [n-1355e973fb8ec20f.a-1355e973af72d008.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:17:06,864 ERROR [n-1355e973fb8ec20f.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:17:06,865 ERROR [n-1355e973fb8ec20f.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355e973fb8ec20f,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:17:11,399 WARN [n-1355e9b6fbef6afb] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:17:11,785 ERROR [n-1355e9b6fbef6afb.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:17:12,564 INFO [n-1355e9b6fbef6afb.a-1355e9b74eabe115.TodoBean] - InformationAgent started.
+2014-02-24 22:17:12,564 INFO [n-1355e9b6fbef6afb.a-1355e9b74eabe115.TodoBean] - my ID: a-1355e9b74eabe115
+2014-02-24 22:17:14,532 INFO [n-1355e9b6fbef6afb.a-1355e9b74eabe115.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:17:14,538 INFO [n-1355e9b6fbef6afb.a-1355e9b74b559ade.FacebookBean] - FacebookAgent started.
+2014-02-24 22:17:15,318 INFO [n-1355e9b6fbef6afb.a-1355e9b70ce77d03.CalendarBean] - InformationAgent started.
+2014-02-24 22:17:16,299 INFO [n-1355e9b6fbef6afb.a-1355e9b70ce77d03.EmailBean] - CommunicationAgent started.
+2014-02-24 22:17:22,411 INFO [n-1355e9b6fbef6afb.a-1355e9b70ce77d03.EmailBean] - MailAgent - Get message received
+2014-02-24 22:17:22,460 INFO [n-1355e9b6fbef6afb.a-1355e9b70ce77d03.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:17:22,476 INFO [n-1355e9b6fbef6afb.a-1355e9b74eabe115.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:17:22,893 INFO [n-1355e9b6fbef6afb.a-1355e9b74eabe115.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:18:21,742 INFO [n-1355e9b6fbef6afb.a-1355e9b70ce77d03.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 22:18:21,771 INFO [n-1355e9b6fbef6afb.a-1355e9b70ce77d03.CalendarBean] - Hier das Mail: jseilkopf@gmail.com
+2014-02-24 22:18:21,771 INFO [n-1355e9b6fbef6afb.a-1355e9b70ce77d03.CalendarBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:18:53,957 INFO [n-1355e9b6fbef6afb.a-1355e9b74b559ade.FacebookBean] - FacebookAgent - message received
+2014-02-24 22:21:46,325 ERROR [n-1355e9b6fbef6afb.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:21:46,362 ERROR [n-1355e9b6fbef6afb.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355e9b6fbef6afb,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:21:49,497 WARN [n-1355e9f8008be421] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:21:49,870 ERROR [n-1355e9f8008be421.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:21:50,613 INFO [n-1355e9f8008be421.a-1355e9f7d426dd41.TodoBean] - InformationAgent started.
+2014-02-24 22:21:50,614 INFO [n-1355e9f8008be421.a-1355e9f7d426dd41.TodoBean] - my ID: a-1355e9f7d426dd41
+2014-02-24 22:21:52,315 INFO [n-1355e9f8008be421.a-1355e9f7d426dd41.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:21:52,340 INFO [n-1355e9f8008be421.a-1355e9f825dd543d.FacebookBean] - FacebookAgent started.
+2014-02-24 22:21:53,042 INFO [n-1355e9f8008be421.a-1355e9f8029224f7.CalendarBean] - InformationAgent started.
+2014-02-24 22:21:53,912 INFO [n-1355e9f8008be421.a-1355e9f8029224f7.EmailBean] - CommunicationAgent started.
+2014-02-24 22:22:05,165 INFO [n-1355e9f8008be421.a-1355e9f7d426dd41.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:22:05,215 INFO [n-1355e9f8008be421.a-1355e9f8029224f7.EmailBean] - MailAgent - Get message received
+2014-02-24 22:22:05,218 INFO [n-1355e9f8008be421.a-1355e9f7d426dd41.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:22:05,251 INFO [n-1355e9f8008be421.a-1355e9f8029224f7.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:32:46,657 WARN [n-1355ea90bb2a4b4b] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:32:49,231 ERROR [n-1355ea90bb2a4b4b.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:32:50,314 INFO [n-1355ea90bb2a4b4b.a-1355ea91029f4538.TodoBean] - InformationAgent started.
+2014-02-24 22:32:50,315 INFO [n-1355ea90bb2a4b4b.a-1355ea91029f4538.TodoBean] - my ID: a-1355ea91029f4538
+2014-02-24 22:32:52,695 INFO [n-1355ea90bb2a4b4b.a-1355ea91029f4538.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:32:52,708 INFO [n-1355ea90bb2a4b4b.a-1355ea90ddab7fe0.FacebookBean] - FacebookAgent started.
+2014-02-24 22:32:53,817 INFO [n-1355ea90bb2a4b4b.a-1355ea9137e6680a.CalendarBean] - InformationAgent started.
+2014-02-24 22:32:54,689 INFO [n-1355ea90bb2a4b4b.a-1355ea9137e6680a.EmailBean] - CommunicationAgent started.
+2014-02-24 22:33:19,226 INFO [n-1355ea90bb2a4b4b.a-1355ea9137e6680a.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 22:33:19,227 INFO [n-1355ea90bb2a4b4b.a-1355ea91029f4538.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:33:19,310 INFO [n-1355ea90bb2a4b4b.a-1355ea9137e6680a.EmailBean] - MailAgent - Get message received
+2014-02-24 22:33:29,851 INFO [n-1355ea90bb2a4b4b.a-1355ea9137e6680a.EmailBean] - MailAgent - Get message received
+2014-02-24 22:33:29,892 INFO [n-1355ea90bb2a4b4b.a-1355ea9137e6680a.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:33:49,860 INFO [n-1355ea90bb2a4b4b.a-1355ea91029f4538.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:33:50,361 INFO [n-1355ea90bb2a4b4b.a-1355ea91029f4538.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:33:41,107 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-1355e9f8008be421AALWS1314GatewayBroker#0 and tcp:///130.149.154.19:45678 shutdown due to a remote error: java.lang.OutOfMemoryError: Java heap space
+2014-02-24 22:34:24,593 WARN [org.apache.activemq.network.DemandForwardingBridgeSupport] - Network connection between vm://n-1355ea90bb2a4b4bAALWS1314GatewayBroker#16 and tcp:///141.23.100.20:52167 shutdown due to a remote error: java.io.IOException: Wire format negotiation timeout: peer did not send his wire format.
+2014-02-24 22:34:15,558 ERROR [n-1355e9f8008be421.a-1355e9f7d426dd41] - Critical error in controlcycle of agent: InformationAgent. Stopping Agent! Exception: 
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: Java heap space
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:262)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:119)
+	at de.dailab.jiactng.agentcore.Agent.run(Agent.java:308)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+2014-02-24 22:34:28,164 ERROR [org.apache.activemq.ActiveMQMessageConsumer] - ID:wlan-141-23-100-20.tubit.tu-berlin.de-52168-1393276909984-3:1:2:2 failed to delivered acknowledgements
+javax.jms.JMSException: Peer (vm://n-1355e9f8008be421AALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.doAsyncSendPacket(ActiveMQConnection.java:1267)
+	at org.apache.activemq.ActiveMQConnection.asyncSendPacket(ActiveMQConnection.java:1259)
+	at org.apache.activemq.ActiveMQSession.asyncSendPacket(ActiveMQSession.java:1863)
+	at org.apache.activemq.ActiveMQSession.sendAck(ActiveMQSession.java:2029)
+	at org.apache.activemq.ActiveMQMessageConsumer$4.run(ActiveMQMessageConsumer.java:722)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355e9f8008be421AALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:89)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.oneway(ResponseCorrelator.java:60)
+	at org.apache.activemq.ActiveMQConnection.doAsyncSendPacket(ActiveMQConnection.java:1265)
+	... 10 more
+2014-02-24 22:34:28,165 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355e9f8008be421AALWS1314GatewayBroker#3) disposed.'
+2014-02-24 22:34:28,166 WARN [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms] - could not close connection 
+javax.jms.JMSException: Peer (vm://n-1355e9f8008be421AALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1342)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:660)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.doCleanup(JMSMessageTransport.java:110)
+	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.doCleanup(DirectoryAgentNodeBean.java:287)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.doCleanup(SimpleAgentNode.java:803)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:612)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:107)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355e9f8008be421AALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:89)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81)
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:91)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1329)
+	... 8 more
+2014-02-24 22:34:28,169 ERROR [n-1355e9f8008be421.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:34:28,170 ERROR [n-1355e9f8008be421.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355e9f8008be421,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:35:50,615 WARN [n-1355eabb9269d953] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:35:51,033 ERROR [n-1355eabb9269d953.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:35:51,885 INFO [n-1355eabb9269d953.a-1355eabbe53fc30d.TodoBean] - InformationAgent started.
+2014-02-24 22:35:51,885 INFO [n-1355eabb9269d953.a-1355eabbe53fc30d.TodoBean] - my ID: a-1355eabbe53fc30d
+2014-02-24 22:35:53,033 INFO [n-1355eabb9269d953.a-1355eabbe53fc30d.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:35:53,045 INFO [n-1355eabb9269d953.a-1355eabbbbbda47c.FacebookBean] - FacebookAgent started.
+2014-02-24 22:35:53,899 INFO [n-1355eabb9269d953.a-1355eabba4ecec73.CalendarBean] - InformationAgent started.
+2014-02-24 22:35:54,960 INFO [n-1355eabb9269d953.a-1355eabba4ecec73.EmailBean] - CommunicationAgent started.
+2014-02-24 22:37:14,341 INFO [n-1355eabb9269d953.a-1355eabbe53fc30d.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:37:14,341 INFO [n-1355eabb9269d953.a-1355eabba4ecec73.EmailBean] - MailAgent - Get message received
+2014-02-24 22:37:14,395 INFO [n-1355eabb9269d953.a-1355eabba4ecec73.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:37:14,871 INFO [n-1355eabb9269d953.a-1355eabbe53fc30d.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:37:22,819 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355ea90bb2a4b4bAALWS1314GatewayBroker#3) disposed.'
+2014-02-24 22:37:22,819 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355ea90bb2a4b4bAALWS1314GatewayBroker#3) disposed.'
+2014-02-24 22:37:22,821 WARN [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms] - could not close connection 
+javax.jms.JMSException: Peer (vm://n-1355ea90bb2a4b4bAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1342)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:660)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.doCleanup(JMSMessageTransport.java:110)
+	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.doCleanup(DirectoryAgentNodeBean.java:287)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.doCleanup(SimpleAgentNode.java:803)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:612)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:107)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355ea90bb2a4b4bAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:89)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81)
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:91)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1329)
+	... 8 more
+2014-02-24 22:37:22,826 ERROR [n-1355ea90bb2a4b4b.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:37:22,827 ERROR [n-1355ea90bb2a4b4b.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355ea90bb2a4b4b,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:37:59,934 WARN [n-1355eada04902daf] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:38:00,295 ERROR [n-1355eada04902daf.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:38:01,106 INFO [n-1355eada04902daf.a-1355ead9b8991540.TodoBean] - InformationAgent started.
+2014-02-24 22:38:01,107 INFO [n-1355eada04902daf.a-1355ead9b8991540.TodoBean] - my ID: a-1355ead9b8991540
+2014-02-24 22:38:03,139 INFO [n-1355eada04902daf.a-1355ead9b8991540.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:38:03,145 INFO [n-1355eada04902daf.a-1355eada1759e065.FacebookBean] - FacebookAgent started.
+2014-02-24 22:38:04,477 INFO [n-1355eada04902daf.a-1355ead9d3b57a82.CalendarBean] - InformationAgent started.
+2014-02-24 22:38:05,238 INFO [n-1355eada04902daf.a-1355ead9d3b57a82.EmailBean] - CommunicationAgent started.
+2014-02-24 22:38:15,839 INFO [n-1355eada04902daf.a-1355ead9d3b57a82.EmailBean] - MailAgent - Get message received
+2014-02-24 22:38:15,839 INFO [n-1355eada04902daf.a-1355ead9b8991540.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:38:15,890 INFO [n-1355eada04902daf.a-1355ead9d3b57a82.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:38:16,733 INFO [n-1355eada04902daf.a-1355ead9b8991540.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:41:10,889 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eabb9269d953AALWS1314GatewayBroker#3) disposed.'
+2014-02-24 22:41:10,889 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eabb9269d953AALWS1314GatewayBroker#3) disposed.'
+2014-02-24 22:41:10,891 WARN [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms] - could not close connection 
+javax.jms.JMSException: Peer (vm://n-1355eabb9269d953AALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1342)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:660)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.doCleanup(JMSMessageTransport.java:110)
+	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.doCleanup(DirectoryAgentNodeBean.java:287)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.doCleanup(SimpleAgentNode.java:803)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:612)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:107)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eabb9269d953AALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:89)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81)
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:91)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1329)
+	... 8 more
+2014-02-24 22:41:10,895 ERROR [n-1355eabb9269d953.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:41:10,895 ERROR [n-1355eabb9269d953.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355eabb9269d953,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:41:51,455 WARN [n-1355eb0f961d3d1b] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:41:51,820 ERROR [n-1355eb0f961d3d1b.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:41:52,560 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.TodoBean] - InformationAgent started.
+2014-02-24 22:41:52,560 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.TodoBean] - my ID: a-1355eb0fe8f5f97d
+2014-02-24 22:41:54,150 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:41:54,162 INFO [n-1355eb0f961d3d1b.a-1355eb0fbe928b3c.FacebookBean] - FacebookAgent started.
+2014-02-24 22:41:55,294 INFO [n-1355eb0f961d3d1b.a-1355eb0fa6dd4b4b.CalendarBean] - InformationAgent started.
+2014-02-24 22:41:56,678 INFO [n-1355eb0f961d3d1b.a-1355eb0fa6dd4b4b.EmailBean] - CommunicationAgent started.
+2014-02-24 22:42:03,120 INFO [n-1355eb0f961d3d1b.a-1355eb0fa6dd4b4b.EmailBean] - MailAgent - Get message received
+2014-02-24 22:42:03,122 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:42:03,188 INFO [n-1355eb0f961d3d1b.a-1355eb0fa6dd4b4b.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:42:03,621 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:42:09,132 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eada04902dafAALWS1314GatewayBroker#3) disposed.'
+2014-02-24 22:42:09,133 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eada04902dafAALWS1314GatewayBroker#3) disposed.'
+2014-02-24 22:42:09,135 WARN [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms] - could not close connection 
+javax.jms.JMSException: Peer (vm://n-1355eada04902dafAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1342)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:660)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.doCleanup(JMSMessageTransport.java:110)
+	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.doCleanup(DirectoryAgentNodeBean.java:287)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.doCleanup(SimpleAgentNode.java:803)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:612)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:107)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eada04902dafAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:89)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81)
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:91)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1329)
+	... 8 more
+2014-02-24 22:42:09,140 ERROR [n-1355eada04902daf.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:42:09,140 ERROR [n-1355eada04902daf.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355eada04902daf,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:43:42,551 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:43:42,581 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:46:42,538 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:46:43,033 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:46:43,064 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:46:51,029 INFO [n-1355eb0f961d3d1b.a-1355eb0fa6dd4b4b.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 22:46:51,056 INFO [n-1355eb0f961d3d1b.a-1355eb0fa6dd4b4b.CalendarBean] - Hier das Mail: jseilkopf@gmail.com
+2014-02-24 22:46:51,056 INFO [n-1355eb0f961d3d1b.a-1355eb0fa6dd4b4b.CalendarBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:46:55,119 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:46:55,149 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:47:05,368 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:47:05,423 INFO [n-1355eb0f961d3d1b.a-1355eb0fe8f5f97d.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:47:21,283 ERROR [n-1355eb0f961d3d1b.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:47:21,283 ERROR [n-1355eb0f961d3d1b.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355eb0f961d3d1b,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:47:38,207 WARN [n-1355eb6052278c9b] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:47:38,570 ERROR [n-1355eb6052278c9b.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:47:39,314 INFO [n-1355eb6052278c9b.a-1355eb60a4d56c55.TodoBean] - InformationAgent started.
+2014-02-24 22:47:39,315 INFO [n-1355eb6052278c9b.a-1355eb60a4d56c55.TodoBean] - my ID: a-1355eb60a4d56c55
+2014-02-24 22:47:41,218 INFO [n-1355eb6052278c9b.a-1355eb60a4d56c55.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:47:41,229 INFO [n-1355eb6052278c9b.a-1355eb607a19d3c4.FacebookBean] - FacebookAgent started.
+2014-02-24 22:47:42,157 INFO [n-1355eb6052278c9b.a-1355eb606267d3db.CalendarBean] - InformationAgent started.
+2014-02-24 22:47:43,148 INFO [n-1355eb6052278c9b.a-1355eb606267d3db.EmailBean] - CommunicationAgent started.
+2014-02-24 22:47:45,901 INFO [n-1355eb6052278c9b.a-1355eb60a4d56c55.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:47:45,908 INFO [n-1355eb6052278c9b.a-1355eb606267d3db.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 22:47:45,955 INFO [n-1355eb6052278c9b.a-1355eb606267d3db.CalendarBean] - Hier das Mail: jseilkopf@gmail.com
+2014-02-24 22:47:45,956 INFO [n-1355eb6052278c9b.a-1355eb606267d3db.CalendarBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:47:46,342 INFO [n-1355eb6052278c9b.a-1355eb60a4d56c55.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:49:19,938 INFO [n-1355eb6052278c9b.a-1355eb60a4d56c55.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:49:20,435 INFO [n-1355eb6052278c9b.a-1355eb60a4d56c55.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:49:56,960 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms] - Sending of Message to address 'group:df@dfgroup' through JMS failed!
+javax.jms.JMSException: Peer (vm://n-1355eb6052278c9bAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1306)
+	at org.apache.activemq.ActiveMQSession.send(ActiveMQSession.java:1760)
+	at org.apache.activemq.ActiveMQMessageProducer.send(ActiveMQMessageProducer.java:231)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSSender.sendMessage(JMSSender.java:52)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSSender.send(JMSSender.java:43)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.send(JMSMessageTransport.java:215)
+	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.sendMessage(DirectoryAgentNodeBean.java:1133)
+	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.doStop(DirectoryAgentNodeBean.java:271)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.stop(AbstractLifecycle.java:182)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.doStop(SimpleAgentNode.java:770)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.stop(AbstractLifecycle.java:182)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:611)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:107)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eb6052278c9bAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:89)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81)
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:86)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1284)
+	... 12 more
+2014-02-24 22:49:56,962 ERROR [n-1355eb6052278c9b.IDirectory] - sendMessage failed. Message:
+[Headers: {JiacTNGSenderAddress=>msgbox:df@n-1355eb6052278c9b;JiacTNGProtocolID=>df:bye;JiacTNGGroupAddress=>df@dfgroup;UUID=>n-1355eb6052278c9b}, Payload: null, Sender: msgbox:df@n-1355eb6052278c9b]
+de.dailab.jiactng.agentcore.comm.CommunicationException: error while sending message
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.send(JMSMessageTransport.java:221)
+	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.sendMessage(DirectoryAgentNodeBean.java:1133)
+	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.doStop(DirectoryAgentNodeBean.java:271)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.stop(AbstractLifecycle.java:182)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.doStop(SimpleAgentNode.java:770)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.stop(AbstractLifecycle.java:182)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:611)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:107)
+Caused by: javax.jms.JMSException: Peer (vm://n-1355eb6052278c9bAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1306)
+	at org.apache.activemq.ActiveMQSession.send(ActiveMQSession.java:1760)
+	at org.apache.activemq.ActiveMQMessageProducer.send(ActiveMQMessageProducer.java:231)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSSender.sendMessage(JMSSender.java:52)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSSender.send(JMSSender.java:43)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.send(JMSMessageTransport.java:215)
+	... 7 more
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eb6052278c9bAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:89)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81)
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:86)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1284)
+	... 12 more
+2014-02-24 22:49:57,101 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eb6052278c9bAALWS1314GatewayBroker#3) disposed.'
+2014-02-24 22:49:57,101 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eb6052278c9bAALWS1314GatewayBroker#3) disposed.'
+2014-02-24 22:49:57,101 WARN [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms] - could not close connection 
+javax.jms.JMSException: Peer (vm://n-1355eb6052278c9bAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1342)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:660)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.doCleanup(JMSMessageTransport.java:110)
+	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.doCleanup(DirectoryAgentNodeBean.java:287)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.doCleanup(SimpleAgentNode.java:803)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:612)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:107)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355eb6052278c9bAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:89)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81)
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:91)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1329)
+	... 8 more
+2014-02-24 22:49:57,104 ERROR [n-1355eb6052278c9b.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:49:57,104 ERROR [n-1355eb6052278c9b.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355eb6052278c9b,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:51:24,746 WARN [n-1355eb9510eb7b13] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:51:25,125 ERROR [n-1355eb9510eb7b13.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:51:25,867 INFO [n-1355eb9510eb7b13.a-1355eb9563cfd035.TodoBean] - InformationAgent started.
+2014-02-24 22:51:25,867 INFO [n-1355eb9510eb7b13.a-1355eb9563cfd035.TodoBean] - my ID: a-1355eb9563cfd035
+2014-02-24 22:51:27,187 INFO [n-1355eb9510eb7b13.a-1355eb9563cfd035.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:51:27,193 INFO [n-1355eb9510eb7b13.a-1355eb953996aa2c.FacebookBean] - FacebookAgent started.
+2014-02-24 22:51:28,050 INFO [n-1355eb9510eb7b13.a-1355eb9521e89dfb.CalendarBean] - InformationAgent started.
+2014-02-24 22:51:29,182 INFO [n-1355eb9510eb7b13.a-1355eb9521e89dfb.EmailBean] - CommunicationAgent started.
+2014-02-24 22:51:34,362 INFO [n-1355eb9510eb7b13.a-1355eb9521e89dfb.EmailBean] - MailAgent - Get message received
+2014-02-24 22:51:34,410 INFO [n-1355eb9510eb7b13.a-1355eb9521e89dfb.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:51:34,609 INFO [n-1355eb9510eb7b13.a-1355eb9563cfd035.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:51:35,084 INFO [n-1355eb9510eb7b13.a-1355eb9563cfd035.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:51:53,254 INFO [n-1355eb9510eb7b13.a-1355eb9521e89dfb.EmailBean] - Mails sent
+2014-02-24 22:51:53,256 INFO [n-1355eb9510eb7b13.a-1355eb9521e89dfb.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 22:51:53,418 INFO [n-1355eb9510eb7b13.a-1355eb9521e89dfb.CalendarBean] - Hier das Mail: jseilkopf@gmail.com
+2014-02-24 22:51:53,419 INFO [n-1355eb9510eb7b13.a-1355eb9521e89dfb.CalendarBean] - Hier das Passwort: cGF0YWZpeC1pYmRnOjIyMw==
+2014-02-24 22:53:23,426 ERROR [n-1355eb9510eb7b13.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:53:23,427 ERROR [n-1355eb9510eb7b13.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355eb9510eb7b13,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:53:57,749 WARN [n-1355ebb8f5509e31] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:53:58,125 ERROR [n-1355ebb8f5509e31.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:53:58,860 INFO [n-1355ebb8f5509e31.a-1355ebb8c8da68e1.TodoBean] - InformationAgent started.
+2014-02-24 22:53:58,860 INFO [n-1355ebb8f5509e31.a-1355ebb8c8da68e1.TodoBean] - my ID: a-1355ebb8c8da68e1
+2014-02-24 22:54:00,797 INFO [n-1355ebb8f5509e31.a-1355ebb8c8da68e1.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:54:00,804 INFO [n-1355ebb8f5509e31.a-1355ebb8b4d5396c.FacebookBean] - FacebookAgent started.
+2014-02-24 22:54:01,571 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.CalendarBean] - InformationAgent started.
+2014-02-24 22:54:02,512 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - CommunicationAgent started.
+2014-02-24 22:54:28,481 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - MailAgent - Get message received
+2014-02-24 22:54:28,526 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:54:47,784 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - Mails sent
+2014-02-24 22:54:47,785 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - MailAgent - Get message received
+2014-02-24 22:54:47,815 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:55:05,216 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - Mails sent
+2014-02-24 22:55:05,218 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - MailAgent - Get message received
+2014-02-24 22:55:05,368 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:55:22,894 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - Mails sent
+2014-02-24 22:55:22,896 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - MailAgent - Get message received
+2014-02-24 22:55:22,928 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:55:40,363 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - Mails sent
+2014-02-24 22:55:40,364 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - MailAgent - Get message received
+2014-02-24 22:55:40,393 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:55:57,610 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.EmailBean] - Mails sent
+2014-02-24 22:57:42,833 INFO [n-1355ebb8f5509e31.a-1355ebb8c8da68e1.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:57:43,125 INFO [n-1355ebb8f5509e31.a-1355ebb8c8da68e1.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:57:43,129 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 22:57:43,159 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.CalendarBean] - Hier das Mail: jseilkopf@gmail.com
+2014-02-24 22:57:43,159 INFO [n-1355ebb8f5509e31.a-1355ebb8f702a09f.CalendarBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 22:58:58,489 ERROR [n-1355ebb8f5509e31.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 22:58:58,490 ERROR [n-1355ebb8f5509e31.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355ebb8f5509e31,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 22:59:02,744 WARN [n-1355ec0009eb2a3f] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 22:59:03,124 ERROR [n-1355ec0009eb2a3f.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 22:59:03,882 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.TodoBean] - InformationAgent started.
+2014-02-24 22:59:03,883 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.TodoBean] - my ID: a-1355ebffbe2a8738
+2014-02-24 22:59:05,687 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.NewsfeedBean] - InformationAgent started.
+2014-02-24 22:59:05,694 INFO [n-1355ec0009eb2a3f.a-1355ec001d3e9e95.FacebookBean] - FacebookAgent started.
+2014-02-24 22:59:06,408 INFO [n-1355ec0009eb2a3f.a-1355ebffd9ad4f6a.CalendarBean] - InformationAgent started.
+2014-02-24 22:59:07,511 INFO [n-1355ec0009eb2a3f.a-1355ebffd9ad4f6a.EmailBean] - CommunicationAgent started.
+2014-02-24 22:59:46,962 INFO [n-1355ec0009eb2a3f.a-1355ebffd9ad4f6a.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 22:59:46,964 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.TodoBean] - TodoAgent - Get message received
+2014-02-24 22:59:47,010 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 22:59:47,018 INFO [n-1355ec0009eb2a3f.a-1355ebffd9ad4f6a.CalendarBean] - Hier das Mail: jseilkopf@gmail.com
+2014-02-24 22:59:47,018 INFO [n-1355ec0009eb2a3f.a-1355ebffd9ad4f6a.CalendarBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 23:00:22,348 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:00:22,842 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:01:59,422 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:01:59,551 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:02:00,015 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:02:00,049 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:02:09,320 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:02:09,465 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:02:09,550 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:02:09,666 INFO [n-1355ec0009eb2a3f.a-1355ebffbe2a8738.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:04:25,545 ERROR [n-1355ec0009eb2a3f.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 23:04:25,545 ERROR [n-1355ec0009eb2a3f.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355ec0009eb2a3f,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 23:05:25,657 WARN [n-1355ec59314b63f7] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 23:05:26,028 ERROR [n-1355ec59314b63f7.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 23:05:26,767 INFO [n-1355ec59314b63f7.a-1355ec58e5c64f08.TodoBean] - InformationAgent started.
+2014-02-24 23:05:26,768 INFO [n-1355ec59314b63f7.a-1355ec58e5c64f08.TodoBean] - my ID: a-1355ec58e5c64f08
+2014-02-24 23:05:28,747 INFO [n-1355ec59314b63f7.a-1355ec58e5c64f08.NewsfeedBean] - InformationAgent started.
+2014-02-24 23:05:28,754 INFO [n-1355ec59314b63f7.a-1355ec59042d437c.FacebookBean] - FacebookAgent started.
+2014-02-24 23:05:29,600 INFO [n-1355ec59314b63f7.a-1355ec59010ec58a.CalendarBean] - InformationAgent started.
+2014-02-24 23:05:30,685 INFO [n-1355ec59314b63f7.a-1355ec59010ec58a.EmailBean] - CommunicationAgent started.
+2014-02-24 23:05:50,930 INFO [n-1355ec59314b63f7.a-1355ec58e5c64f08.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:05:50,960 INFO [n-1355ec59314b63f7.a-1355ec59010ec58a.EmailBean] - MailAgent - Get message received
+2014-02-24 23:05:51,004 INFO [n-1355ec59314b63f7.a-1355ec59010ec58a.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 23:05:51,424 INFO [n-1355ec59314b63f7.a-1355ec58e5c64f08.NewsfeedBean] - Newsfeed sent
+2014-02-24 23:05:51,425 INFO [n-1355ec59314b63f7.a-1355ec58e5c64f08.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:05:51,476 INFO [n-1355ec59314b63f7.a-1355ec58e5c64f08.TodoBean] - Todo sent.
+2014-02-24 23:06:10,075 INFO [n-1355ec59314b63f7.a-1355ec59010ec58a.EmailBean] - Mails sent
+2014-02-24 23:06:10,076 INFO [n-1355ec59314b63f7.a-1355ec59010ec58a.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 23:06:10,114 INFO [n-1355ec59314b63f7.a-1355ec59010ec58a.CalendarBean] - Hier das Mail: jseilkopf@gmail.com
+2014-02-24 23:06:10,115 INFO [n-1355ec59314b63f7.a-1355ec59010ec58a.CalendarBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 23:06:52,376 ERROR [n-1355ec59314b63f7.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 23:06:52,376 ERROR [n-1355ec59314b63f7.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355ec59314b63f7,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 23:06:55,869 WARN [n-1355ec6ddc33eecb] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 23:06:56,244 ERROR [n-1355ec6ddc33eecb.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 23:06:56,995 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.TodoBean] - InformationAgent started.
+2014-02-24 23:06:56,996 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.TodoBean] - my ID: a-1355ec6e2eed347d
+2014-02-24 23:06:58,205 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.NewsfeedBean] - InformationAgent started.
+2014-02-24 23:06:58,212 INFO [n-1355ec6ddc33eecb.a-1355ec6e0469a3ac.FacebookBean] - FacebookAgent started.
+2014-02-24 23:06:59,101 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.CalendarBean] - InformationAgent started.
+2014-02-24 23:06:59,903 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - CommunicationAgent started.
+2014-02-24 23:07:05,037 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - MailAgent - Get message received
+2014-02-24 23:07:05,087 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 23:07:12,115 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:07:12,151 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.TodoBean] - Todo sent.
+2014-02-24 23:07:12,219 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:07:12,291 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.NewsfeedBean] - Newsfeed sent
+2014-02-24 23:07:26,749 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - Mails sent
+2014-02-24 23:07:26,750 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - MailAgent - Get message received
+2014-02-24 23:07:26,777 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 23:07:46,460 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - Mails sent
+2014-02-24 23:07:46,461 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - MailAgent - Get message received
+2014-02-24 23:07:46,489 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 23:08:03,064 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - Mails sent
+2014-02-24 23:08:03,065 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - MailAgent - Get message received
+2014-02-24 23:08:03,094 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 23:08:05,474 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:08:05,503 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.TodoBean] - Todo sent.
+2014-02-24 23:08:05,553 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:08:06,006 INFO [n-1355ec6ddc33eecb.a-1355ec6e2eed347d.NewsfeedBean] - Newsfeed sent
+2014-02-24 23:08:21,122 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - Mails sent
+2014-02-24 23:08:21,122 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - MailAgent - Get message received
+2014-02-24 23:08:21,149 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - Hier das Passwort: patafix-ibdg:223
+2014-02-24 23:08:38,926 INFO [n-1355ec6ddc33eecb.a-1355ec6decbefaab.EmailBean] - Mails sent
+2014-02-24 23:08:38,930 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355ec6ddc33eecbAALWS1314GatewayBroker#3) disposed.'
+2014-02-24 23:08:38,931 ERROR [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms.receiver] - Couldn't destroy consumer cause of 'org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355ec6ddc33eecbAALWS1314GatewayBroker#3) disposed.'
+2014-02-24 23:08:38,932 WARN [de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.jms] - could not close connection 
+javax.jms.JMSException: Peer (vm://n-1355ec6ddc33eecbAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1342)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:660)
+	at de.dailab.jiactng.agentcore.comm.transport.jms.JMSMessageTransport.doCleanup(JMSMessageTransport.java:110)
+	at de.dailab.jiactng.agentcore.directory.DirectoryAgentNodeBean.doCleanup(DirectoryAgentNodeBean.java:287)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.doCleanup(SimpleAgentNode.java:803)
+	at de.dailab.jiactng.agentcore.lifecycle.AbstractLifecycle.cleanup(AbstractLifecycle.java:222)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode.shutdown(SimpleAgentNode.java:612)
+	at de.dailab.jiactng.agentcore.SimpleAgentNode$1.run(SimpleAgentNode.java:107)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Peer (vm://n-1355ec6ddc33eecbAALWS1314GatewayBroker#3) disposed.
+	at org.apache.activemq.transport.vm.VMTransport.oneway(VMTransport.java:89)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:40)
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81)
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:91)
+	at org.apache.activemq.ActiveMQConnection.doSyncSendPacket(ActiveMQConnection.java:1329)
+	... 8 more
+2014-02-24 23:08:38,936 ERROR [n-1355ec6ddc33eecb.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 23:08:38,937 ERROR [n-1355ec6ddc33eecb.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355ec6ddc33eecb,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 23:10:31,505 WARN [n-1355eca055c3ce09] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 23:10:31,876 ERROR [n-1355eca055c3ce09.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 23:10:32,622 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - InformationAgent started.
+2014-02-24 23:10:32,622 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - my ID: a-1355eca028c93231
+2014-02-24 23:10:34,683 INFO [n-1355eca055c3ce09.a-1355eca028c93231.NewsfeedBean] - InformationAgent started.
+2014-02-24 23:10:34,690 INFO [n-1355eca055c3ce09.a-1355eca014aed0f4.FacebookBean] - FacebookAgent started.
+2014-02-24 23:10:35,642 INFO [n-1355eca055c3ce09.a-1355eca056e05abf.CalendarBean] - InformationAgent started.
+2014-02-24 23:10:36,390 INFO [n-1355eca055c3ce09.a-1355eca056e05abf.EmailBean] - CommunicationAgent started.
+2014-02-24 23:10:46,234 INFO [n-1355eca055c3ce09.a-1355eca056e05abf.EmailBean] - MailAgent - Get message received
+2014-02-24 23:10:46,281 INFO [n-1355eca055c3ce09.a-1355eca056e05abf.EmailBean] - MailAgent - Get message received
+2014-02-24 23:10:46,311 INFO [n-1355eca055c3ce09.a-1355eca056e05abf.EmailBean] - MailAgent - Get message received
+2014-02-24 23:10:46,339 INFO [n-1355eca055c3ce09.a-1355eca056e05abf.EmailBean] - MailAgent - Get message received
+2014-02-24 23:10:56,290 INFO [n-1355eca055c3ce09.a-1355eca056e05abf.EmailBean] - MailAgent - Get message received
+2014-02-24 23:10:56,292 INFO [n-1355eca055c3ce09.a-1355eca028c93231.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:10:56,333 INFO [n-1355eca055c3ce09.a-1355eca056e05abf.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 23:10:56,833 INFO [n-1355eca055c3ce09.a-1355eca028c93231.NewsfeedBean] - Newsfeed sent
+2014-02-24 23:10:56,835 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:10:56,874 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - Todo sent.
+2014-02-24 23:11:11,022 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - TodoAgent - Save message received
+2014-02-24 23:11:24,397 INFO [n-1355eca055c3ce09.a-1355eca028c93231.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:11:24,436 INFO [n-1355eca055c3ce09.a-1355eca028c93231.NewsfeedBean] - Newsfeed sent
+2014-02-24 23:11:24,475 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:12:03,924 INFO [n-1355eca055c3ce09.a-1355eca014aed0f4.FacebookBean] - FacebookAgent - message received
+2014-02-24 23:12:08,053 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - Todo sent.
+2014-02-24 23:12:08,063 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:12:08,094 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - Todo sent.
+2014-02-24 23:12:09,339 INFO [n-1355eca055c3ce09.a-1355eca014aed0f4.FacebookBean] - FacebookAgent - message received
+2014-02-24 23:12:09,538 INFO [n-1355eca055c3ce09.a-1355eca014aed0f4.FacebookBean] - FacebookAgent - message received
+2014-02-24 23:12:09,755 INFO [n-1355eca055c3ce09.a-1355eca014aed0f4.FacebookBean] - FacebookAgent - message received
+2014-02-24 23:12:23,693 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:12:23,722 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - Todo sent.
+2014-02-24 23:12:43,649 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:12:43,681 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - Todo sent.
+2014-02-24 23:12:50,130 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:12:50,158 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - Todo sent.
+2014-02-24 23:13:05,350 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:13:05,478 INFO [n-1355eca055c3ce09.a-1355eca028c93231.TodoBean] - Todo sent.
+2014-02-24 23:13:05,479 INFO [n-1355eca055c3ce09.a-1355eca028c93231.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:13:05,930 INFO [n-1355eca055c3ce09.a-1355eca028c93231.NewsfeedBean] - Newsfeed sent
+2014-02-24 23:14:56,387 INFO [n-1355eca055c3ce09.a-1355eca014aed0f4.FacebookBean] - FacebookAgent - message received
+2014-02-24 23:15:06,223 ERROR [n-1355eca055c3ce09.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 23:15:06,223 ERROR [n-1355eca055c3ce09.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355eca055c3ce09,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 23:16:54,573 WARN [n-1355ecf997e354df] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 23:16:54,926 ERROR [n-1355ecf997e354df.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 23:16:55,685 INFO [n-1355ecf997e354df.a-1355ecf94bf4ef00.TodoBean] - InformationAgent started.
+2014-02-24 23:16:55,686 INFO [n-1355ecf997e354df.a-1355ecf94bf4ef00.TodoBean] - my ID: a-1355ecf94bf4ef00
+2014-02-24 23:16:57,167 INFO [n-1355ecf997e354df.a-1355ecf94bf4ef00.NewsfeedBean] - InformationAgent started.
+2014-02-24 23:16:57,174 INFO [n-1355ecf997e354df.a-1355ecf9ab0db97d.FacebookBean] - FacebookAgent started.
+2014-02-24 23:16:57,755 INFO [n-1355ecf997e354df.a-1355ecf9677267d2.CalendarBean] - InformationAgent started.
+2014-02-24 23:16:58,035 INFO [n-1355ecf997e354df.a-1355ecf9677267d2.EmailBean] - CommunicationAgent started.
+2014-02-24 23:17:08,523 INFO [n-1355ecf997e354df.a-1355ecf9677267d2.EmailBean] - MailAgent - Get message received
+2014-02-24 23:17:08,660 INFO [n-1355ecf997e354df.a-1355ecf94bf4ef00.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:17:09,604 INFO [n-1355ecf997e354df.a-1355ecf94bf4ef00.NewsfeedBean] - Newsfeed sent
+2014-02-24 23:17:09,606 INFO [n-1355ecf997e354df.a-1355ecf94bf4ef00.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:17:09,651 INFO [n-1355ecf997e354df.a-1355ecf94bf4ef00.TodoBean] - Todo sent.
+2014-02-24 23:17:26,973 INFO [n-1355ecf997e354df.a-1355ecf9677267d2.EmailBean] - Mails sent
+2014-02-24 23:17:26,974 INFO [n-1355ecf997e354df.a-1355ecf9677267d2.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 23:17:31,373 ERROR [n-1355ecf997e354df.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 23:17:31,373 ERROR [n-1355ecf997e354df.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355ecf997e354df,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-24 23:18:09,279 WARN [n-1355ed0aa692e80b] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-24 23:18:09,651 ERROR [n-1355ed0aa692e80b.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-24 23:18:10,411 INFO [n-1355ed0aa692e80b.a-1355ed0af96f4235.TodoBean] - InformationAgent started.
+2014-02-24 23:18:10,412 INFO [n-1355ed0aa692e80b.a-1355ed0af96f4235.TodoBean] - my ID: a-1355ed0af96f4235
+2014-02-24 23:18:11,482 INFO [n-1355ed0aa692e80b.a-1355ed0af96f4235.NewsfeedBean] - InformationAgent started.
+2014-02-24 23:18:11,488 INFO [n-1355ed0aa692e80b.a-1355ed0aced27c44.FacebookBean] - FacebookAgent started.
+2014-02-24 23:18:12,050 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.CalendarBean] - InformationAgent started.
+2014-02-24 23:18:12,370 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - CommunicationAgent started.
+2014-02-24 23:18:12,462 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 23:18:12,474 INFO [n-1355ed0aa692e80b.a-1355ed0af96f4235.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:18:12,973 INFO [n-1355ed0aa692e80b.a-1355ed0af96f4235.NewsfeedBean] - Newsfeed sent
+2014-02-24 23:18:19,443 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:18:19,474 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:18:20,763 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:18:20,797 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:18:20,835 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:19:41,462 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:20:00,447 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:20:00,889 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:20:16,671 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:20:44,446 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:20:49,980 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:20:55,204 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:21:25,182 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:21:25,184 INFO [n-1355ed0aa692e80b.a-1355ed0af96f4235.TodoBean] - TodoAgent - Get message received
+2014-02-24 23:21:25,223 INFO [n-1355ed0aa692e80b.a-1355ed0af96f4235.TodoBean] - Todo sent.
+2014-02-24 23:21:25,224 INFO [n-1355ed0aa692e80b.a-1355ed0af96f4235.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-24 23:21:25,701 INFO [n-1355ed0aa692e80b.a-1355ed0af96f4235.NewsfeedBean] - Newsfeed sent
+2014-02-24 23:21:42,259 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - Mails sent
+2014-02-24 23:21:42,259 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.EmailBean] - MailAgent - Get message received
+2014-02-24 23:21:42,369 INFO [n-1355ed0aa692e80b.a-1355ed0ab71ddc7b.CalendarBean] - CalendarAgent - Get message received
+2014-02-24 23:22:37,104 ERROR [n-1355ed0aa692e80b.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-24 23:22:37,105 ERROR [n-1355ed0aa692e80b.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1355ed0aa692e80b,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
