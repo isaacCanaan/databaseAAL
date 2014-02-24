@@ -20,6 +20,7 @@
             <list>      	
           		<ref bean="InformationAgent" />
             	<ref bean="SocialMediaAgent" />
+            	<ref bean="CommunicationAgent" />
             	<ref bean="RecognitionAgent" />
             </list>
         </property>
@@ -64,6 +65,7 @@
 	<bean name="CommunicationAgent" parent="SimpleAgent" singleton="false">
 		<property name="agentBeans">
 			<list>
+				<ref bean="CalendarBean" />
 				<ref bean="EmailBean" />
 			</list>
 		</property>
@@ -109,7 +111,7 @@
         <property name="logLevel" value="INFO" />
     </bean>
     
-    <bean name="EmailBean" class="agents.beans.EmailbookBean" singleton="false">  
+    <bean name="EmailBean" class="agents.beans.EmailBean" singleton="false">  
         <property name="logLevel" value="INFO" />
     </bean>
     

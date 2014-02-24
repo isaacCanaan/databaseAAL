@@ -1,18 +1,25 @@
 package agents.beans;
 
 import java.io.Serializable;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import mails.MailReceiver;
 import mails.eMailAcc;
+import objects.GmailData;
+import ontology.messages.GetCalendarData;
 import ontology.messages.GetMailData;
 import ontology.messages.MailData;
 
+import org.apache.commons.codec.binary.Base64;
 import org.sercho.masp.space.event.SpaceEvent;
 import org.sercho.masp.space.event.SpaceObserver;
 import org.sercho.masp.space.event.WriteCallEvent;
 
+import access.MySQLAccess;
+import access.UserAccess;
 import de.dailab.jiactng.agentcore.AbstractAgentBean;
 import de.dailab.jiactng.agentcore.action.Action;
 import de.dailab.jiactng.agentcore.comm.ICommunicationBean;
@@ -27,11 +34,18 @@ import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 public class EmailBean extends AbstractAgentBean{
 	
 	private IActionDescription sendAction = null;
+	private MySQLAccess access;
+	private Connection connect;
+	private UserAccess userAccess;
 	
 	@Override
 	public void doStart() throws Exception{
 		super.doStart();
 		log.info("CommunicationAgent started.");
+		
+		access = new MySQLAccess();
+		connect = access.connectDriver();
+		userAccess = new UserAccess(connect);
 		
 		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
 		sendAction = memory.read(template);
@@ -64,8 +78,6 @@ public class EmailBean extends AbstractAgentBean{
 			if(event instanceof WriteCallEvent<?>){
 				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
 				
-				log.info("MailAgent - message received");
-				
 				IJiacMessage message = memory.remove(wce.getObject());
 				IFact obj = message.getPayload();
 				
@@ -73,9 +85,28 @@ public class EmailBean extends AbstractAgentBean{
 				ArrayList<MailData.Mail> mails = null;
 
 				if(obj instanceof GetMailData){
+					
+					log.info("MailAgent - Get message received");
+					
+					GmailData data = null;
+					
+					try {
+						data = userAccess.getGmailData(((GetMailData) obj).getUserID());
+					} catch (SQLException e1) {
+						e1.printStackTrace();
+					}
+					
+					String mail = data.getMail();
+					String pw = data.getPassword();
+					Base64 decoder = new Base64();
+					String test = decoder.encodeToString(pw.getBytes());
+					byte[] decodedBytes = decoder.decode(test);
+					String password = new String(decodedBytes);
+					
+					log.info("Hier das Passwort: " + password);
 									
 					try {
-						eMailAcc acc = new eMailAcc("email@beispiel.de", "password");
+						eMailAcc acc = new eMailAcc(mail, "patafix-ibdg:223");
 						accs.add(acc);
 						MailReceiver mrec = new MailReceiver(accs);
 						mails = mrec.receiveMails();
@@ -83,7 +114,7 @@ public class EmailBean extends AbstractAgentBean{
 						List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
 
 						for(IAgentDescription agent : agentDescriptions){
-							if(agent.getName().equals("")){
+							if(agent.getName().equals("CommunicationAgent")){
 
 								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 								
@@ -95,10 +126,6 @@ public class EmailBean extends AbstractAgentBean{
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
-				}
-				
-				if(mails == null){
-					throw new RuntimeException("No Mails found.");
 				}
 				
 			}

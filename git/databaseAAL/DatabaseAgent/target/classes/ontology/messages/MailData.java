@@ -1,5 +1,6 @@
 package ontology.messages;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -30,8 +31,12 @@ public class MailData extends Message {
 		this.mails = mails;
 	}
 
-	public class Mail {
+	public class Mail implements Serializable{
 
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = -3698655994164024994L;
 		private String subject;
 		private String content;
 		private String type;

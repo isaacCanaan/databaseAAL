@@ -9,6 +9,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 
 import jiac.Settings;
+import objects.GmailData;
 import objects.LivingUser;
 
 public class UserAccess {
@@ -222,6 +223,44 @@ public class UserAccess {
           }
 		  
 		  return sets;
+	  }
+	  
+	  public void saveGmailData(int id, String mail, String pw) throws SQLException{
+		  
+		  preparedStatement = connect.prepareStatement("SELECT * from AAL.GMAILDATA where id= ?; ");
+	      preparedStatement.setInt(1, id);
+          resultSet = preparedStatement.executeQuery();
+          
+          if(resultSet.next()){
+        	  preparedStatement = connect.prepareStatement("update AAL.GMAILDATA set mail = ?, password = ? where id= ? ; ");
+    	      preparedStatement.setString(1, mail);
+    	      preparedStatement.setString(2, pw);
+    	      preparedStatement.setInt(3, id);
+              preparedStatement.executeUpdate();
+          }
+          else{
+        	  preparedStatement = connect.prepareStatement("insert into AAL.GMAILDATA values (?, ?, ?)");
+        	  preparedStatement.setInt(1, id);
+    	      preparedStatement.setString(2, mail);
+    	      preparedStatement.setString(3, pw);
+    	      preparedStatement.executeUpdate();
+          }
+		  
+	  }
+	  
+	  public GmailData getGmailData(int id) throws SQLException{
+		  
+		  preparedStatement = connect.prepareStatement("SELECT * from AAL.GMAILDATA where id= ?; ");
+	      preparedStatement.setInt(1, id);
+          resultSet = preparedStatement.executeQuery();
+          
+          if(resultSet.next()){
+        	  GmailData data = new GmailData(id, resultSet.getString("mail"), resultSet.getString("password"));
+        	  
+        	  return data;
+          }
+          
+          return null;
 	  }
 
 }

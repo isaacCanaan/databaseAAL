@@ -41,6 +41,7 @@ private Connection connect = null;
 	public void doStart() throws Exception{
 		super.doStart();
 		log.info("InformationAgent started.");
+		log.info("my ID: " + this.thisAgent.getAgentId());
 		
 		access = new MySQLAccess();
 		connect = access.connectDriver();

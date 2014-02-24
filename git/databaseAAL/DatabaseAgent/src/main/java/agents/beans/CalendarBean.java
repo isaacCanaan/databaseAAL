@@ -1,19 +1,28 @@
 package agents.beans;
 
 import java.io.Serializable;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.bind.DatatypeConverter;
+
 import mails.MailReceiver;
 import mails.eMailAcc;
+import objects.GmailData;
 import ontology.messages.CalendarData;
 import ontology.messages.GetCalendarData;
+import ontology.messages.SaveCalendarData;
+import ontology.messages.SaveGmailData;
 
+import org.apache.commons.codec.binary.Base64;
 import org.sercho.masp.space.event.SpaceEvent;
 import org.sercho.masp.space.event.SpaceObserver;
 import org.sercho.masp.space.event.WriteCallEvent;
 
-
+import access.MySQLAccess;
+import access.UserAccess;
 import calendar.GoogleCalendarFetcher;
 import de.dailab.jiactng.agentcore.AbstractAgentBean;
 import de.dailab.jiactng.agentcore.action.Action;
@@ -29,11 +38,18 @@ import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 public class CalendarBean extends AbstractAgentBean{
 	
 	private IActionDescription sendAction = null;
+	private MySQLAccess access;
+	private Connection connect;
+	private UserAccess userAccess;
 	
 	@Override
 	public void doStart() throws Exception{
 		super.doStart();
 		log.info("InformationAgent started.");
+		
+		access = new MySQLAccess();
+		connect = access.connectDriver();
+		userAccess = new UserAccess(connect);
 		
 		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
 		sendAction = memory.read(template);
@@ -69,22 +85,52 @@ public class CalendarBean extends AbstractAgentBean{
 			if(event instanceof WriteCallEvent<?>){
 				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
 				
-				log.info("NewsfeedAgent - message received");
-				
-				IJiacMessage message = memory.remove(wce.getObject());
+				IJiacMessage message = memory.read(wce.getObject());
 				IFact obj = message.getPayload();
 				
+				if(obj instanceof SaveGmailData){
+					
+					log.info("CalendarAgent - Save message received");
+					try {
+						userAccess.saveGmailData(((SaveGmailData) obj).getUserID(), ((SaveGmailData) obj).getUser(), ((SaveGmailData) obj).getPassword());
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
+					
+					memory.remove(wce.getObject());
+				}
+				
 				if(obj instanceof GetCalendarData){
-									
+						
+					log.info("CalendarAgent - Get message received");
+					
+					GmailData data = null;
+					
+					try {
+						data = userAccess.getGmailData(((GetCalendarData) obj).getUserID());
+					} catch (SQLException e1) {
+						e1.printStackTrace();
+					}
+					
+					String mail = data.getMail();
+					String pw = data.getPassword();
+					Base64 decoder = new Base64();
+					String test = decoder.encodeToString(pw.getBytes());
+					byte[] decodedBytes = decoder.decode(test);
+					String password = new String(decodedBytes);
+					
+					log.info("Hier das Mail: " + mail);
+					log.info("Hier das Passwort: " + password);
+					
 					try {
 						
-						GoogleCalendarFetcher fetch = new GoogleCalendarFetcher("", "");
+						GoogleCalendarFetcher fetch = new GoogleCalendarFetcher("noxes.yc@googlemail.de", "noxes2506");
 						entries = fetch.getEventEntries();
 						
 						List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
 
 						for(IAgentDescription agent : agentDescriptions){
-							if(agent.getName().equals("InformationAgent")){
+							if(agent.getName().equals("CommunicationAgent")){
 
 								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 								
@@ -97,11 +143,10 @@ public class CalendarBean extends AbstractAgentBean{
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
+					
+					memory.remove(wce.getObject());
 				}
-				
-				if(entries == null){
-					throw new RuntimeException("No Calendar Entries found.");
-				}
+
 			}
 			
 		}
