@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import newsfeeds.FetchRSSFeed;
+import ontology.Message;
 import ontology.messages.GetNewsData;
 import ontology.messages.NewsFeedData;
 
@@ -23,77 +24,52 @@ import de.dailab.jiactng.agentcore.ontology.AgentDescription;
 import de.dailab.jiactng.agentcore.ontology.IActionDescription;
 import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 
-public class NewsfeedBean extends AbstractAgentBean{
+public class NewsfeedBean extends AbstractCommunicatingBean{
 	
 	private IActionDescription sendAction = null;
 	
 	@Override
 	public void doStart() throws Exception{
 		super.doStart();
+		
+		sendAction = retrieveAction(ICommunicationBean.ACTION_SEND);
 		log.info("InformationAgent started.");
-		
-		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
-		sendAction = memory.read(template);
-
-		if(sendAction == null){
-			sendAction = thisAgent.searchAction(template);
-		}
-		
-		if(sendAction == null){
-			throw new RuntimeException("Send action not found.");
-		}
-		
-		memory.attach(new MessageObserver(), new JiacMessage());
 	}
 	
 	@Override
 	public void execute(){
 		
 	}
-	
-	private class MessageObserver implements SpaceObserver<IFact>{
 
-		/**
-		 * 
-		 */
-		private static final long serialVersionUID = -8182513339144469591L;
+	@Override
+	protected void receiveMessage(Message message) {
+		ArrayList<NewsFeedData.NewsFeedMessage> news = null;
+		
+		if(message instanceof GetNewsData){
+			
+			log.info("NewsfeedAgent - message received");
+							
+			try {
+				news = new FetchRSSFeed().getRSSFeedWeltDE();
+				
+				List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
 
-		@Override
-		public void notify(SpaceEvent<? extends IFact> event) {
-			if(event instanceof WriteCallEvent<?>){
-				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
-				
-				IJiacMessage message = memory.read(wce.getObject());
-				IFact obj = message.getPayload();
-				
-				ArrayList<NewsFeedData.NewsFeedMessage> news = null;
-				
-				if(obj instanceof GetNewsData){
-					
-					log.info("NewsfeedAgent - message received");
-									
-					try {
-						news = new FetchRSSFeed().getRSSFeedWeltDE();
+				for(IAgentDescription agent : agentDescriptions){
+					if(agent.getName().equals("InformationAgent")){
+
+						log.info("Found InformationAgent");
+						IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 						
-						List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+						JiacMessage newMessage = new JiacMessage(new NewsFeedData(thisAgent.getAgentId(), agent.getAid(), news));
 
-						for(IAgentDescription agent : agentDescriptions){
-							if(agent.getName().equals("InformationAgent")){
-
-								IMessageBoxAddress receiver = agent.getMessageBoxAddress();
-								
-								JiacMessage newMessage = new JiacMessage(new NewsFeedData(thisAgent.getAgentId(), agent.getAid(), news));
-
-								invoke(sendAction, new Serializable[] {newMessage, receiver});
-							}
-						}
-					} catch (Exception e) {
-						e.printStackTrace();
+						invoke(sendAction, new Serializable[] {newMessage, receiver});
+						log.info("Newsfeed sent");
 					}
-					memory.remove(wce.getObject());
-					log.info("Newsfeed sent");
 				}
+			} catch (Exception e) {
+				e.printStackTrace();
 			}
+			
 		}
 	}
 

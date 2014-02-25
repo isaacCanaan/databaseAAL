@@ -11,6 +11,7 @@ import java.util.List;
 
 import javax.imageio.ImageIO;
 
+import ontology.Message;
 import ontology.TransportFrame;
 import ontology.messages.FBMessage;
 import ontology.messages.FindUserIdMessage;
@@ -41,6 +42,8 @@ import de.dailab.jiactng.agentcore.action.AbstractMethodExposingBean;
 
 public class RecognitionBean extends AbstractMethodExposingBean{
 
+	private final static JiacMessage MESSAGE_TEMPLATE = new JiacMessage(new Message());
+	
 	public static final String FACEDATAGROUPNAME = "FaceDataGroup";
 	private IGroupAddress groupAddress;
 	
@@ -83,7 +86,7 @@ public class RecognitionBean extends AbstractMethodExposingBean{
 		
 		invoke(join, new Serializable[] {groupAddress}, this);
 		
-		memory.attach(new MessageObserver(), new JiacMessage());
+		memory.attach(new MessageObserver(), MESSAGE_TEMPLATE);
 	}
 	
 	private class MessageObserver implements SpaceObserver<IFact>{
@@ -97,37 +100,36 @@ public class RecognitionBean extends AbstractMethodExposingBean{
 
 		@Override
 		public void notify(SpaceEvent<? extends IFact> event) {
-			if(event instanceof WriteCallEvent<?>){
-				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
+			 if (event instanceof WriteCallEvent) {
+	                Object object = ((WriteCallEvent) event).getObject();
+	                if (object instanceof JiacMessage) {
+
+	                    IFact msg = ((JiacMessage) object).getPayload();
+	                    if (msg instanceof Message) {
 				
-				log.info("RecognitionAgent - message received");
-				
-				IJiacMessage message = memory.remove(wce.getObject());
-				IFact obj = message.getPayload();
-				
-				if(obj instanceof SaveMessage){
-					
-					try {
-						
-						ByteArrayOutputStream baos = new ByteArrayOutputStream();
-						
-						int id = ((SaveMessage) obj).getId();
-						String qrString = ((SaveMessage) obj).getQrString();
-						LinkedList<TransportFrame> datas = ((SaveMessage) obj).getTrainingData();
-						
-						for(TransportFrame tFrame : datas){
-							
-							ImageIO.write(tFrame.getFrame(), "png", baos);
-							recAccess.saveRecData(id, qrString, baos.toByteArray());
-							baos.flush();
-						}
-						
-						baos.close();
-						
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-				}
+							if(msg instanceof SaveMessage){
+								
+								try {
+									
+									ByteArrayOutputStream baos = new ByteArrayOutputStream();
+									
+									int id = ((SaveMessage) msg).getId();
+									String qrString = ((SaveMessage) msg).getQrString();
+									LinkedList<TransportFrame> datas = ((SaveMessage) msg).getTrainingData();
+									
+									for(TransportFrame tFrame : datas){
+										
+										ImageIO.write(tFrame.getFrame(), "png", baos);
+										recAccess.saveRecData(id, qrString, baos.toByteArray());
+										baos.flush();
+									}
+									
+									baos.close();
+									
+								} catch (Exception e) {
+									e.printStackTrace();
+								}
+							}
 //				
 //				if(obj instanceof FindUserIdMessage){
 //					

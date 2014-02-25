@@ -5,7 +5,9 @@ import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 
+import ontology.Message;
 import ontology.messages.CalendarData;
+import ontology.messages.DeleteTodo;
 import ontology.messages.GetCalendarData;
 import ontology.messages.GetTodoData;
 import ontology.messages.SaveTodo;
@@ -30,7 +32,7 @@ import de.dailab.jiactng.agentcore.ontology.AgentDescription;
 import de.dailab.jiactng.agentcore.ontology.IActionDescription;
 import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 
-public class TodoBean extends AbstractAgentBean{
+public class TodoBean extends AbstractCommunicatingBean{
 
 private IActionDescription sendAction = null;
 private MySQLAccess access = null;
@@ -43,22 +45,11 @@ private Connection connect = null;
 		log.info("InformationAgent started.");
 		log.info("my ID: " + this.thisAgent.getAgentId());
 		
+		sendAction = retrieveAction(ICommunicationBean.ACTION_SEND);
+		
 		access = new MySQLAccess();
 		connect = access.connectDriver();
 		todoAccess = new TodoAccess(connect);
-		
-		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
-		sendAction = memory.read(template);
-
-		if(sendAction == null){
-			sendAction = thisAgent.searchAction(template);
-		}
-		
-		if(sendAction == null){
-			throw new RuntimeException("Send action not found.");
-		}
-		
-		memory.attach(new MessageObserver(), new JiacMessage());
 	}
 	
 	@Override
@@ -125,6 +116,63 @@ private Connection connect = null;
 				
 			}
 			
+		}
+		
+	}
+
+	@Override
+	protected void receiveMessage(Message message) {
+		if(message instanceof SaveTodo){
+			
+			log.info("TodoAgent - Save message received");
+			TodoItem item = ((SaveTodo) message).getTodo();
+			try {
+				todoAccess.saveNewTodoItem(((SaveTodo) message).getUserID(), item.getPrio(), item.getText(), item.getDate());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		if(message instanceof GetTodoData){
+			
+			log.info("TodoAgent - Get message received");
+							
+			try {
+
+				ArrayList<TodoItem> todos = todoAccess.readTodoItemList(((GetTodoData) message).getUserID());
+				
+				List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+
+				for(IAgentDescription agent : agentDescriptions){
+					if(agent.getName().equals("InformationAgent")){
+
+						IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+						
+						JiacMessage newMessage = new JiacMessage(new TodoData(thisAgent.getAgentId(), agent.getAid(), ((GetTodoData) message).getUserID(), todos));
+
+						invoke(sendAction, new Serializable[] {newMessage, receiver});
+					}
+				}
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			log.info("Todo sent.");
+		}
+		
+		if(message instanceof DeleteTodo){
+			log.info("TodoAgent - Delete message received");
+			
+			try {
+
+				int todoId = ((DeleteTodo) message).getTodoID();
+
+				todoAccess.deleteTodo(todoId);
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 		
 	}

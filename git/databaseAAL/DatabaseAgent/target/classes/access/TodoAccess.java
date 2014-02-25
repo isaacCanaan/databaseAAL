@@ -57,7 +57,7 @@ public class TodoAccess {
 		  
 	  }
 	  
-	  public void deleteUser(int todoId) throws Exception{
+	  public void deleteTodo(int todoId) throws Exception{
 		  
 		  try {
 			  
@@ -103,24 +103,23 @@ public class TodoAccess {
 	  public  ArrayList<TodoData.TodoItem> readTodoItemList(int userId) throws Exception{
 		  ArrayList<TodoData.TodoItem> items = new ArrayList<TodoData.TodoItem>();
 		  TodoData data = new TodoData();
-		  TodoData.TodoItem item = data.new TodoItem(0, null, null, null);
 		  
 		  try {
 			  
 			  preparedStatement = connect.prepareStatement("SELECT todoId, prio, text, date from AAL.TODO where userId=?");
-	          preparedStatement.setString(1, String.valueOf(userId));
+	          preparedStatement.setInt(1, userId);
 	          resultSet = preparedStatement.executeQuery();
 	          
 	          
 	          while (resultSet.next()) {
+	        	  TodoData.TodoItem item = data.new TodoItem(0, null, null, null);
 	        	  item.id = resultSet.getInt("todoId");
 	    	      item.prio = resultSet.getString("prio");
 	    	      item.text = resultSet.getString("text");
 	    	      item.created = resultSet.getDate("date");
 	    	      
 	    	      items.add(item);
-	    	      
-
+	    	     
 	    	    }
 		  } 
 		  catch (Exception e) {

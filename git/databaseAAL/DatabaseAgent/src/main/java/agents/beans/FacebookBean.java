@@ -9,6 +9,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import ontology.Message;
 import ontology.messages.FacebookData;
 import ontology.messages.GetFacebookData;
 
@@ -43,7 +44,7 @@ import facebook4j.internal.org.json.JSONArray;
 import facebook4j.internal.org.json.JSONException;
 import facebook4j.internal.org.json.JSONObject;
 
-public class FacebookBean extends AbstractAgentBean{
+public class FacebookBean extends AbstractCommunicatingBean{
 	
 	private IActionDescription sendAction = null;
 	
@@ -207,6 +208,49 @@ public class FacebookBean extends AbstractAgentBean{
 				}
 			}
 			
+		}
+		
+	}
+
+	@Override
+	protected void receiveMessage(Message message) {
+		if(message instanceof GetFacebookData){
+			
+			log.info("FacebookAgent - message received");
+			
+			id = ((GetFacebookData) message).getUserID();
+			try {
+				accessToken = smAccess.getAccessToken(id, ((GetFacebookData) message).getAccessToken(), "facebook");
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
+			
+			FacebookData fbUser = null;
+			
+			initFacebook();
+			
+			try {
+				
+				List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+
+				for(IAgentDescription agent : agentDescriptions){
+					if(agent.getName().equals("SocialMediaAgent")){
+
+						IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+						
+						fbUser = getMeInformation(id, agent.getAid());
+						
+//						fetchInterests(id);
+						
+						JiacMessage newMessage = new JiacMessage(fbUser);
+
+						invoke(sendAction, new Serializable[] {newMessage, receiver});
+					}
+				}
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 		
 	}

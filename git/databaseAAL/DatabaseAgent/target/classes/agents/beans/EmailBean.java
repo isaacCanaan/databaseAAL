@@ -9,6 +9,7 @@ import java.util.List;
 import mails.MailReceiver;
 import mails.eMailAcc;
 import objects.GmailData;
+import ontology.Message;
 import ontology.messages.GetCalendarData;
 import ontology.messages.GetMailData;
 import ontology.messages.MailData;
@@ -31,7 +32,7 @@ import de.dailab.jiactng.agentcore.ontology.AgentDescription;
 import de.dailab.jiactng.agentcore.ontology.IActionDescription;
 import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 
-public class EmailBean extends AbstractAgentBean{
+public class EmailBean extends AbstractCommunicatingBean{
 	
 	private IActionDescription sendAction = null;
 	private MySQLAccess access;
@@ -43,22 +44,11 @@ public class EmailBean extends AbstractAgentBean{
 		super.doStart();
 		log.info("CommunicationAgent started.");
 		
+		sendAction = retrieveAction(ICommunicationBean.ACTION_SEND);
+		
 		access = new MySQLAccess();
 		connect = access.connectDriver();
 		userAccess = new UserAccess(connect);
-		
-		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
-		sendAction = memory.read(template);
-
-		if(sendAction == null){
-			sendAction = thisAgent.searchAction(template);
-		}
-		
-		if(sendAction == null){
-			throw new RuntimeException("Send action not found.");
-		}
-		
-		memory.attach(new MessageObserver(), new JiacMessage());
 	}
 	
 	@Override
@@ -135,6 +125,56 @@ public class EmailBean extends AbstractAgentBean{
 			
 		}
 		
+	}
+
+	@Override
+	protected void receiveMessage(Message message) {
+		ArrayList<eMailAcc> accs = new ArrayList<eMailAcc>();
+		ArrayList<MailData.Mail> mails = null;
+
+		if(message instanceof GetMailData){
+			
+			log.info("MailAgent - Get message received");
+			
+			GmailData data = null;
+			
+			try {
+				data = userAccess.getGmailData(((GetMailData) message).getUserID());
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
+			
+			String mail = data.getMail();
+			String pw = data.getPassword();
+			Base64 decoder = new Base64();
+			byte[] test = decoder.decodeBase64(pw);
+
+			String password = new String(test);
+							
+			try {
+				eMailAcc acc = new eMailAcc(mail, password);
+				accs.add(acc);
+				MailReceiver mrec = new MailReceiver(accs);
+				mails = mrec.receiveMails();
+				
+				List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+
+				for(IAgentDescription agent : agentDescriptions){
+					if(agent.getName().equals("CommunicationAgent")){
+
+						IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+						
+						JiacMessage newMessage = new JiacMessage(new MailData(thisAgent.getAgentId(), agent.getAid(), ((GetMailData) message).getUserID(), mails));
+
+						invoke(sendAction, new Serializable[] {newMessage, receiver});
+					}
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			log.info("Mails sent");
+		}
 	}
 
 }

@@ -11,6 +11,7 @@ import javax.xml.bind.DatatypeConverter;
 import mails.MailReceiver;
 import mails.eMailAcc;
 import objects.GmailData;
+import ontology.Message;
 import ontology.messages.CalendarData;
 import ontology.messages.GetCalendarData;
 import ontology.messages.SaveCalendarData;
@@ -35,7 +36,7 @@ import de.dailab.jiactng.agentcore.ontology.AgentDescription;
 import de.dailab.jiactng.agentcore.ontology.IActionDescription;
 import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 
-public class CalendarBean extends AbstractAgentBean{
+public class CalendarBean extends AbstractCommunicatingBean{
 	
 	private IActionDescription sendAction = null;
 	private MySQLAccess access;
@@ -47,22 +48,12 @@ public class CalendarBean extends AbstractAgentBean{
 		super.doStart();
 		log.info("InformationAgent started.");
 		
+		sendAction = retrieveAction(ICommunicationBean.ACTION_SEND);
+		
 		access = new MySQLAccess();
 		connect = access.connectDriver();
 		userAccess = new UserAccess(connect);
 		
-		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
-		sendAction = memory.read(template);
-
-		if(sendAction == null){
-			sendAction = thisAgent.searchAction(template);
-		}
-		
-		if(sendAction == null){
-			throw new RuntimeException("Send action not found.");
-		}
-		
-		memory.attach(new MessageObserver(), new JiacMessage());
 	}
 	
 	@Override
@@ -147,6 +138,64 @@ public class CalendarBean extends AbstractAgentBean{
 
 			}
 			
+		}
+		
+	}
+
+	@Override
+	protected void receiveMessage(Message message) {
+		if(message instanceof SaveGmailData){
+			
+			log.info("CalendarAgent - Save message received");
+			try {
+				userAccess.saveGmailData(((SaveGmailData) message).getUserID(), ((SaveGmailData) message).getUser(), ((SaveGmailData) message).getPassword());
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		
+		}
+		
+		if(message instanceof GetCalendarData){
+				
+			log.info("CalendarAgent - Get message received");
+			ArrayList<CalendarData.Entry> entries = null;
+			GmailData data = null;
+			
+			try {
+				data = userAccess.getGmailData(((GetCalendarData) message).getUserID());
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
+			
+			String mail = data.getMail();
+			String pw = data.getPassword();
+			Base64 decoder = new Base64();
+			byte[] test = decoder.decodeBase64(pw);
+
+			String password = new String(test);
+			
+			
+			try {
+				
+				GoogleCalendarFetcher fetch = new GoogleCalendarFetcher(mail, password);
+				entries = fetch.getEventEntries();
+				
+				List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+
+				for(IAgentDescription agent : agentDescriptions){
+					if(agent.getName().equals("CommunicationAgent")){
+
+						IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+						
+						JiacMessage newMessage = new JiacMessage(new CalendarData(thisAgent.getAgentId(), agent.getAid(), ((GetCalendarData) message).getUserID(), entries));
+
+						invoke(sendAction, new Serializable[] {newMessage, receiver});
+					}
+				}
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 		
 	}
