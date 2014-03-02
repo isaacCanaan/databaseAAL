@@ -383,3 +383,1812 @@
 2014-02-25 11:20:31,217 INFO [n-135613ce3b6193e9.a-135613ce2f857c4c.EmailBean] - stopping a-135613ce2f857c4c
 2014-02-25 11:20:31,244 ERROR [n-135613ce3b6193e9.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
 2014-02-25 11:20:31,245 ERROR [n-135613ce3b6193e9.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-135613ce3b6193e9,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-25 11:22:19,544 WARN [n-1356148f2e72b5e2] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-25 11:22:59,632 WARN [n-135614987da3b79b] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-25 11:23:00,434 ERROR [n-135614987da3b79b.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-25 11:23:01,211 INFO [n-135614987da3b79b.a-13561498ab5f21b7.TodoBean] - AbstractCommunicationBean started.
+2014-02-25 11:23:01,214 INFO [n-135614987da3b79b.a-13561498ab5f21b7.TodoBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@2bd90252
+ provider =InformationAgent(a-13561498ab5f21b7)
+ scope=AGENT
+
+2014-02-25 11:23:01,214 INFO [n-135614987da3b79b.a-13561498ab5f21b7.TodoBean] - InformationAgent started.
+2014-02-25 11:23:01,215 INFO [n-135614987da3b79b.a-13561498ab5f21b7.TodoBean] - my ID: a-13561498ab5f21b7
+2014-02-25 11:23:03,098 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - AbstractCommunicationBean started.
+2014-02-25 11:23:03,102 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@2bd90252
+ provider =InformationAgent(a-13561498ab5f21b7)
+ scope=AGENT
+
+2014-02-25 11:23:03,103 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - InformationAgent started.
+2014-02-25 11:23:03,107 INFO [n-135614987da3b79b.a-13561498bfcb1f8d.FacebookBean] - AbstractCommunicationBean started.
+2014-02-25 11:23:03,108 INFO [n-135614987da3b79b.a-13561498bfcb1f8d.FacebookBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@53b3da67
+ provider =SocialMediaAgent(a-13561498bfcb1f8d)
+ scope=AGENT
+
+2014-02-25 11:23:03,108 INFO [n-135614987da3b79b.a-13561498bfcb1f8d.FacebookBean] - FacebookAgent started.
+2014-02-25 11:23:04,001 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - AbstractCommunicationBean started.
+2014-02-25 11:23:04,002 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@6499cd43
+ provider =CommunicationAgent(a-13561498f1c192ed)
+ scope=AGENT
+
+2014-02-25 11:23:04,003 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - InformationAgent started.
+2014-02-25 11:23:04,919 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - AbstractCommunicationBean started.
+2014-02-25 11:23:04,920 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@6499cd43
+ provider =CommunicationAgent(a-13561498f1c192ed)
+ scope=AGENT
+
+2014-02-25 11:23:04,921 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - CommunicationAgent started.
+2014-02-25 11:23:18,672 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - received a message
+2014-02-25 11:23:18,672 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - received a message
+2014-02-25 11:23:18,672 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:23:18,674 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - received a message
+2014-02-25 11:23:18,674 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - MailAgent - Get message received
+2014-02-25 11:23:19,180 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:23:19,181 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:23:19,181 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:23:19,182 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:23:19,183 INFO [n-135614987da3b79b.a-13561498ab5f21b7.TodoBean] - received a message
+2014-02-25 11:23:19,196 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - received a message
+2014-02-25 11:23:19,197 INFO [n-135614987da3b79b.a-13561498ab5f21b7.TodoBean] - received a message
+2014-02-25 11:23:41,884 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - received a message
+2014-02-25 11:23:41,884 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:23:41,949 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:23:41,950 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:23:41,950 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:23:41,950 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:23:41,951 INFO [n-135614987da3b79b.a-13561498ab5f21b7.TodoBean] - received a message
+2014-02-25 11:23:41,963 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - received a message
+2014-02-25 11:23:41,964 INFO [n-135614987da3b79b.a-13561498ab5f21b7.TodoBean] - received a message
+2014-02-25 11:23:51,038 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - Mails sent
+2014-02-25 11:23:51,038 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - received a message
+2014-02-25 11:23:51,038 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 11:23:51,073 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - received a message
+2014-02-25 11:23:51,097 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - received a message
+2014-02-25 11:23:51,098 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - received a message
+2014-02-25 11:23:51,098 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - MailAgent - Get message received
+2014-02-25 11:24:25,113 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - Mails sent
+2014-02-25 11:24:25,114 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - received a message
+2014-02-25 11:24:25,114 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 11:24:25,152 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - received a message
+2014-02-25 11:24:25,158 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - received a message
+2014-02-25 11:24:25,159 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - received a message
+2014-02-25 11:24:25,264 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - received a message
+2014-02-25 11:24:25,265 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - received a message
+2014-02-25 11:25:03,663 INFO [n-135614987da3b79b.a-13561498ab5f21b7.TodoBean] - stopping a-13561498ab5f21b7
+2014-02-25 11:25:03,664 INFO [n-135614987da3b79b.a-13561498ab5f21b7.NewsfeedBean] - stopping a-13561498ab5f21b7
+2014-02-25 11:25:03,664 INFO [n-135614987da3b79b.a-13561498bfcb1f8d.FacebookBean] - stopping a-13561498bfcb1f8d
+2014-02-25 11:25:03,665 INFO [n-135614987da3b79b.a-13561498f1c192ed.CalendarBean] - stopping a-13561498f1c192ed
+2014-02-25 11:25:03,665 INFO [n-135614987da3b79b.a-13561498f1c192ed.EmailBean] - stopping a-13561498f1c192ed
+2014-02-25 11:25:03,691 ERROR [n-135614987da3b79b.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-25 11:25:03,692 ERROR [n-135614987da3b79b.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-135614987da3b79b,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-25 11:25:08,428 WARN [n-135614b696b44385] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-25 11:25:08,816 ERROR [n-135614b696b44385.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-25 11:25:09,611 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - AbstractCommunicationBean started.
+2014-02-25 11:25:09,614 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@42cd2b59
+ provider =InformationAgent(a-135614b6cc3860d0)
+ scope=AGENT
+
+2014-02-25 11:25:09,615 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - InformationAgent started.
+2014-02-25 11:25:09,616 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - my ID: a-135614b6cc3860d0
+2014-02-25 11:25:11,113 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - AbstractCommunicationBean started.
+2014-02-25 11:25:11,115 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@42cd2b59
+ provider =InformationAgent(a-135614b6cc3860d0)
+ scope=AGENT
+
+2014-02-25 11:25:11,115 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - InformationAgent started.
+2014-02-25 11:25:11,119 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - AbstractCommunicationBean started.
+2014-02-25 11:25:11,120 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@53b3da67
+ provider =SocialMediaAgent(a-135614b6dd02dc26)
+ scope=AGENT
+
+2014-02-25 11:25:11,121 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent started.
+2014-02-25 11:25:12,962 INFO [n-135614b696b44385.a-135614b67846b0ff.CalendarBean] - AbstractCommunicationBean started.
+2014-02-25 11:25:12,963 INFO [n-135614b696b44385.a-135614b67846b0ff.CalendarBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@5340e92c
+ provider =CommunicationAgent(a-135614b67846b0ff)
+ scope=AGENT
+
+2014-02-25 11:25:12,963 INFO [n-135614b696b44385.a-135614b67846b0ff.CalendarBean] - InformationAgent started.
+2014-02-25 11:25:14,253 INFO [n-135614b696b44385.a-135614b67846b0ff.EmailBean] - AbstractCommunicationBean started.
+2014-02-25 11:25:14,254 INFO [n-135614b696b44385.a-135614b67846b0ff.EmailBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@5340e92c
+ provider =CommunicationAgent(a-135614b67846b0ff)
+ scope=AGENT
+
+2014-02-25 11:25:14,254 INFO [n-135614b696b44385.a-135614b67846b0ff.EmailBean] - CommunicationAgent started.
+2014-02-25 11:29:38,600 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:29:38,601 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:29:38,601 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:29:38,604 INFO [n-135614b696b44385.a-135614b67846b0ff.EmailBean] - received a message
+2014-02-25 11:29:38,604 INFO [n-135614b696b44385.a-135614b67846b0ff.EmailBean] - MailAgent - Get message received
+2014-02-25 11:29:38,688 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:29:38,693 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:29:38,693 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:29:38,797 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:29:38,797 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:29:38,798 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:29:38,798 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:29:38,798 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:29:38,799 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:29:38,803 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:29:38,804 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:29:38,805 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:29:38,823 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:29:38,823 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:29:44,071 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:29:44,072 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:29:44,119 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:29:44,119 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:29:44,120 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:29:44,120 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:29:44,120 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:29:44,121 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:29:44,122 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:29:44,126 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:29:44,127 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:29:57,502 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:29:57,503 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:29:57,503 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:29:57,549 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:29:57,561 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:29:57,562 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:29:57,920 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:29:57,921 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:29:57,961 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:29:57,962 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:29:57,962 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:29:57,962 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:29:57,962 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:29:57,963 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:29:57,963 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:29:57,978 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:29:57,978 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:30:13,236 INFO [n-135614b696b44385.a-135614b67846b0ff.EmailBean] - Mails sent
+2014-02-25 11:30:13,237 INFO [n-135614b696b44385.a-135614b67846b0ff.CalendarBean] - received a message
+2014-02-25 11:30:13,237 INFO [n-135614b696b44385.a-135614b67846b0ff.EmailBean] - received a message
+2014-02-25 11:30:13,238 INFO [n-135614b696b44385.a-135614b67846b0ff.CalendarBean] - received a message
+2014-02-25 11:30:13,238 INFO [n-135614b696b44385.a-135614b67846b0ff.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 11:30:42,621 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:30:42,622 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:30:43,081 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:30:43,081 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:30:43,082 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:30:43,082 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:30:43,082 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:30:43,082 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:30:43,083 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:30:43,085 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:30:43,086 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:33:06,350 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:33:06,350 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:33:06,442 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:33:06,443 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:33:06,443 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:33:06,443 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:33:06,443 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:33:06,446 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:33:06,446 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:35:35,373 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:35:35,374 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:35:35,914 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:35:35,914 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:35:35,915 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:35:35,915 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:35:35,916 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:35:35,923 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:35:35,924 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:35:55,580 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:35:55,580 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:35:55,658 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:35:55,659 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:35:55,659 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:35:55,659 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:35:55,660 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:35:55,660 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:35:55,660 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:35:55,670 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:35:55,671 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:13,541 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:36:13,542 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:36:14,050 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:14,050 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:14,050 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:14,051 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:14,051 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:14,051 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:14,051 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:14,054 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:36:14,054 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:21,257 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:36:21,257 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:36:21,303 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:21,303 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:21,303 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:21,304 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:21,304 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:21,304 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:21,304 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:21,306 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:36:21,307 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:34,486 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:36:34,486 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:36:34,523 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:34,523 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:34,523 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:34,523 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:34,524 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:34,524 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:34,524 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:34,526 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:36:34,527 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:52,633 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:36:52,633 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:36:52,685 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:36:52,686 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:36:53,078 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:53,079 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:53,079 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:53,079 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:53,079 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:36:53,080 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:36:53,080 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:53,081 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:36:53,081 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:53,081 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:36:53,144 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:36:53,145 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:36:53,145 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:53,150 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:36:53,150 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:36:53,875 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:36:54,255 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:37:56,410 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:37:56,411 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:37:56,939 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:37:56,940 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:37:56,940 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:37:56,940 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:37:56,941 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:37:56,941 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:37:56,941 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:37:56,942 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:37:56,942 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:37:56,973 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:37:56,973 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:37:56,973 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:37:56,974 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:37:56,974 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:37:56,974 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:37:56,975 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:37:56,975 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:37:56,976 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:37:56,985 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:37:56,986 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:37:58,482 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:37:58,482 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:37:58,510 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:37:58,511 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:37:58,511 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:37:58,511 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:37:58,512 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:37:58,512 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:37:58,512 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:37:58,515 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:37:58,515 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:38:14,274 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:38:14,275 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:38:14,318 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:38:14,319 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:38:14,319 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:38:14,319 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:38:14,320 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:38:14,320 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:38:14,320 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:38:14,321 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:38:14,321 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:38:14,355 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:38:14,355 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:38:14,356 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:38:14,356 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:38:14,356 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:38:14,356 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:38:14,357 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:38:14,357 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:38:14,358 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:38:14,361 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:38:14,362 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:38:29,035 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:38:29,035 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:38:29,058 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:38:29,058 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:38:29,398 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:38:29,530 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:38:29,530 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:38:29,530 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:38:29,531 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:38:29,531 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:38:29,531 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:38:29,532 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:38:29,533 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:38:29,534 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:38:29,534 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:38:29,590 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:38:29,591 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:38:29,591 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:38:29,596 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:38:29,597 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:38:29,598 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:39:02,858 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:39:02,859 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:39:03,331 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:39:03,331 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:39:03,332 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:39:03,332 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:39:03,332 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:39:03,332 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:39:03,333 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:39:03,334 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:39:03,334 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:39:06,567 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:39:06,568 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:39:06,606 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:39:06,606 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:39:06,606 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:39:06,606 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:39:06,606 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:39:06,607 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:39:06,607 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:39:06,607 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:39:06,608 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:39:06,608 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:39:06,609 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:39:06,609 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:39:06,680 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:39:06,680 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:39:06,681 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:39:06,683 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:39:06,683 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:39:06,896 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:39:07,092 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:40:26,944 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:40:26,945 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:40:27,427 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:40:27,427 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:40:27,427 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:40:27,428 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:40:27,428 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:40:27,428 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:40:27,429 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:40:27,429 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:40:27,430 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:40:27,456 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:40:27,456 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:40:27,457 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:40:27,457 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:40:27,457 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:40:27,458 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:40:27,458 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:40:27,458 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:40:27,459 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:40:27,459 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:40:27,460 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:40:35,910 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:40:35,910 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:40:35,987 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:40:35,987 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:40:35,987 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:40:35,988 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:40:35,988 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:40:35,988 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:40:35,988 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:40:35,998 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:40:35,998 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:40:55,629 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:40:55,630 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:40:55,630 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:40:55,662 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:40:55,669 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:40:55,669 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:08,566 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:08,566 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:08,567 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:41:08,600 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:41:08,600 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:08,600 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:08,601 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:41:08,634 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:41:08,634 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:08,634 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:08,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:08,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:41:09,094 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:09,094 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:09,095 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:09,095 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:09,095 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:09,095 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:09,095 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:09,095 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:09,096 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:09,096 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:09,096 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:09,097 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:09,097 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:09,097 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:09,097 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:41:09,116 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:09,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:09,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:09,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:09,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:09,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:09,118 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:09,118 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:09,118 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:09,118 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:09,119 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:09,119 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:09,120 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:09,129 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:09,129 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:12,235 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:12,235 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:41:12,316 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:12,317 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:12,317 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:12,317 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:12,317 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:12,318 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:12,318 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:12,318 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:12,318 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:12,318 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:12,319 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:12,319 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:12,319 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:41:12,337 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:12,337 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:12,338 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:12,338 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:12,338 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:12,339 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:12,339 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:12,339 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:12,339 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:12,339 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:12,340 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:12,340 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:12,340 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:12,341 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:41:12,420 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:41:12,420 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:12,421 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:12,421 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:41:12,459 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:41:12,460 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:12,461 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:12,461 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:12,461 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:12,462 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:12,462 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:12,471 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:12,471 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:18,628 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:41:18,628 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:41:18,696 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:18,697 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:41:18,804 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:18,805 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:18,805 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:18,805 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:18,805 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:18,806 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:18,806 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:18,806 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:18,806 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:18,807 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:18,807 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:18,808 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:18,808 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:41:18,846 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:18,846 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:18,847 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:18,847 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:18,847 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:18,848 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:18,848 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:18,848 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:18,848 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:41:18,848 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:41:18,849 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:18,849 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:18,850 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:18,850 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:41:18,850 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:41:20,778 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:41:22,649 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:41:22,650 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:41:22,652 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:42:34,020 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:42:34,021 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:42:34,021 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:42:34,021 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:42:34,021 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:42:34,057 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:42:34,057 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:42:34,058 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:42:34,266 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:42:34,468 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:42:34,525 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:34,525 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:34,525 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:34,525 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:34,525 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:34,526 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:34,526 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:34,526 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:34,526 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:34,526 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:34,527 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:42:34,527 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:42:34,527 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:42:34,536 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:42:34,536 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:42:44,447 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:42:44,448 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:42:44,475 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:44,475 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:44,476 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:44,476 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:44,476 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:44,476 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:44,476 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:44,477 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:44,477 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:44,477 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:44,477 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:42:44,481 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:42:44,482 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:42:44,644 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:42:44,645 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:42:44,645 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:42:44,677 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:42:44,687 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:42:44,688 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:42:47,335 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:42:47,336 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:42:47,428 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:47,429 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:47,429 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:47,429 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:47,429 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:47,430 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:47,430 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:47,430 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:47,430 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:42:47,431 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:42:47,431 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:42:47,432 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:42:47,432 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:00,458 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:00,459 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:43:00,490 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,490 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,491 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,491 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,491 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,491 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,491 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,492 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,492 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,492 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,493 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:00,493 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:00,494 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:00,607 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:00,607 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:43:00,634 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,634 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,634 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,636 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,636 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:00,637 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:00,638 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:00,690 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:00,690 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:43:00,710 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,710 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,710 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,711 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,711 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,711 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,712 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,712 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,712 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,712 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,713 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:00,713 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:00,713 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:43:00,734 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,734 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,734 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,734 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,734 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,735 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,735 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,735 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,735 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:00,735 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:00,736 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:00,736 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:00,736 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:00,737 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:00,738 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:03,970 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:03,971 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:43:04,147 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:04,147 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:04,148 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:04,148 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:04,148 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:04,149 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:04,149 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:04,150 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:04,150 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:04,150 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:04,151 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:04,151 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:04,152 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:43:04,174 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:04,174 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:04,175 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:04,175 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:04,175 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:04,175 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:04,176 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:04,176 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:04,176 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:04,176 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:04,177 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:04,177 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:04,177 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:04,177 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:04,178 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:14,097 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:43:14,097 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:43:15,805 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:43:17,438 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:43:17,440 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:43:17,442 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:43:26,896 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:26,896 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:43:28,017 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:28,017 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:28,017 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:28,018 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:28,018 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:28,018 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:28,018 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:28,018 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:28,018 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:43:28,018 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:43:28,018 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:43:28,031 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:43:28,031 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:22,541 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:22,541 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:44:22,985 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:22,985 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:22,985 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:22,985 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:22,986 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:22,986 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:22,986 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:22,986 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:22,986 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:22,986 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:22,986 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:22,993 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:22,993 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:23,020 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:23,021 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:44:23,039 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:23,039 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:23,039 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:23,039 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:23,039 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:23,040 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:23,040 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:23,040 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:23,040 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:23,040 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:23,040 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:23,048 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:23,048 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:46,077 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:46,077 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:46,077 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:44:46,106 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:44:46,107 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:46,107 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:44:46,141 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:46,141 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:46,142 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:46,142 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:46,142 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:46,142 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:46,143 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:46,143 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:46,143 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:46,143 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:46,143 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:46,144 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:46,144 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:46,144 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:44:46,178 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:44:46,178 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:46,178 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:46,179 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:46,179 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:44:46,201 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:46,201 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:46,201 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:46,201 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:46,201 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:46,202 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:46,202 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:46,202 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:46,202 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:44:46,202 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:44:46,203 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:46,203 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:46,203 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:46,203 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:46,203 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:44:46,204 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:44:46,204 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:45:25,344 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:45:25,345 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:45:25,347 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:45:25,348 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:45:25,592 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:45:25,781 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:45:25,837 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:45:25,837 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:45:25,837 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:45:25,837 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:45:25,837 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:45:25,838 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:45:25,838 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:45:25,838 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:45:25,838 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:45:25,838 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:45:25,867 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:45:25,867 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:45:25,867 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:45:25,871 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:45:25,871 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:14,442 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:46:14,442 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:46:14,443 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:14,443 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:14,443 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:46:14,510 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:46:14,510 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:14,510 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:46:14,749 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:46:14,987 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:14,999 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:14,999 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:14,999 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:14,999 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:15,000 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:15,000 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:15,000 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:15,000 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:15,001 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:15,001 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:15,186 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:46:38,045 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:38,045 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:38,046 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:46:38,075 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:46:38,076 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:38,076 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:46:38,116 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:38,116 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:38,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:38,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:38,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:38,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:38,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:38,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:38,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:38,122 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:38,122 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:45,337 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:45,338 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:45,338 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:46:45,368 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:46:45,370 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:45,370 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:45,445 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:45,445 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:46:45,929 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:45,930 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:45,930 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:45,930 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:45,930 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:45,930 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:45,930 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:45,932 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:45,932 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:53,235 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:53,236 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:46:53,541 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:53,541 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:53,541 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:53,541 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:53,542 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:53,542 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:53,542 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:53,551 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:53,551 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:59,145 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:59,145 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:46:59,179 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:59,179 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:59,179 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:59,179 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:59,179 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:46:59,180 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:46:59,180 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:46:59,188 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:46:59,189 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:47:57,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:47:57,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:47:58,087 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:47:58,088 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:47:58,088 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:47:58,088 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:47:58,088 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:47:58,089 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:47:58,089 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:47:58,090 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:47:58,091 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:26,800 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:26,801 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:50:26,916 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:26,916 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:26,916 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:26,916 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:26,917 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:26,917 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:26,917 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:26,917 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:26,917 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:26,919 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:26,919 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:29,663 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:29,663 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:50:29,697 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:29,697 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:29,697 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:29,697 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:29,697 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:29,697 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:29,698 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:29,698 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:29,698 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:29,704 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:29,705 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:36,094 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:36,094 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:36,094 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:50:36,122 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:50:36,130 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:36,130 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:36,139 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:36,139 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:50:36,189 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:36,189 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:36,190 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:36,190 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:36,190 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:36,190 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:36,190 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:36,190 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:36,191 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:36,200 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:36,200 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:42,676 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:42,676 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:42,677 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:50:42,705 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:50:42,705 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:42,705 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:50:42,739 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:42,740 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:42,740 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:42,740 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:42,740 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:42,740 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:42,740 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:42,741 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:42,741 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:42,741 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:42,741 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:42,743 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:42,743 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:49,359 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:49,360 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:49,360 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:50:49,389 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:50:49,389 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:49,389 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:50:49,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:49,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:49,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:49,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:49,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:49,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:49,434 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:50:49,434 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:50:49,434 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:49,434 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:49,434 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:50:49,435 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:50:49,435 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:00,216 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:00,216 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:51:00,218 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:51:00,218 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:51:00,520 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:51:00,692 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:51:00,693 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:51:00,693 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:51:00,693 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:51:00,693 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:51:00,693 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:51:00,694 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:51:00,694 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:51:00,694 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:00,694 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:00,694 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:00,694 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:51:00,717 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:51:00,726 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:51:00,726 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:00,727 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:00,731 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:00,732 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:52,986 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:52,987 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:51:53,443 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:51:53,443 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:51:53,444 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:51:53,444 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:51:53,444 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:51:53,444 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:51:53,444 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:53,445 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:53,445 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:53,445 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:51:53,487 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:51:53,488 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:53,488 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:53,491 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:53,492 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:57,845 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:57,845 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:51:57,866 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:51:57,867 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:51:57,867 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:51:57,867 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:51:57,867 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:51:57,867 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:51:57,867 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:57,872 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:57,872 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:59,658 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:51:59,658 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:51:59,658 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Delete message received
+2014-02-25 11:52:11,601 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:52:11,601 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:52:11,641 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:52:11,641 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:52:11,641 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:52:11,641 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:52:11,641 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:52:11,642 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:52:11,642 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:52:11,643 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:52:11,643 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:01,328 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:01,328 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:54:01,366 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:01,366 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:01,366 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:01,367 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:01,367 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:01,367 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:01,367 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:01,367 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:01,367 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:01,367 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:54:01,406 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:54:01,406 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:01,406 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:01,413 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:01,413 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:06,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:06,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:06,635 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:54:06,664 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:54:06,665 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:06,665 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:54:06,724 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:06,724 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:06,724 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:06,724 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:06,725 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:06,725 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:06,725 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:06,725 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:06,725 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:06,732 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:06,732 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:08,865 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:08,866 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:08,866 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Delete message received
+2014-02-25 11:54:11,839 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:11,839 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:54:11,902 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:11,902 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:11,902 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:11,903 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:11,903 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:11,903 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:11,903 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:11,904 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:11,904 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:15,227 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:15,227 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:15,228 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Delete message received
+2014-02-25 11:54:18,456 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:18,457 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:18,457 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:54:18,484 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:54:18,485 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:18,485 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:54:18,545 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:18,546 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:18,546 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:18,546 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:18,546 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:54:18,546 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:54:18,546 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:18,547 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:18,547 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:54:18,549 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:54:18,549 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:55:20,802 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:55:20,803 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:55:21,273 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:55:21,273 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:55:21,273 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:55:21,273 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:55:21,274 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:55:21,274 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:55:21,274 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:55:21,275 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:55:21,275 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:55:30,572 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:55:30,573 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:55:30,647 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:55:30,648 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:55:30,648 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:55:30,648 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:55:30,648 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:55:30,648 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:55:30,648 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:55:30,649 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:55:30,649 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:55:30,649 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:55:30,699 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:55:30,699 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:55:30,699 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:55:30,700 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:55:30,701 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:55:35,134 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:55:35,135 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:55:35,157 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:55:35,157 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:55:35,157 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:55:35,157 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:55:35,157 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:55:35,157 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:55:35,158 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:55:35,158 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:55:35,158 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:55:35,158 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:55:35,319 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:55:35,319 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:55:35,319 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:55:35,323 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:55:35,324 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:56:45,055 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:56:45,055 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:56:45,546 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:56:45,546 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:56:45,546 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:56:45,547 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:56:45,547 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:56:45,547 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:56:45,547 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:56:45,552 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:56:45,552 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:56:46,791 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:56:46,791 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:56:46,854 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:56:46,855 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:56:46,855 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:56:46,855 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:56:46,855 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:56:46,855 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:56:46,856 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:56:46,863 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:56:46,863 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:57:23,184 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:57:23,185 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:57:23,259 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:57:23,260 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:57:23,802 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:57:23,802 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:57:23,802 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:57:23,802 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:57:23,802 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:57:23,802 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:57:23,803 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:57:23,803 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:57:23,803 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:57:23,803 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:57:23,893 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:57:23,894 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:57:23,894 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:57:23,895 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:57:23,895 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:57:24,119 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:57:24,335 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:57:29,991 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:57:29,992 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:57:30,036 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:57:30,036 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:57:30,036 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:57:30,036 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:57:30,036 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:57:30,037 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:57:30,037 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:57:30,042 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:57:30,042 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:58:10,970 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:58:10,971 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:58:11,011 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:58:11,011 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:58:11,296 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 11:58:11,660 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:11,660 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:11,661 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:11,661 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:11,661 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:11,661 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:11,661 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:58:11,661 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:58:11,661 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:58:11,662 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - TodoAgent - Get message received
+2014-02-25 11:58:11,733 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 11:58:11,750 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - Todo sent.
+2014-02-25 11:58:11,751 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:58:11,751 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:58:11,755 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:58:11,755 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:58:57,780 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:58:57,781 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:58:58,278 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:58,278 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:58,278 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:58,279 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:58,279 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:58,279 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:58,279 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:58:58,279 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:58:58,279 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:58:58,342 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:58,342 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:58,342 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:58,343 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:58,343 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:58,343 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:58,343 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:58:58,343 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:58:58,343 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:58:58,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:58,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:58,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:58,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:58,433 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:58:58,434 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:58:58,434 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:58:58,434 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:58:58,435 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:58:58,435 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:58:58,435 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:58:58,441 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:58:58,442 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:59:24,730 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:59:24,731 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:59:24,764 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:59:24,764 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:59:24,764 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:59:24,765 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:59:24,765 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:59:24,765 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:59:24,765 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:59:24,766 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:59:24,767 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:59:25,144 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:59:25,144 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 11:59:25,160 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:59:25,160 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:59:25,160 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:59:25,161 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:59:25,161 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 11:59:25,161 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 11:59:25,161 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 11:59:25,163 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 11:59:25,163 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:41,103 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:41,103 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:00:41,166 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,167 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,167 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,168 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,168 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,168 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,168 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,168 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,168 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,168 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,169 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,169 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,169 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:41,169 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:41,169 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:00:41,195 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,195 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,195 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,195 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,196 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,196 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,196 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,196 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,196 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,197 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,197 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,197 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,197 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:41,197 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:41,198 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:00:41,236 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,236 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,236 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,237 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,237 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,237 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,237 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,237 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,238 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,238 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,238 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,238 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,238 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:41,239 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:41,239 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:00:41,288 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,288 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,288 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,288 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,289 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,289 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,289 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,289 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,289 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,289 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,289 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:41,290 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:41,290 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:41,290 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:41,290 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:41,291 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:41,291 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:41,291 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:41,291 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:41,291 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:41,292 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:42,083 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:42,083 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:00:42,116 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,116 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,117 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,118 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,118 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,118 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,118 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:42,118 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:42,118 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:00:42,170 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,170 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,170 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,171 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,171 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,171 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,171 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,171 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,171 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,172 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,172 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,172 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,172 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:42,172 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:42,173 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:00:42,217 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,217 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,217 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,218 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,218 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,218 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,218 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,218 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,218 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,218 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,219 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,219 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,219 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:42,219 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:42,219 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:42,220 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:42,220 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:00:42,293 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,294 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,294 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,294 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,294 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,295 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,295 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,295 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,295 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,296 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,296 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:00:42,296 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:00:42,296 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:42,296 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:42,297 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:42,297 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:42,297 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:00:42,311 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:00:42,311 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:04:35,049 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:04:35,049 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:04:35,238 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:04:35,238 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:04:35,238 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:04:35,239 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:04:35,239 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:04:35,239 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:04:35,239 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:04:35,239 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:04:35,239 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:04:35,239 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:04:35,240 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:04:35,240 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:04:35,240 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:04:35,240 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:04:35,241 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:06:41,503 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 12:06:41,503 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 12:06:42,764 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - FacebookAgent - message received
+2014-02-25 12:06:43,510 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 12:06:43,511 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 12:06:43,513 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - received a message
+2014-02-25 12:08:37,283 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:08:37,283 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:08:38,836 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:08:38,837 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:08:38,837 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:08:38,837 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:08:38,837 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:08:38,840 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - received a message
+2014-02-25 12:08:38,840 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - received a message
+2014-02-25 12:15:12,736 INFO [n-135614b696b44385.a-135614b6cc3860d0.TodoBean] - stopping a-135614b6cc3860d0
+2014-02-25 12:15:12,737 INFO [n-135614b696b44385.a-135614b6cc3860d0.NewsfeedBean] - stopping a-135614b6cc3860d0
+2014-02-25 12:15:12,738 INFO [n-135614b696b44385.a-135614b6dd02dc26.FacebookBean] - stopping a-135614b6dd02dc26
+2014-02-25 12:15:12,738 INFO [n-135614b696b44385.a-135614b67846b0ff.CalendarBean] - stopping a-135614b67846b0ff
+2014-02-25 12:15:12,738 INFO [n-135614b696b44385.a-135614b67846b0ff.EmailBean] - stopping a-135614b67846b0ff
+2014-02-25 12:15:13,477 ERROR [n-135614b696b44385.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-25 12:15:13,477 ERROR [n-135614b696b44385.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-135614b696b44385,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-02-25 12:40:09,307 WARN [n-135618ced21290c3] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-02-25 12:40:09,699 ERROR [n-135618ced21290c3.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-02-25 12:40:10,350 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - AbstractCommunicationBean started.
+2014-02-25 12:40:10,353 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@226dad07
+ provider =InformationAgent(a-135618ce8b948ba3)
+ scope=AGENT
+
+2014-02-25 12:40:10,358 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - InformationAgent started.
+2014-02-25 12:40:10,358 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - my ID: a-135618ce8b948ba3
+2014-02-25 12:40:11,323 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - AbstractCommunicationBean started.
+2014-02-25 12:40:11,324 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@226dad07
+ provider =InformationAgent(a-135618ce8b948ba3)
+ scope=AGENT
+
+2014-02-25 12:40:11,325 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - InformationAgent started.
+2014-02-25 12:40:11,329 INFO [n-135618ced21290c3.a-135618ce99736ff8.FacebookBean] - AbstractCommunicationBean started.
+2014-02-25 12:40:11,330 INFO [n-135618ced21290c3.a-135618ce99736ff8.FacebookBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@7e03b92d
+ provider =SocialMediaAgent(a-135618ce99736ff8)
+ scope=AGENT
+
+2014-02-25 12:40:11,331 INFO [n-135618ced21290c3.a-135618ce99736ff8.FacebookBean] - FacebookAgent started.
+2014-02-25 12:40:11,971 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - AbstractCommunicationBean started.
+2014-02-25 12:40:11,972 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@14c8b9ac
+ provider =CommunicationAgent(a-135618cedf337009)
+ scope=AGENT
+
+2014-02-25 12:40:11,973 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - InformationAgent started.
+2014-02-25 12:40:12,685 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - AbstractCommunicationBean started.
+2014-02-25 12:40:12,686 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@14c8b9ac
+ provider =CommunicationAgent(a-135618cedf337009)
+ scope=AGENT
+
+2014-02-25 12:40:12,686 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - CommunicationAgent started.
+2014-02-25 12:41:28,506 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:41:28,508 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:41:28,508 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:41:28,596 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:41:28,597 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:41:28,597 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:41:28,598 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:41:28,615 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:41:28,615 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:41:28,637 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:41:28,638 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 12:41:28,682 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:41:28,686 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:41:28,686 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:41:28,687 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - MailAgent - Get message received
+2014-02-25 12:41:50,048 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - Mails sent
+2014-02-25 12:41:50,125 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:41:50,125 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:43:41,928 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:43:41,929 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:43:41,929 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:43:41,949 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:43:41,949 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:43:41,949 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - MailAgent - Get message received
+2014-02-25 12:43:42,408 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:43:42,408 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:43:42,408 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:43:42,409 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:43:42,419 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:43:42,420 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:44:02,362 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - Mails sent
+2014-02-25 12:44:02,362 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:44:02,363 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 12:44:02,390 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:44:02,415 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:44:02,416 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:46:16,696 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:46:16,696 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 12:46:16,724 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:46:17,113 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:46:17,114 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:46:17,114 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - MailAgent - Get message received
+2014-02-25 12:46:38,109 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - Mails sent
+2014-02-25 12:46:38,153 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:46:38,154 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:51:00,772 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:51:00,772 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:51:00,772 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:51:01,112 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:51:01,113 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:51:01,113 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - MailAgent - Get message received
+2014-02-25 12:51:01,200 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,200 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,200 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,200 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,201 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,201 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,201 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,201 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,201 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,201 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,202 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:51:01,202 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:51:01,202 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:51:01,229 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,230 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,230 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,230 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,231 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,231 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,231 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,231 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,231 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,232 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,232 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:51:01,232 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:51:01,232 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:51:01,258 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,259 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,259 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,259 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,259 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,259 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,260 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,260 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,260 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,261 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,261 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:51:01,262 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:51:01,262 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:51:01,293 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,293 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,294 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,294 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,294 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,295 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,295 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,295 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,295 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:51:01,296 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:51:01,296 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:51:01,296 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:51:01,297 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:51:01,297 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:51:01,298 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:51:01,298 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:51:01,309 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:51:01,310 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:51:21,740 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - Mails sent
+2014-02-25 12:51:21,740 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:51:21,740 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:51:21,741 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - MailAgent - Get message received
+2014-02-25 12:51:39,792 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - Mails sent
+2014-02-25 12:51:39,793 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:51:39,793 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 12:51:39,819 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:51:39,820 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:51:39,820 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:51:39,820 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - MailAgent - Get message received
+2014-02-25 12:52:00,258 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - Mails sent
+2014-02-25 12:52:00,258 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:52:00,258 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 12:52:00,286 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:52:00,287 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:52:00,287 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:52:00,287 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - MailAgent - Get message received
+2014-02-25 12:52:19,197 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - Mails sent
+2014-02-25 12:52:19,197 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:52:19,197 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 12:52:19,362 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:52:19,362 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:52:19,362 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 12:52:19,389 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:52:19,399 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:52:19,399 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:52:19,417 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:52:19,417 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:52:19,437 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:52:19,437 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:52:19,447 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:52:19,447 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:55:45,177 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:55:45,177 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:55:45,178 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:55:45,226 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:55:45,226 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:55:45,227 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - MailAgent - Get message received
+2014-02-25 12:55:45,241 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:55:45,241 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:55:45,241 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:55:45,241 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:55:45,244 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:55:45,244 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:56:05,040 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - Mails sent
+2014-02-25 12:56:05,041 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:56:05,041 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 12:56:05,069 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:56:05,080 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:56:05,080 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:56:55,964 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:56:55,964 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:56:55,965 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:56:55,972 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:56:55,973 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:56:55,973 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - MailAgent - Get message received
+2014-02-25 12:56:56,422 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:56:56,422 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:56:56,425 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:56:56,425 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:56:56,428 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:56:56,428 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:57:16,168 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - Mails sent
+2014-02-25 12:57:16,169 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:57:16,169 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 12:57:16,198 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:57:16,209 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:57:16,210 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:59:24,198 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:59:24,198 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:59:24,198 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 12:59:24,242 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:59:24,242 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:59:24,242 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 12:59:24,243 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 12:59:24,244 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:59:24,244 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:59:24,245 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - MailAgent - Get message received
+2014-02-25 12:59:24,245 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 12:59:24,246 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 12:59:42,428 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - Mails sent
+2014-02-25 12:59:42,429 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:59:42,429 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 12:59:42,457 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 12:59:42,474 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 12:59:42,474 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 13:02:45,015 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 13:02:45,015 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 13:02:45,042 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 13:02:45,329 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:02:45,330 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:02:45,330 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 13:02:45,790 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:02:45,791 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:02:45,791 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:02:45,791 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:02:45,794 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:02:45,794 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:03:10,644 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:03:10,644 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:03:10,644 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 13:03:10,678 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:03:10,678 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:03:10,678 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:03:10,679 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:03:10,681 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:03:10,681 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:03:10,958 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 13:03:10,959 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 13:03:10,985 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 13:03:34,975 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 13:03:34,975 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 13:03:34,984 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:03:34,984 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:03:34,984 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 13:03:35,002 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 13:03:35,443 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:03:35,443 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:03:35,443 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:03:35,444 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:03:35,450 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:03:35,451 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:03:44,553 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:03:44,553 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:03:44,554 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 13:03:44,557 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 13:03:44,558 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 13:03:44,585 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 13:03:44,589 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:03:44,589 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:03:44,590 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:03:44,590 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:03:44,592 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:03:44,593 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:03:48,854 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 13:03:48,854 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 13:03:48,855 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:03:48,855 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:03:48,856 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 13:03:48,882 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 13:03:48,882 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:03:48,882 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:03:48,882 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:03:48,883 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:03:48,885 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:03:48,886 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:03:54,783 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:03:54,784 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:03:54,784 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - NewsfeedAgent - message received
+2014-02-25 13:03:54,789 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - received a message
+2014-02-25 13:03:54,789 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - CalendarAgent - Get message received
+2014-02-25 13:03:54,816 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - received a message
+2014-02-25 13:03:54,822 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:03:54,822 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:03:54,822 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Found InformationAgent
+2014-02-25 13:03:54,823 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - Newsfeed sent
+2014-02-25 13:03:54,825 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - received a message
+2014-02-25 13:03:54,825 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - received a message
+2014-02-25 13:08:21,286 INFO [n-135618ced21290c3.a-135618ce8b948ba3.TodoBean] - stopping a-135618ce8b948ba3
+2014-02-25 13:08:21,286 INFO [n-135618ced21290c3.a-135618ce8b948ba3.NewsfeedBean] - stopping a-135618ce8b948ba3
+2014-02-25 13:08:21,287 INFO [n-135618ced21290c3.a-135618ce99736ff8.FacebookBean] - stopping a-135618ce99736ff8
+2014-02-25 13:08:21,288 INFO [n-135618ced21290c3.a-135618cedf337009.CalendarBean] - stopping a-135618cedf337009
+2014-02-25 13:08:21,288 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - stopping a-135618cedf337009
+2014-02-25 13:08:21,311 ERROR [n-135618ced21290c3.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-02-25 13:08:21,312 ERROR [n-135618ced21290c3.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-135618ced21290c3,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"

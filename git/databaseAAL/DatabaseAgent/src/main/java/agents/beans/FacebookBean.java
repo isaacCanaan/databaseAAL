@@ -53,17 +53,12 @@ public class FacebookBean extends AbstractCommunicatingBean{
 	private static String secretKey = "4761c8cec03889b8e7b8b6dd93eb91ee";
 	
 	private int id = 0;
-	private String accessToken = "fail";
+	private String accessToken = "";
 	private long expirationTimeMillis = 5178246;
 	
 	private MySQLAccess access = null;
 	private SocialAccess smAccess = null;
 	private Connection connect = null;
-	private Statement statement = null;
-	private PreparedStatement preparedStatement = null;
-	private ResultSet resultSet = null;
-	
-	private long userID;
 	
 	@Override
 	public void doStart() throws Exception{
@@ -74,18 +69,8 @@ public class FacebookBean extends AbstractCommunicatingBean{
 		connect = access.connectDriver();
 		smAccess = new SocialAccess(connect);
 		
-		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
-		sendAction = memory.read(template);
+		sendAction = retrieveAction(ICommunicationBean.ACTION_SEND);
 		
-		if(sendAction == null){
-			sendAction = thisAgent.searchAction(template);
-		}
-		
-		if(sendAction == null){
-			throw new RuntimeException("Send action not found.");
-		}
-		
-		memory.attach(new MessageObserver(), new JiacMessage());
 	}
 	
 	@Override

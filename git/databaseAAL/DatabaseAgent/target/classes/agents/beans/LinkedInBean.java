@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.List;
 
 import objects.LinkedInUser;
+import ontology.Message;
 import ontology.messages.LinkedInData;
 
 import org.sercho.masp.space.event.SpaceEvent;
@@ -32,7 +33,7 @@ import de.dailab.jiactng.agentcore.ontology.AgentDescription;
 import de.dailab.jiactng.agentcore.ontology.IActionDescription;
 import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 
-public class LinkedInBean extends AbstractAgentBean{
+public class LinkedInBean extends AbstractCommunicatingBean{
 	
 	private final String consumerKeyValue = "77ja7axi3e2bp5";
 	private final String consumerSecretValue = "7l6kDAp2pb6eU7fK";
@@ -44,9 +45,6 @@ public class LinkedInBean extends AbstractAgentBean{
 	private MySQLAccess access = null;
 	private UserAccess userAccess = null;
 	private Connection connect = null;
-	private Statement statement = null;
-	private PreparedStatement preparedStatement = null;
-	private ResultSet resultSet = null;
 	
 	private LinkedInApiClientFactory factory;
 	private LinkedInApiClient client;
@@ -62,85 +60,51 @@ public class LinkedInBean extends AbstractAgentBean{
 		
 		factory = LinkedInApiClientFactory.newInstance(consumerKeyValue, consumerSecretValue);
 		
-		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
-		sendAction = memory.read(template);
-		
-		if(sendAction == null){
-			sendAction = thisAgent.searchAction(template);
-		}
-		
-		if(sendAction == null){
-			throw new RuntimeException("Send action not found.");
-		}
-		
-		memory.attach(new MessageObserver(), new JiacMessage());
+		sendAction = retrieveAction(ICommunicationBean.ACTION_SEND);
 	}
-	
-	private class MessageObserver implements SpaceObserver<IFact>{
-		
-		
 
-		/**
-		 * 
-		 */
-		private static final long serialVersionUID = -8182513339144469591L;
-
-		@Override
-		public void notify(SpaceEvent<? extends IFact> event) {
-			if(event instanceof WriteCallEvent<?>){
-				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
+	@Override
+	protected void receiveMessage(Message message) {
+		if(message != null){
+			
+			if(message instanceof GetLinkedInData){
 				
-				IJiacMessage message = memory.remove(wce.getObject());
-				
-				if(message != null){
-					IFact obj = message.getPayload();
+				try {
+					client = factory.createLinkedInApiClient(message.getAccessToken(), ((LinkedInData) message).getTokenSecret());
+					Person profile = client.getProfileForCurrentUser();
+					log.info("Name:" + profile.getFirstName() + " " + profile.getLastName());
+					log.info("Headline:" + profile.getHeadline());
+					log.info("Summary:" + profile.getSummary());
+					log.info("Industry:" + profile.getIndustry());
+					log.info("Picture:" + profile.getPictureUrl());
 					
-					if(obj instanceof GetLinkedInData){
-						
-						try {
-							client = factory.createLinkedInApiClient(obj.getAccessToken(), ((LinkedInData) obj).getTokenSecret());
-							Person profile = client.getProfileForCurrentUser();
-							log.info("Name:" + profile.getFirstName() + " " + profile.getLastName());
-							log.info("Headline:" + profile.getHeadline());
-							log.info("Summary:" + profile.getSummary());
-							log.info("Industry:" + profile.getIndustry());
-							log.info("Picture:" + profile.getPictureUrl());
-							
-							Connections connections = client.getConnectionsForCurrentUser();
-							log.info("Total connections fetched:" + connections.getTotal());
-							for (Person person : connections.getPersonList()) {
-							       log.info(person.getId() + ":" + person.getFirstName() + " " + person.getLastName() + ":" + person.getHeadline());
-							}	
-							
-							LinkedInUser user = new LinkedInUser();
-							
-							List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+					Connections connections = client.getConnectionsForCurrentUser();
+					log.info("Total connections fetched:" + connections.getTotal());
+					for (Person person : connections.getPersonList()) {
+					       log.info(person.getId() + ":" + person.getFirstName() + " " + person.getLastName() + ":" + person.getHeadline());
+					}	
+					
+					LinkedInUser user = new LinkedInUser();
+					
+					List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
 
-							for(IAgentDescription agent : agentDescriptions){
-								if(agent.getName().equals("LinkedInAgent")){
+					for(IAgentDescription agent : agentDescriptions){
+						if(agent.getName().equals("LinkedInAgent")){
 
-									IMessageBoxAddress receiver = agent.getMessageBoxAddress();
-									
-									LinkedInData data = new LinkedInData(obj.getID(), thisAgent.getAgentId(), agent.getAid());
-									data.setMe(user);
-									JiacMessage newMessage = new JiacMessage(data);
+							IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+							
+							LinkedInData data = new LinkedInData(message.getID(), thisAgent.getAgentId(), agent.getAid());
+							data.setMe(user);
+							JiacMessage newMessage = new JiacMessage(data);
 
-									invoke(sendAction, new Serializable[] {newMessage, receiver});
-								}
-							}
-						} catch (Exception e) {
-							e.printStackTrace();
+							invoke(sendAction, new Serializable[] {newMessage, receiver});
 						}
 					}
-					else{
-						memory.write(wce.getObject());
-					}
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
-				
 			}
-			
 		}
-		
 	}
 
 }

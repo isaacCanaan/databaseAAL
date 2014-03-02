@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map.Entry;
 
 import jiac.Settings;
+import ontology.Message;
 import ontology.messages.GetUserKeys;
 import ontology.messages.GetUserPreferences;
 import ontology.messages.ResultQrIdMessage;
@@ -38,9 +39,9 @@ import de.dailab.jiactng.agentcore.ontology.AgentDescription;
 import de.dailab.jiactng.agentcore.ontology.IActionDescription;
 import de.dailab.jiactng.agentcore.ontology.IAgentDescription;
 
-public class ProfileBean extends AbstractAgentBean{
+public class ProfileBean extends AbstractCommunicatingBean{
 	
-private IActionDescription sendAction = null;
+	private IActionDescription sendAction = null;
 	
 	private MySQLAccess access = null;
 	private UserAccess userAccess = null;
@@ -57,18 +58,7 @@ private IActionDescription sendAction = null;
 		connect = access.connectDriver();
 		userAccess = new UserAccess(connect);
 		
-		IActionDescription template = new Action(ICommunicationBean.ACTION_SEND);
-		IActionDescription sendAction = memory.read(template);
-		
-		if(sendAction == null){
-			sendAction = thisAgent.searchAction(template);
-		}
-		
-		if(sendAction == null){
-			throw new RuntimeException("Send action not found.");
-		}
-		
-		memory.attach(new MessageObserver(), new JiacMessage());
+		sendAction = retrieveAction(ICommunicationBean.ACTION_SEND);
 	}
 	
 
@@ -176,6 +166,96 @@ private IActionDescription sendAction = null;
 				}
 			}
 		}
+	}
+
+
+	@Override
+	protected void receiveMessage(Message message) {
+		
+		if(message instanceof GetUserKeys){
+			
+			int id = ((GetUserKeys) message).getUserID();
+			
+			List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+
+			for(IAgentDescription agent : agentDescriptions){
+				if(agent.getName().equals("FacebookAgent")){
+
+					IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+					
+					UserKeysData keys = null;
+					
+					try {
+						keys = new UserKeysData(thisAgent.getAgentId(), agent.getAid(), id, userAccess.getKeys(id));
+					} catch (SQLException e) {
+						
+						e.printStackTrace();
+					}
+
+					JiacMessage newMessage = new JiacMessage(keys);
+
+					invoke(sendAction, new Serializable[] {newMessage, receiver});
+				}
+			}
+			
+		}
+		
+		if(message instanceof UpdateUserKeys){
+			
+			int id = ((UpdateUserKeys) message).getUserID();
+			HashMap<String,String> keys = ((UpdateUserKeys) message).getKeys();
+			
+			for(Entry<String, String> e : keys.entrySet()){
+				
+				try {
+					userAccess.saveKey(id, e.getKey(), e.getValue());
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+			}
+			
+		}
+		
+		if(message instanceof GetUserPreferences){
+			
+			int id = ((GetUserPreferences) message).getUserID();
+			
+			List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
+
+			for(IAgentDescription agent : agentDescriptions){
+				if(agent.getName().equals("FacebookAgent")){
+
+					IMessageBoxAddress receiver = agent.getMessageBoxAddress();
+					
+					UserPreferencesData prefs = null;
+					
+					try {
+						prefs = new UserPreferencesData(thisAgent.getAgentId(), agent.getAid(), id, userAccess.getPreferences(id));
+					} catch (SQLException e) {
+						
+						e.printStackTrace();
+					}
+
+					JiacMessage newMessage = new JiacMessage(prefs);
+
+					invoke(sendAction, new Serializable[] {newMessage, receiver});
+				}
+			}
+			
+		}
+		
+		if(message instanceof UpdateUserPreferences){
+			
+			int id = ((UpdateUserPreferences) message).getUserID();
+			Settings sets = ((UpdateUserPreferences) message).getPreferences();
+				
+				try {
+					userAccess.savePreferences(id, sets);
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+		}
+		
 	}
 
 }

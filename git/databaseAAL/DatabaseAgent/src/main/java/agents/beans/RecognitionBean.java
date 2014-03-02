@@ -53,9 +53,6 @@ public class RecognitionBean extends AbstractMethodExposingBean{
 	private MySQLAccess access = null;
 	private RecognitionAccess recAccess = null;
 	private Connection connect = null;
-	private Statement statement = null;
-	private PreparedStatement preparedStatement = null;
-	private ResultSet resultSet = null;
 	
 	@Override
 	public void doInit() throws Exception{
@@ -106,52 +103,62 @@ public class RecognitionBean extends AbstractMethodExposingBean{
 
 	                    IFact msg = ((JiacMessage) object).getPayload();
 	                    if (msg instanceof Message) {
-				
-							if(msg instanceof SaveMessage){
-								
-								try {
-									
-									ByteArrayOutputStream baos = new ByteArrayOutputStream();
-									
-									int id = ((SaveMessage) msg).getId();
-									String qrString = ((SaveMessage) msg).getQrString();
-									LinkedList<TransportFrame> datas = ((SaveMessage) msg).getTrainingData();
-									
-									for(TransportFrame tFrame : datas){
-										
-										ImageIO.write(tFrame.getFrame(), "png", baos);
-										recAccess.saveRecData(id, qrString, baos.toByteArray());
-										baos.flush();
-									}
-									
-									baos.close();
-									
-								} catch (Exception e) {
-									e.printStackTrace();
-								}
-							}
-//				
-//				if(obj instanceof FindUserIdMessage){
-//					
-//					int id = 0;
-//					try {
-//						id = recAccess.findUserId(((FindUserIdMessage) obj).getQrString());
-//					} catch (Exception e) {
-//						// TODO Auto-generated catch block
-//						e.printStackTrace();
-//					}
-//
-//					
-//					ResultQrIdMessage idResult = new ResultQrIdMessage(thisAgent.getAgentId(), null, id);
-//
-//					JiacMessage newMessage = new JiacMessage(idResult);
-//
-//					invoke(sendAction, new Serializable[] {newMessage, groupAddress});
-//				}
-
+	                    	if (!((Message) msg).getSenderID().equals(thisAgent.getAgentId())) {
+	                            if ((((Message) msg).getReceiverID() == null) || (((Message) msg).getReceiverID().equals(thisAgent.getAgentId()))) {
+	                                this.receiveMessage((Message) msg);
+	                            }
+	                        }
+	                    }
+	                }				
 			}
 			
 		}
 		
+		protected void receiveMessage(Message message){
+			
+			if(message instanceof SaveMessage){
+				
+				try {
+					
+					ByteArrayOutputStream baos = new ByteArrayOutputStream();
+					
+					int id = ((SaveMessage) message).getId();
+					String qrString = ((SaveMessage) message).getQrString();
+					LinkedList<TransportFrame> datas = ((SaveMessage) message).getTrainingData();
+					
+					for(TransportFrame tFrame : datas){
+						
+						ImageIO.write(tFrame.getFrame(), "png", baos);
+						recAccess.saveRecData(id, qrString, baos.toByteArray());
+						baos.flush();
+					}
+					
+					baos.close();
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+
+//			
+//			if(message instanceof FindUserIdMessage){
+//				
+//				int id = 0;
+//				try {
+//					id = recAccess.findUserId(((FindUserIdMessage) message).getQrString());
+//				} catch (Exception e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+//			
+//				
+//				ResultQrIdMessage idResult = new ResultQrIdMessage(thisAgent.getAgentId(), null, id);
+//			
+//				JiacMessage newMessage = new JiacMessage(idResult);
+//			
+//				invoke(sendAction, new Serializable[] {newMessage, groupAddress});
+//			}
+		}
 	}
+
 }
