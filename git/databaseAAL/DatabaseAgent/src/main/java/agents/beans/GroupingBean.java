@@ -2,25 +2,14 @@ package agents.beans;
 
 import java.io.Serializable;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import mails.MailReceiver;
-import mails.eMailAcc;
-
-import org.apache.commons.codec.binary.Base64;
-
-import objects.GmailData;
 import ontology.Message;
-import ontology.messages.GetMailData;
-import ontology.messages.MailData;
+import ontology.messages.GetGroupData;
+import ontology.messages.GroupData;
 import access.MySQLAccess;
 import access.SocialAccess;
-import de.dailab.jiactng.agentcore.AbstractAgentBean;
 import de.dailab.jiactng.agentcore.comm.ICommunicationBean;
 import de.dailab.jiactng.agentcore.comm.IMessageBoxAddress;
 import de.dailab.jiactng.agentcore.comm.message.JiacMessage;
@@ -48,11 +37,15 @@ public class GroupingBean extends AbstractCommunicatingBean{
 
 	@Override
 	protected void receiveMessage(Message message) {
-		if(message instanceof GetMailData){
+		
+		if(message instanceof GetGroupData){
 			
 			log.info("GroupAgent - Get message received");
+			
+			ArrayList<Integer> members = ((GetGroupData) message).getMembers();
 							
 			try {
+				ArrayList<GroupData.FBGroup> common = sAccess.getGroup(members);
 				
 				List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
 
@@ -61,7 +54,8 @@ public class GroupingBean extends AbstractCommunicatingBean{
 
 						IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 						
-						JiacMessage newMessage = new JiacMessage();
+						GroupData groupData = new GroupData(thisAgent.getAgentId(), agent.getAid(), common);
+						JiacMessage newMessage = new JiacMessage(groupData);
 
 						invoke(sendAction, new Serializable[] {newMessage, receiver});
 					}

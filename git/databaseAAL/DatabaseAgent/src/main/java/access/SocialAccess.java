@@ -1,5 +1,4 @@
 package access;
-import java.sql.Array;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,13 +7,11 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import objects.FBGroup;
 import ontology.messages.FacebookData;
+import ontology.messages.GroupData;
 
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient.AccessToken;
-import com.restfb.types.FacebookType;
-
 import facebook4j.Book;
 import facebook4j.Game;
 import facebook4j.Interest;
@@ -367,9 +364,9 @@ public class SocialAccess {
         
 	}
 	
-	public ArrayList<FBGroup> getGroup(ArrayList<Integer> members) throws SQLException{
+	public ArrayList<GroupData.FBGroup> getGroup(ArrayList<Integer> members) throws SQLException{
 		
-		ArrayList<FBGroup> groups = new ArrayList<FBGroup>();
+		ArrayList<GroupData.FBGroup> groups = new ArrayList<GroupData.FBGroup>();
 
 		int memCount = members.size();
 		String sql1 = "SELECT * FROM ((SELECT gid, COUNT(mid) AS count from (SELECT * from AAL.GROUPMEMBER where";
@@ -397,7 +394,8 @@ public class SocialAccess {
 			
 			while (resultSet.next()) {
 
-				FBGroup group  = new FBGroup();
+				GroupData data = new GroupData();
+				GroupData.FBGroup group  = data.new FBGroup();
 				group.setId(resultSet.getInt("gid"));
 				group.setTopic(resultSet.getString("topic"));
 				group.setMembers(members);

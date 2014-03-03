@@ -52,11 +52,6 @@ public class TwitterBean extends AbstractAgentBean{
 	private MySQLAccess access = null;
 	private UserAccess userAccess = null;
 	private Connection connect = null;
-	private Statement statement = null;
-	private PreparedStatement preparedStatement = null;
-	private ResultSet resultSet = null;
-	
-	
 	
 	@Override
 	public void doStart() throws Exception{

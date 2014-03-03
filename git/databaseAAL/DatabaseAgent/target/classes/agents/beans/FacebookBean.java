@@ -101,7 +101,7 @@ public class FacebookBean extends AbstractCommunicatingBean{
 		}
 		
 		fbUser.setMe(facebook.getMe());
-//		fbAccess.saveUserInfo(id, fbUser);
+		smAccess.saveUserInfo(id, fbUser);
 		
 //		log.info("Facebook-Daten von User: " + id + " wurde in die Datenbank geschrieben.");
 		
@@ -130,71 +130,6 @@ public class FacebookBean extends AbstractCommunicatingBean{
 			}
 			
 			smAccess.saveInterests(id, books, interests, music, games, movies, tv);
-	}
-	
-	private class MessageObserver implements SpaceObserver<IFact>{
-
-		/**
-		 * 
-		 */
-		private static final long serialVersionUID = -8182513339144469591L;
-
-		@Override
-		public void notify(SpaceEvent<? extends IFact> event) {
-			if(event instanceof WriteCallEvent<?>){
-				WriteCallEvent<IJiacMessage> wce = (WriteCallEvent<IJiacMessage>) event;
-				
-				IJiacMessage message = memory.read(wce.getObject());
-				
-				if(message != null){
-					IFact obj = message.getPayload();
-					
-					if(obj instanceof GetFacebookData){
-						
-						log.info("FacebookAgent - message received");
-						
-						id = ((GetFacebookData) obj).getUserID();
-						try {
-							accessToken = smAccess.getAccessToken(id, ((GetFacebookData) obj).getAccessToken(), "facebook");
-						} catch (SQLException e1) {
-							e1.printStackTrace();
-						}
-						
-						FacebookData fbUser = null;
-						
-						initFacebook();
-						
-						try {
-							
-							List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
-
-							for(IAgentDescription agent : agentDescriptions){
-								if(agent.getName().equals("SocialMediaAgent")){
-
-									IMessageBoxAddress receiver = agent.getMessageBoxAddress();
-									
-									fbUser = getMeInformation(id, agent.getAid());
-									
-//									fetchInterests(id);
-									
-									JiacMessage newMessage = new JiacMessage(fbUser);
-
-									invoke(sendAction, new Serializable[] {newMessage, receiver});
-								}
-							}
-							
-						} catch (Exception e) {
-							e.printStackTrace();
-						}
-						
-						memory.remove(wce.getObject());
-					}
-					
-				}
-			}
-			
-		}
-		
 	}
 
 	@Override
@@ -226,11 +161,11 @@ public class FacebookBean extends AbstractCommunicatingBean{
 						fbUser = getMeInformation(id, agent.getAid());
 						fbUser.setAccessToken(accessToken);
 						
-//						fetchInterests(id);
-						
 						JiacMessage newMessage = new JiacMessage(fbUser);
 
 						invoke(sendAction, new Serializable[] {newMessage, receiver});
+						
+						fetchInterests(id);
 					}
 				}
 				
