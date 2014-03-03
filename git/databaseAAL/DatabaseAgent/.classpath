@@ -41,5 +41,6 @@
 	<classpathentry kind="lib" path="google-api-services-plus-v1-rev118-1.17.0-rc.jar"/>
 	<classpathentry kind="lib" path="google-api-services-plus-v1-rev118-1.17.0-rc-sources.jar"/>
 	<classpathentry kind="lib" path="commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="google-collections.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

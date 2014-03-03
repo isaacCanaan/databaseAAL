@@ -2192,3 +2192,72 @@
 2014-02-25 13:08:21,288 INFO [n-135618ced21290c3.a-135618cedf337009.EmailBean] - stopping a-135618cedf337009
 2014-02-25 13:08:21,311 ERROR [n-135618ced21290c3.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
 2014-02-25 13:08:21,312 ERROR [n-135618ced21290c3.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-135618ced21290c3,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
+2014-03-03 16:52:54,517 WARN [n-1357fe14de2c8d26] - JIAC version: JIAC TNG Agent Core version 5.1.4 (01.08.2013 17:23:34) (DAI-Labor, TU Berlin)
+2014-03-03 16:52:56,043 ERROR [n-1357fe14de2c8d26.JmxConnectorManager] - Unable to leave multicast group 226.6.6.7
+2014-03-03 16:52:57,070 INFO [n-1357fe14de2c8d26.a-1357fe153f057a77.TodoBean] - AbstractCommunicationBean started.
+2014-03-03 16:52:57,073 INFO [n-1357fe14de2c8d26.a-1357fe153f057a77.TodoBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@a5d7e98
+ provider =InformationAgent(a-1357fe153f057a77)
+ scope=AGENT
+
+2014-03-03 16:52:57,074 INFO [n-1357fe14de2c8d26.a-1357fe153f057a77.TodoBean] - InformationAgent started.
+2014-03-03 16:52:57,074 INFO [n-1357fe14de2c8d26.a-1357fe153f057a77.TodoBean] - my ID: a-1357fe153f057a77
+2014-03-03 16:52:58,285 INFO [n-1357fe14de2c8d26.a-1357fe153f057a77.NewsfeedBean] - AbstractCommunicationBean started.
+2014-03-03 16:52:58,286 INFO [n-1357fe14de2c8d26.a-1357fe153f057a77.NewsfeedBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@a5d7e98
+ provider =InformationAgent(a-1357fe153f057a77)
+ scope=AGENT
+
+2014-03-03 16:52:58,287 INFO [n-1357fe14de2c8d26.a-1357fe153f057a77.NewsfeedBean] - InformationAgent started.
+2014-03-03 16:52:58,292 INFO [n-1357fe14de2c8d26.a-1357fe14cf462ea7.FacebookBean] - AbstractCommunicationBean started.
+2014-03-03 16:52:58,292 INFO [n-1357fe14de2c8d26.a-1357fe14cf462ea7.FacebookBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@621b886
+ provider =SocialMediaAgent(a-1357fe14cf462ea7)
+ scope=AGENT
+
+2014-03-03 16:52:58,293 INFO [n-1357fe14de2c8d26.a-1357fe14cf462ea7.FacebookBean] - FacebookAgent started.
+2014-03-03 16:52:58,620 INFO [n-1357fe14de2c8d26.a-1357fe14ecf96ec2.CalendarBean] - AbstractCommunicationBean started.
+2014-03-03 16:52:58,621 INFO [n-1357fe14de2c8d26.a-1357fe14ecf96ec2.CalendarBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@2ddf7c93
+ provider =CommunicationAgent(a-1357fe14ecf96ec2)
+ scope=AGENT
+
+2014-03-03 16:52:58,622 INFO [n-1357fe14de2c8d26.a-1357fe14ecf96ec2.CalendarBean] - InformationAgent started.
+2014-03-03 16:52:58,931 INFO [n-1357fe14de2c8d26.a-1357fe14ecf96ec2.EmailBean] - AbstractCommunicationBean started.
+2014-03-03 16:52:58,932 INFO [n-1357fe14de2c8d26.a-1357fe14ecf96ec2.EmailBean] - sendAction is Action:
+ name='de.dailab.jiactng.agentcore.comm.ICommunicationBean#send'
+ parameters=[de.dailab.jiactng.agentcore.comm.message.IJiacMessage; de.dailab.jiactng.agentcore.comm.ICommunicationAddress]
+ results=[]
+ bean=de.dailab.jiactng.agentcore.comm.CommunicationBean@2ddf7c93
+ provider =CommunicationAgent(a-1357fe14ecf96ec2)
+ scope=AGENT
+
+2014-03-03 16:52:58,932 INFO [n-1357fe14de2c8d26.a-1357fe14ecf96ec2.EmailBean] - CommunicationAgent started.
+2014-03-03 17:01:30,807 ERROR [n-1357fe14de2c8d26.JmxConnectorManager] - Unable to send multicast message on interface lo0
+2014-03-03 17:01:47,476 ERROR [de.dailab.jiac.net.discovery.multicast.SourceAwareMulticastDiscoveryAgent] - Failed to advertise our service: aal.ActiveMQ-4.alive.%localhost%tcp://wlan-141-23-74-238.tubit.tu-berlin.de:49479
+java.io.IOException: Network is down
+	at java.net.PlainDatagramSocketImpl.send(Native Method)
+	at java.net.DatagramSocket.send(DatagramSocket.java:676)
+	at de.dailab.jiac.net.discovery.multicast.SourceAwareMulticastDiscoveryAgent.doAdvertizeSelf(SourceAwareMulticastDiscoveryAgent.java:409)
+	at de.dailab.jiac.net.discovery.multicast.SourceAwareMulticastDiscoveryAgent.doTimeKeepingServices(SourceAwareMulticastDiscoveryAgent.java:393)
+	at de.dailab.jiac.net.discovery.multicast.SourceAwareMulticastDiscoveryAgent.run(SourceAwareMulticastDiscoveryAgent.java:354)
+	at java.lang.Thread.run(Thread.java:722)
+2014-03-03 17:02:19,100 INFO [n-1357fe14de2c8d26.a-1357fe153f057a77.TodoBean] - stopping a-1357fe153f057a77
+2014-03-03 17:02:19,101 INFO [n-1357fe14de2c8d26.a-1357fe153f057a77.NewsfeedBean] - stopping a-1357fe153f057a77
+2014-03-03 17:02:19,102 INFO [n-1357fe14de2c8d26.a-1357fe14cf462ea7.FacebookBean] - stopping a-1357fe14cf462ea7
+2014-03-03 17:02:19,103 INFO [n-1357fe14de2c8d26.a-1357fe14ecf96ec2.CalendarBean] - stopping a-1357fe14ecf96ec2
+2014-03-03 17:02:19,104 INFO [n-1357fe14de2c8d26.a-1357fe14ecf96ec2.EmailBean] - stopping a-1357fe14ecf96ec2
+2014-03-03 17:02:20,975 ERROR [n-1357fe14de2c8d26.AALWS1314GatewayBroker] - WARNING: Unable to deregister transport connector tcp://0.0.0.0:0 of the broker of agent node DataNode as JMX resource.
+2014-03-03 17:02:20,976 ERROR [n-1357fe14de2c8d26.AALWS1314GatewayBroker] - de.dailab.jiactng:category1=AgentNode,agentnode=n-1357fe14de2c8d26,category2=agentNodeBean,agentnodebean=AALWS1314GatewayBroker,category3=TransportConnector,resource="tcp://0.0.0.0:0"
