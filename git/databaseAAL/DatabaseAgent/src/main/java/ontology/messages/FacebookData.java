@@ -26,6 +26,7 @@ public class FacebookData extends Message{
 	private String picture;
 	private Timestamp timestamp;
 	private User me;
+	private String accessToken;
 	
 	public FacebookData(String senderID, String receiverID, long id){
 		super(senderID, receiverID, MessageType.SOCIAL_DATA);
@@ -64,6 +65,10 @@ public class FacebookData extends Message{
 		this.me = user;
 	}
 	
+	public void setAccessToken(String access){
+		this.accessToken = access;
+	}
+	
 	public long getId(){
 		return id;
 	}
@@ -98,6 +103,10 @@ public class FacebookData extends Message{
 	
 	public User getMe(){
 		return me;
+	}
+	
+	public String getAccessToken(){
+		return accessToken;
 	}
 
 }

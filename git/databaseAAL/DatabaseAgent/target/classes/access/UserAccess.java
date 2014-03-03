@@ -262,5 +262,20 @@ public class UserAccess {
           
           return null;
 	  }
+	  
+	  public int findGmailUser(String mail) throws SQLException{
+		  
+		  int id = 0;
+		  
+		  preparedStatement = connect.prepareStatement("SELECT id from AAL.GMAILDATA where mail= ?; ");
+	      preparedStatement.setString(1, mail);
+          resultSet = preparedStatement.executeQuery();
+          
+          if(resultSet.next()){
+        	  id = resultSet.getInt("id");
+          }
+          
+          return id;
+	  }
 
 }

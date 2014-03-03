@@ -224,6 +224,7 @@ public class FacebookBean extends AbstractCommunicatingBean{
 						IMessageBoxAddress receiver = agent.getMessageBoxAddress();
 						
 						fbUser = getMeInformation(id, agent.getAid());
+						fbUser.setAccessToken(accessToken);
 						
 //						fetchInterests(id);
 						

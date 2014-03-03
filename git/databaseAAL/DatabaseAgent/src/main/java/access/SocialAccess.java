@@ -11,6 +11,8 @@ import java.util.Calendar;
 import objects.FBGroup;
 import ontology.messages.FacebookData;
 
+import com.restfb.DefaultFacebookClient;
+import com.restfb.FacebookClient.AccessToken;
 import com.restfb.types.FacebookType;
 
 import facebook4j.Book;
@@ -24,6 +26,9 @@ import facebook4j.Television;
 // not tested yet
 
 public class SocialAccess {
+	
+	private static String appId = "688786967828835";
+	private static String secretKey = "4761c8cec03889b8e7b8b6dd93eb91ee";
 	
 	private Connection connect = null;
 	private Statement statement = null;
@@ -41,7 +46,7 @@ public class SocialAccess {
 			  // get current date	  
 			  Calendar cal = Calendar.getInstance();
 			  
-			  // check whether there is an instance for the facebook-datas in the database or not
+			  // check whether there is an instance for the facebook-datas in the database or nota
 			  preparedStatement = connect.prepareStatement("SELECT * from AAL.FBUSER where id= ? ; ");
 			  preparedStatement.setLong(1, id);
 			  resultSet = preparedStatement.executeQuery();
@@ -419,6 +424,8 @@ public class SocialAccess {
 	          
 	          if(resultSet.next()){
 	        	  aToken = resultSet.getString("token");
+	        	  AccessToken token = new DefaultFacebookClient().obtainExtendedAccessToken(appId, secretKey, aToken);
+	        	  aToken = token.toString();
 	          }
 		}
 		
