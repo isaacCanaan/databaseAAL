@@ -35,6 +35,7 @@ public class GroupingBean extends AbstractCommunicatingBean{
 		sendAction = retrieveAction(ICommunicationBean.ACTION_SEND);	
 	}
 
+	// method to handle the received message
 	@Override
 	protected void receiveMessage(Message message) {
 		
@@ -42,11 +43,14 @@ public class GroupingBean extends AbstractCommunicatingBean{
 			
 			log.info("GroupAgent - Get message received");
 			
+			// retrieve the list of ids of users from the message
 			ArrayList<Integer> members = ((GetGroupData) message).getMembers();
 							
 			try {
+				// get the common groups of the users
 				ArrayList<GroupData.FBGroup> common = sAccess.getGroup(members);
 				
+				// find the agent that shall receive the list of groups
 				List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
 
 				for(IAgentDescription agent : agentDescriptions){

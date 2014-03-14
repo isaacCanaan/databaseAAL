@@ -190,6 +190,8 @@ public class CalendarBean extends AbstractCommunicatingBean{
 						JiacMessage newMessage = new JiacMessage(new CalendarData(thisAgent.getAgentId(), agent.getAid(), ((GetCalendarData) message).getUserID(), entries));
 
 						invoke(sendAction, new Serializable[] {newMessage, receiver});
+						
+						log.info("CalendarData sent.");
 					}
 				}
 

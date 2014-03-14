@@ -47,8 +47,7 @@ public class UserAccess {
 
 	  }
 	  
-	  // methode to update user profile
-	  // works flawless, but more efficient way to save data is needed
+	  // method to update user profile
 	  public void updateUser(long id, LivingUser user) throws Exception{
 		  
 		  try {
@@ -129,6 +128,7 @@ public class UserAccess {
 		  
 	  }
 	  
+	  // method to save the key of an user with given id
 	  public void saveKey(int id, String key, String value) throws Exception{
 		  
 		  try {
@@ -158,6 +158,8 @@ public class UserAccess {
 		  }
 	  }
 	  
+	  
+	  // method to get the key of an user with given id
 	  public HashMap<String,String> getKeys(int id) throws SQLException{
 		  
 		  HashMap<String,String> map = new HashMap<String,String>();
@@ -173,13 +175,16 @@ public class UserAccess {
 		  return map;
 	  }
 	  
+	  // method to save the preferences of an user with given id
 	  public void savePreferences(int id, Settings sets) throws Exception{
 		  try {
 			  
+			  // check whether the preferences exist or not
 			  preparedStatement = connect.prepareStatement("SELECT * from AAL.PREFERENCES where id= ?; ");
 		      preparedStatement.setInt(1, id);
 	          resultSet = preparedStatement.executeQuery();
 	          
+	          // if they do exist then perform an update
 	          if(resultSet.next()) {
 	        	  preparedStatement = connect.prepareStatement("update AAL.PREFERENCES set news = ?, todo = ?, calendar = ?, social =?, info = ? where id= ?; ");
 				  preparedStatement.setBoolean(1, sets.isNewsPrivate());
@@ -190,6 +195,7 @@ public class UserAccess {
 				  preparedStatement.setInt(6, id);
 			      preparedStatement.executeUpdate();
 	    	  }
+	          // otherwise insert the preferences into the database
 	          else{
 	        	  preparedStatement = connect.prepareStatement("insert into AAL.PREFERENCES values (?, ?, ?, ?, ?, ?)");
 				  preparedStatement.setInt(1, id);
@@ -206,6 +212,7 @@ public class UserAccess {
 		  }
 	  }
 	  
+	  // method to get the preferences
 	  public Settings getPreferences(int id) throws SQLException{
 		  
 		  Settings sets = new Settings();
@@ -225,12 +232,15 @@ public class UserAccess {
 		  return sets;
 	  }
 	  
+	  // method to save the gmail-account data in the database
 	  public void saveGmailData(int id, String mail, String pw) throws SQLException{
 		  
+		  // check whether the information exists in the database or not
 		  preparedStatement = connect.prepareStatement("SELECT * from AAL.GMAILDATA where id= ?; ");
 	      preparedStatement.setInt(1, id);
           resultSet = preparedStatement.executeQuery();
           
+          // if it does then perform an update
           if(resultSet.next()){
         	  preparedStatement = connect.prepareStatement("update AAL.GMAILDATA set mail = ?, password = ? where id= ? ; ");
     	      preparedStatement.setString(1, mail);
@@ -238,6 +248,7 @@ public class UserAccess {
     	      preparedStatement.setInt(3, id);
               preparedStatement.executeUpdate();
           }
+          // otherwise insert the datas
           else{
         	  preparedStatement = connect.prepareStatement("insert into AAL.GMAILDATA values (?, ?, ?)");
         	  preparedStatement.setInt(1, id);
@@ -248,6 +259,7 @@ public class UserAccess {
 		  
 	  }
 	  
+	  // method to get the gmail-account information
 	  public GmailData getGmailData(int id) throws SQLException{
 		  
 		  preparedStatement = connect.prepareStatement("SELECT * from AAL.GMAILDATA where id= ?; ");
@@ -263,6 +275,7 @@ public class UserAccess {
           return null;
 	  }
 	  
+	  // method to find the id of an user with given mail-address
 	  public int findGmailUser(String mail) throws SQLException{
 		  
 		  int id = 0;

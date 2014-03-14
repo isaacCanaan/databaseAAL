@@ -17,6 +17,7 @@ public class RecognitionAccess {
   		this.connect = connect;
   	}
   	
+  	// method to save the datas of the recognition (QR-String, multiple pictures)
   	public void saveRecData(int id, String qrString, byte[] pic) throws Exception{
 
 		  try {
@@ -33,6 +34,7 @@ public class RecognitionAccess {
 	      } 
   	}
   	
+  	// method to return the id of the user with following QR_String
   	public int findUserId(String qrString) throws Exception{
   		
   		try {

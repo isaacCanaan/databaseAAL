@@ -167,13 +167,13 @@ public class EmailBean extends AbstractCommunicatingBean{
 						JiacMessage newMessage = new JiacMessage(new MailData(thisAgent.getAgentId(), agent.getAid(), ((GetMailData) message).getUserID(), mails));
 
 						invoke(sendAction, new Serializable[] {newMessage, receiver});
+						
+						log.info("Mails sent");
 					}
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			
-			log.info("Mails sent");
 		}
 	}
 

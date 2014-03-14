@@ -56,6 +56,7 @@ public class MySQLAccess {
   }
 
 
+  // method to end the connection to driver
   public void close(Connection connect) {
     try {
       if (resultSet != null) {
