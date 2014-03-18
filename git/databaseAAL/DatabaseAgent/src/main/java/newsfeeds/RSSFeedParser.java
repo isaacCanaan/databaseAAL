@@ -36,7 +36,7 @@ public class RSSFeedParser {
 	  static final String ENCLOSURE = "enclosure";
 
 	  final URL url;
-
+	  // constructor with the url of the rssFeed
 	  public RSSFeedParser(String feedUrl) {
 	    try {
 	      this.url = new URL(feedUrl);
@@ -45,7 +45,7 @@ public class RSSFeedParser {
 	    }
 	  }
 
-	  
+	// method to read a rss-online-Feed and create/return a Feed object with Header and  List of NewsMessages
 	public Feed readFeed() {
 	    Feed feed = null;
 	    try {
@@ -75,8 +75,12 @@ public class RSSFeedParser {
 	        if (event.isStartElement()) {
 	          String localPart = event.asStartElement().getName()
 	              .getLocalPart();
+	          
+	          // switch-case-block to read the different tags of the xml-file
+	          
 	          switch (localPart) {
 	          case ITEM:
+	          // if its the header create a new Feed object
 	            if (isFeedHeader) {
 	              isFeedHeader = false;
 	              feed = new Feed(title, link, description, language,
@@ -118,7 +122,7 @@ public class RSSFeedParser {
 	          }
 	        } else if (event.isEndElement()) {
 	          if (event.asEndElement().getName().getLocalPart() == (ITEM)) {
-	        	NewsFeedData data = new NewsFeedData();
+	            NewsFeedData data = new NewsFeedData();
 	            NewsFeedData.NewsFeedMessage message = data.new NewsFeedMessage();
 	            message.setDescription(description);
 //	            message.setGuid(guid);
@@ -137,12 +141,13 @@ public class RSSFeedParser {
 	    }
 	    return feed;
 	  }
-
+	  // returns the String of a given XMLEvent(tag) and Reader
 	  private String getCharacterData(XMLEvent event, XMLEventReader eventReader)
 	      throws XMLStreamException {
 	    String result = "";
+	    // go to the next event
 	    event = eventReader.nextEvent();
-	    
+	    // get the String of the tag
 	    if (event instanceof Characters) {
 	      result = event.asCharacters().getData();
 	    }
@@ -155,7 +160,7 @@ public class RSSFeedParser {
 	  
 	  
 	  	
-
+          // open a Stream to the rss-xml-file-url
 	  private InputStream read() {
 	    try {
 	      return url.openStream();
