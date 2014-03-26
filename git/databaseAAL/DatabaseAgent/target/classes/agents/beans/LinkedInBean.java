@@ -70,6 +70,7 @@ public class LinkedInBean extends AbstractCommunicatingBean{
 			if(message instanceof GetLinkedInData){
 				
 				try {
+					//new client with user information
 					client = factory.createLinkedInApiClient(message.getAccessToken(), ((LinkedInData) message).getTokenSecret());
 					Person profile = client.getProfileForCurrentUser();
 					log.info("Name:" + profile.getFirstName() + " " + profile.getLastName());
@@ -78,6 +79,7 @@ public class LinkedInBean extends AbstractCommunicatingBean{
 					log.info("Industry:" + profile.getIndustry());
 					log.info("Picture:" + profile.getPictureUrl());
 					
+					// save users connections
 					Connections connections = client.getConnectionsForCurrentUser();
 					log.info("Total connections fetched:" + connections.getTotal());
 					for (Person person : connections.getPersonList()) {
