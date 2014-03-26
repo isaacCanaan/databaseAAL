@@ -126,7 +126,7 @@ public class TwitterBean extends AbstractAgentBean{
 					if(obj instanceof GetTwitterData){
 						
 						try {
-							
+							//Authenticate
 							  ConfigurationBuilder cb = new ConfigurationBuilder();
 							    cb.setDebugEnabled(true)
 							      .setOAuthConsumerKey(consumerKeyValue)
@@ -135,8 +135,9 @@ public class TwitterBean extends AbstractAgentBean{
 							      .setOAuthAccessTokenSecret(obj.getTokenSecret());
 							    TwitterFactory tf = new TwitterFactory(cb.build());
 							    Twitter twitter = tf.getInstance();
-							
+							//creates a List of all statuses from the Timeline
 							 List<Status> statuses = twitter.getHomeTimeline();
+							 //collects Friends
 					    	    IDs friendsList = twitter.getFriendsIDs(20);
 							
 							List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
