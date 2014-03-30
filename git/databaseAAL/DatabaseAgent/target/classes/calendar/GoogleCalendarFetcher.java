@@ -30,18 +30,20 @@ public class GoogleCalendarFetcher {
 	private Connection connect;
 	private UserAccess userAccess;
 
+	//contructor
 	public GoogleCalendarFetcher(String emailAddress, String pword){
 		this.emailAddress = emailAddress;
 		this.pword = pword;
 	}
 	
+	//method to extract all calendar entires 
 	public ArrayList<CalendarData.Entry> getEventEntries() throws Exception{
-		// Create a Service to access the calendar
 		
 		access = new MySQLAccess();
 		connect = access.connectDriver();
 		userAccess = new UserAccess(connect);
 		
+		// creates the service and logs in with specified user data
 		CalendarService myService = new CalendarService("LivingWall GoogleCalendarAccess2");
 		try {
 			myService.setUserCredentials(this.emailAddress, this.pword);
@@ -69,6 +71,8 @@ public class GoogleCalendarFetcher {
 		LinkedList<CalendarEventEntry> events = (LinkedList<CalendarEventEntry>) feed.getEntries();
 		
 		ArrayList<CalendarData.Entry> entries = new ArrayList<CalendarData.Entry>();
+		
+		//parse all events 
 		for (CalendarEventEntry e : events){
 			
 			ArrayList<Integer> partIds = new ArrayList<Integer>();

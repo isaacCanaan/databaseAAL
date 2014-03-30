@@ -116,6 +116,8 @@ public class RecognitionBean extends AbstractMethodExposingBean{
 		
 		protected void receiveMessage(Message message){
 			
+			
+			// save the received QR-String and pictures with given id into the database
 			if(message instanceof SaveMessage){
 				
 				try {

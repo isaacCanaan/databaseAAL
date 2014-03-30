@@ -19,19 +19,6 @@ import ontology.messages.MailData;
 
 public class MailReceiver {
 	
-//	public static void main (String args[]){
-//		ArrayList<eMailAcc> accs = new ArrayList<eMailAcc>();
-//		eMailAcc acc = new eMailAcc("email@beispiel.de", "password");
-//		accs.add(acc);
-//		MailReceiver receiver = new MailReceiver(accs);
-//		ArrayList<Mail> mails = receiver.receiveMails();
-//		Collections.sort(mails, new MailComparator());
-//		for (int i=0; i<mails.size();i++){
-//			System.out.println(mails.get(i).toString());
-//		}
-//		System.out.println(mails.get(1).toString());
-//	}
-	
 	private ArrayList<eMailAcc> emailAccs;
 	private ArrayList<MailData.Mail> emails;
 	
@@ -39,11 +26,16 @@ public class MailReceiver {
 		this.emailAccs = emailAccs;
 	}
 	
+	//method to recieve mails from multiple email accounts
 	public ArrayList<MailData.Mail> receiveMails(){
 		ArrayList<MailData.Mail> received = new ArrayList<MailData.Mail>();
+		
+		// for each email account we extract all email in "INBOX"
 		for (int i=0; i<emailAccs.size(); i++){
 			eMailAcc current = emailAccs.get(i);
+			// set the provider 
 			String provider = getProvider(current.getEmailAdd());
+			// set the properties, e.g. SLL port...
 			Properties props = new Properties();
 			switch(provider){
 				case "aol.com":
@@ -75,12 +67,14 @@ public class MailReceiver {
 					System.err.println("Provider is not supported!");;
 			}
 		}
+		// sort all emails by date
 		Collections.sort(received, new MailComparator());
 
 		return received;
 		
 	}
 	
+	// method to extract the provider (server address)
 	private String getProvider(String addr){
 		if (addr.contains("@")){
 			return addr.substring(addr.indexOf("@")+1);
@@ -90,11 +84,14 @@ public class MailReceiver {
 		}
 	}
 	
+	// method which extract the emails from the mailservers
 	private ArrayList<MailData.Mail> getMails(eMailAcc acc,Properties properties){
 		ArrayList<MailData.Mail> mails = new ArrayList<MailData.Mail>();
 		try {  
 			   Session session = Session.getInstance(properties, null);
 			   Store store = null;
+			   
+			   // imap and pop3, both with ssl transcription are supported
 			   if (properties.getProperty("mail.imaps.host") != null){
 					   store = session.getStore("imaps");
 					   if (properties.getProperty("mail.imaps.port") == null){
@@ -114,28 +111,22 @@ public class MailReceiver {
 				}
 			   
 			  
-			   //3) create the folder object and open it  
-//			   Folder emailFolder = emailStore.getFolder("INBOX");  
-//			   Folder[] f = store.getDefaultFolder().list();
-//			   for(Folder fd:f)
-//				    System.out.println(">> "+fd.getName());
+			   // create the folder object and open it  
 			   Folder emailFolder = store.getFolder("INBOX"); 
-			   System.out.println(emailFolder.getUnreadMessageCount());
 			   emailFolder.open(Folder.READ_ONLY);  
 			  
-			   //4) retrieve the messages from the folder in an array and print it  
+			   // retrieve the messages from the folder in an array
 			   Message[] messages = emailFolder.getMessages();  
-//			   System.out.println(messages.length);
 			   for (int i = 0; i < messages.length; i++) {  
-			    Message message = messages[i];  
-			    String msg = getText(message);
-			    String type = message.getContentType();
-			    MailData mailData = new MailData();
-			    mails.add(mailData.new Mail(message.getSubject(), msg, type,
+			    	Message message = messages[i];  
+			    	String msg = getText(message);
+			    	String type = message.getContentType();
+			    	MailData mailData = new MailData();
+			    	mails.add(mailData.new Mail(message.getSubject(), msg, type,
 			    		message.getFrom()[0].toString(),new Date(message.getSentDate().getTime())));
 			   }  
 			  
-			   //5) close the store and folder objects  
+			   // close the store and folder objects  
 			   emailFolder.close(false);  
 			   store.close(); 
 			  
@@ -153,6 +144,7 @@ public class MailReceiver {
 		this.emails = emails;
 	}
 	
+	// method to get the plain text from the message
 	private String getText(Part p){
 		try {
 			if (p.isMimeType("text/plain")) {

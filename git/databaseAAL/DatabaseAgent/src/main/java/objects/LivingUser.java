@@ -2,7 +2,7 @@ package objects;
 import java.sql.Timestamp;
 import java.util.Date;
 
-
+// not in use
 public class LivingUser {
 	
 	String name;

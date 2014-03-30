@@ -172,6 +172,7 @@ public class ProfileBean extends AbstractCommunicatingBean{
 	@Override
 	protected void receiveMessage(Message message) {
 		
+		// get the key for recognition from the database
 		if(message instanceof GetUserKeys){
 			
 			int id = ((GetUserKeys) message).getUserID();
@@ -200,6 +201,7 @@ public class ProfileBean extends AbstractCommunicatingBean{
 			
 		}
 		
+		// save the keys for recognition into the database
 		if(message instanceof UpdateUserKeys){
 			
 			int id = ((UpdateUserKeys) message).getUserID();
@@ -216,6 +218,7 @@ public class ProfileBean extends AbstractCommunicatingBean{
 			
 		}
 		
+		// get the saved Private-Settings from the database
 		if(message instanceof GetUserPreferences){
 			
 			int id = ((GetUserPreferences) message).getUserID();
@@ -244,6 +247,7 @@ public class ProfileBean extends AbstractCommunicatingBean{
 			
 		}
 		
+		// save the Private-Setting into the database
 		if(message instanceof UpdateUserPreferences){
 			
 			int id = ((UpdateUserPreferences) message).getUserID();
