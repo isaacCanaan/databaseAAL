@@ -46,7 +46,7 @@ private Connection connect = null;
 		log.info("my ID: " + this.thisAgent.getAgentId());
 		
 		sendAction = retrieveAction(ICommunicationBean.ACTION_SEND);
-		
+		// connect to sql database
 		access = new MySQLAccess();
 		connect = access.connectDriver();
 		todoAccess = new TodoAccess(connect);
@@ -74,7 +74,7 @@ private Connection connect = null;
 				IFact obj = message.getPayload();
 				
 				if(obj instanceof SaveTodo){
-					
+					// save new todo in database
 					log.info("TodoAgent - Save message received");
 					TodoItem item = ((SaveTodo) obj).getTodo();
 					try {
@@ -88,9 +88,9 @@ private Connection connect = null;
 				if(obj instanceof GetTodoData){
 					
 					log.info("TodoAgent - Get message received");
-									
+					// get list of todos out of the database by userid				
 					try {
-
+					
 						ArrayList<TodoItem> todos = todoAccess.readTodoItemList(((GetTodoData) obj).getUserID());
 						
 						List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
@@ -126,6 +126,7 @@ private Connection connect = null;
 			
 			log.info("TodoAgent - Save message received");
 			TodoItem item = ((SaveTodo) message).getTodo();
+			// new todoItem
 			try {
 				todoAccess.saveNewTodoItem(((SaveTodo) message).getUserID(), item.getPrio(), item.getText(), item.getDate());
 			} catch (Exception e) {
@@ -138,7 +139,7 @@ private Connection connect = null;
 			log.info("TodoAgent - Get message received");
 							
 			try {
-
+				// get list of todoItems out of the database
 				ArrayList<TodoItem> todos = todoAccess.readTodoItemList(((GetTodoData) message).getUserID());
 				
 				List<IAgentDescription> agentDescriptions = thisAgent.searchAllAgents(new AgentDescription());
